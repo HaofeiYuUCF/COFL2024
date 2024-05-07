@@ -130,18 +130,18 @@ Public Class NorthSouthFreeway
     '************************************************************************************************************************
     Sub VerifyNSDiamondForm()
         'Extracts variables from form
-        Welcome.SSB = TextBox8.Text
-        Welcome.ATSB = TextBox7.Text
-        Welcome.ORSB = TextBox9.Text
-        Welcome.ATWB = TextBox15.Text
-        Welcome.SWB = TextBox16.Text
-        Welcome.ORWB = TextBox4.Text
-        Welcome.ATEB = TextBox13.Text
-        Welcome.SEB = TextBox14.Text
-        Welcome.OREB = TextBox6.Text
-        Welcome.ATNB = TextBox11.Text
-        Welcome.SNB = TextBox12.Text
-        Welcome.ORNB = TextBox2.Text
+        'Welcome.SSB = TextBox8.Text
+        'Welcome.ATSB = TextBox7.Text
+        'Welcome.ORSB = TextBox9.Text
+        'Welcome.ATWB = TextBox15.Text
+        'Welcome.SWB = TextBox16.Text
+        'Welcome.ORWB = TextBox4.Text
+        'Welcome.ATEB = TextBox13.Text
+        'Welcome.SEB = TextBox14.Text
+        'Welcome.OREB = TextBox6.Text
+        'Welcome.ATNB = TextBox11.Text
+        'Welcome.SNB = TextBox12.Text
+        'Welcome.ORNB = TextBox2.Text
 
         'Verifies that all fields have numeric inputs
         Try

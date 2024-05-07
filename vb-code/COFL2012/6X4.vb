@@ -128,14 +128,14 @@ Public Class _6X4
     '************************************************************************************************************************
     Sub Verify6X4Form()
         'Extracts variables from form
-        Welcome.SSB = TextBox1.Text
-        Welcome.ATSB = TextBox2.Text
-        Welcome.ATWB = TextBox3.Text
-        Welcome.SWB = TextBox4.Text
-        Welcome.ATEB = TextBox5.Text
-        Welcome.SEB = TextBox6.Text
-        Welcome.ATNB = TextBox7.Text
-        Welcome.SNB = TextBox8.Text
+        'Welcome.SSB = TextBox1.Text
+        'Welcome.ATSB = TextBox2.Text
+        'Welcome.ATWB = TextBox3.Text
+        'Welcome.SWB = TextBox4.Text
+        'Welcome.ATEB = TextBox5.Text
+        'Welcome.SEB = TextBox6.Text
+        'Welcome.ATNB = TextBox7.Text
+        'Welcome.SNB = TextBox8.Text
 
         'Verifies that all fields have numeric inputs
         Try

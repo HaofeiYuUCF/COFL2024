@@ -125,12 +125,12 @@ Public Class North_Tee
     '************************************************************************************************************************
     Sub VerifyNorthTeeForm()
         'Extracts variables from form
-        Welcome.SSB = TextBox1.Text
-        Welcome.ATSB = TextBox2.Text
-        Welcome.ATWB = TextBox3.Text
-        Welcome.SWB = TextBox4.Text
-        Welcome.ATEB = TextBox5.Text
-        Welcome.SEB = TextBox6.Text
+        'Welcome.SSB = TextBox1.Text
+        'Welcome.ATSB = TextBox2.Text
+        'Welcome.ATWB = TextBox3.Text
+        'Welcome.SWB = TextBox4.Text
+        'Welcome.ATEB = TextBox5.Text
+        'Welcome.SEB = TextBox6.Text
 
         'Verifies that all fields have numeric inputs
         Try

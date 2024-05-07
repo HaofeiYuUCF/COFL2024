@@ -123,8 +123,9 @@ Public Class TollBoothEW
 
         If Welcome.EWTollBooth = False Then
             PictureBox1.Visible = False
-            PictureBox5.Visible = False
+            'PictureBox5.Visible = False
             PictureBox4.Visible = False
+            PictureBox8.Visible = False
             Label12.Visible = False
             Label11.Visible = False
             Label10.Visible = False
@@ -133,7 +134,7 @@ Public Class TollBoothEW
             Label17.Visible = False
             Label15.Visible = False
             Label14.Visible = False
-            Label19.Visible = False
+            'Label19.Visible = False
             TextBox6.Visible = False
             TextBox7.Visible = False
             TextBox8.Visible = False
@@ -161,8 +162,9 @@ Public Class TollBoothEW
             TextBox2.Visible = True
         Else
             PictureBox1.Visible = True
-            PictureBox5.Visible = True
+            'PictureBox5.Visible = True
             PictureBox4.Visible = True
+            PictureBox8.Visible = True
             Label12.Visible = True
             Label11.Visible = True
             Label10.Visible = True
@@ -171,7 +173,7 @@ Public Class TollBoothEW
             Label17.Visible = True
             Label15.Visible = True
             Label14.Visible = True
-            Label19.Visible = True
+            'Label19.Visible = True
             TextBox6.Visible = True
             TextBox7.Visible = True
             TextBox8.Visible = True
@@ -190,7 +192,7 @@ Public Class TollBoothEW
             Label7.Visible = False
             Label6.Visible = False
             Label9.Visible = False
-            Label1.Visible = False
+            'Label1.Visible = False
             TextBox3.Visible = False
             TextBox4.Visible = False
             TextBox5.Visible = False
@@ -382,7 +384,7 @@ Public Class TollBoothEW
                     If Welcome.QuickVerify = False Then
                         MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                         Welcome.InputsCorrect(4) = False
-                        TextBox7.Text = ""
+                        TextBox6.Text = ""
                         Exit Sub
                     Else
                         Welcome.InputsCorrect(4) = False
@@ -530,6 +532,57 @@ Public Class TollBoothEW
         End If
     End Sub
 
+    '***************************************************************************************************************************
+    '*******************************************Changes to variables in input fields********************************************
+    '***************************************************************************************************************************
+    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
+        Welcome.SSB = TextBox6.Text
+    End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+        Welcome.ATSB = TextBox7.Text
+    End Sub
+
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+        Welcome.ETCSB = TextBox8.Text
+    End Sub
+
+    Private Sub TextBox9_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox9.TextChanged
+        Welcome.SNB = TextBox9.Text
+    End Sub
+
+    Private Sub TextBox10_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox10.TextChanged
+        Welcome.ATNB = TextBox10.Text
+    End Sub
+
+    Private Sub TextBox11_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox11.TextChanged
+        Welcome.ETCNB = TextBox11.Text
+    End Sub
+
+    Private Sub TextBox14_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox14.TextChanged
+        Welcome.SEB = TextBox14.Text
+    End Sub
+
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
+        Welcome.ATEB = TextBox1.Text
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+        Welcome.ETCEB = TextBox2.Text
+    End Sub
+
+    Private Sub TextBox5_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox5.TextChanged
+        Welcome.SWB = TextBox5.Text
+    End Sub
+
+    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
+        Welcome.ATWB = TextBox4.Text
+    End Sub
+
+    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
+        Welcome.ETCWB = TextBox3.Text
+    End Sub
+
 
 
     '***************************************************************************************************************************
@@ -566,8 +619,9 @@ Public Class TollBoothEW
         Welcome.EWTollBooth = False
         'N-S
         PictureBox1.Visible = True
-        PictureBox5.Visible = True
+        'PictureBox5.Visible = True
         PictureBox4.Visible = True
+        PictureBox8.Visible = True
         Label12.Visible = True
         Label11.Visible = True
         Label10.Visible = True
@@ -576,7 +630,7 @@ Public Class TollBoothEW
         Label17.Visible = True
         Label15.Visible = True
         Label14.Visible = True
-        Label19.Visible = True
+        'Label19.Visible = True
         TextBox6.Visible = True
         TextBox7.Visible = True
         TextBox8.Visible = True
@@ -596,7 +650,7 @@ Public Class TollBoothEW
         Label7.Visible = False
         Label6.Visible = False
         Label9.Visible = False
-        Label1.Visible = False
+        'Label1.Visible = False
         TextBox3.Visible = False
         TextBox4.Visible = False
         TextBox5.Visible = False
@@ -611,8 +665,9 @@ Public Class TollBoothEW
         Welcome.EWTollBooth = True
         'N-S
         PictureBox1.Visible = False
-        PictureBox5.Visible = False
+        'PictureBox5.Visible = False
         PictureBox4.Visible = False
+        PictureBox8.Visible = False
         Label12.Visible = False
         Label11.Visible = False
         Label10.Visible = False
@@ -621,7 +676,7 @@ Public Class TollBoothEW
         Label17.Visible = False
         Label15.Visible = False
         Label14.Visible = False
-        Label19.Visible = False
+        'Label19.Visible = False
         TextBox6.Visible = False
         TextBox7.Visible = False
         TextBox8.Visible = False
@@ -641,7 +696,7 @@ Public Class TollBoothEW
         Label7.Visible = True
         Label6.Visible = True
         Label9.Visible = True
-        Label1.Visible = True
+        'Label1.Visible = True
         TextBox3.Visible = True
         TextBox4.Visible = True
         TextBox5.Visible = True

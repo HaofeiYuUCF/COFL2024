@@ -22,7 +22,7 @@ Partial Class EastWestFreeway
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(EastWestFreeway))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(EastWestFreeway))
         Label10 = New Label()
         Label7 = New Label()
         Label18 = New Label()
@@ -41,18 +41,14 @@ Partial Class EastWestFreeway
         btnPrevious = New Button()
         Label8 = New Label()
         Label16 = New Label()
-        PictureBox7 = New PictureBox()
         TextBox11 = New TextBox()
-        PictureBox8 = New PictureBox()
         TextBox12 = New TextBox()
         Label15 = New Label()
         Label4 = New Label()
-        PictureBox3 = New PictureBox()
         TextBox9 = New TextBox()
         TextBox7 = New TextBox()
         Label6 = New Label()
         Label5 = New Label()
-        PictureBox2 = New PictureBox()
         TextBox6 = New TextBox()
         TextBox14 = New TextBox()
         Label3 = New Label()
@@ -75,19 +71,23 @@ Partial Class EastWestFreeway
         AboutToolStripButton = New ToolStripButton()
         SaveFileDialog1 = New SaveFileDialog()
         OpenFileDialog1 = New OpenFileDialog()
+        PictureBox7 = New PictureBox()
+        PictureBox8 = New PictureBox()
+        PictureBox3 = New PictureBox()
+        PictureBox2 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        ToolStrip1.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        ToolStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label10.Location = New Point(369, 671)
+        Label10.Location = New Point(369, 678)
         Label10.Name = "Label10"
         Label10.Size = New Size(162, 21)
         Label10.TabIndex = 162
@@ -115,16 +115,16 @@ Partial Class EastWestFreeway
         ' 
         ' TextBox15
         ' 
-        TextBox15.Location = New Point(944, 474)
+        TextBox15.Location = New Point(944, 513)
         TextBox15.Name = "TextBox15"
         TextBox15.Size = New Size(100, 23)
-        TextBox15.TabIndex = 159
+        TextBox15.TabIndex = 10
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label12.Location = New Point(1065, 468)
+        Label12.Location = New Point(1065, 507)
         Label12.Name = "Label12"
         Label12.Size = New Size(136, 42)
         Label12.TabIndex = 158
@@ -135,14 +135,14 @@ Partial Class EastWestFreeway
         TextBox4.Location = New Point(944, 554)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(100, 23)
-        TextBox4.TabIndex = 157
+        TextBox4.TabIndex = 11
         ' 
         ' TextBox16
         ' 
-        TextBox16.Location = New Point(944, 512)
+        TextBox16.Location = New Point(944, 460)
         TextBox16.Name = "TextBox16"
         TextBox16.Size = New Size(100, 23)
-        TextBox16.TabIndex = 156
+        TextBox16.TabIndex = 9
         ' 
         ' Label13
         ' 
@@ -158,7 +158,7 @@ Partial Class EastWestFreeway
         ' 
         Label17.AutoSize = True
         Label17.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label17.Location = New Point(1065, 512)
+        Label17.Location = New Point(1065, 460)
         Label17.Name = "Label17"
         Label17.Size = New Size(121, 42)
         Label17.TabIndex = 154
@@ -166,16 +166,16 @@ Partial Class EastWestFreeway
         ' 
         ' TextBox13
         ' 
-        TextBox13.Location = New Point(292, 337)
+        TextBox13.Location = New Point(292, 377)
         TextBox13.Name = "TextBox13"
         TextBox13.Size = New Size(100, 23)
-        TextBox13.TabIndex = 153
+        TextBox13.TabIndex = 7
         ' 
         ' Label11
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label11.Location = New Point(150, 331)
+        Label11.Location = New Point(150, 371)
         Label11.Name = "Label11"
         Label11.Size = New Size(136, 42)
         Label11.TabIndex = 152
@@ -186,14 +186,14 @@ Partial Class EastWestFreeway
         TextBox2.Location = New Point(537, 763)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 23)
-        TextBox2.TabIndex = 151
+        TextBox2.TabIndex = 5
         ' 
         ' TextBox8
         ' 
         TextBox8.Location = New Point(887, 90)
         TextBox8.Name = "TextBox8"
         TextBox8.Size = New Size(100, 23)
-        TextBox8.TabIndex = 150
+        TextBox8.TabIndex = 0
         ' 
         ' Label9
         ' 
@@ -213,7 +213,7 @@ Partial Class EastWestFreeway
         btnRun.Location = New Point(1207, 744)
         btnRun.Name = "btnRun"
         btnRun.Size = New Size(105, 36)
-        btnRun.TabIndex = 148
+        btnRun.TabIndex = 12
         btnRun.Text = "Run"
         btnRun.UseVisualStyleBackColor = False
         ' 
@@ -225,7 +225,7 @@ Partial Class EastWestFreeway
         btnPrevious.Location = New Point(1096, 744)
         btnPrevious.Name = "btnPrevious"
         btnPrevious.Size = New Size(105, 36)
-        btnPrevious.TabIndex = 147
+        btnPrevious.TabIndex = 13
         btnPrevious.Text = "Previous"
         btnPrevious.UseVisualStyleBackColor = False
         ' 
@@ -233,7 +233,7 @@ Partial Class EastWestFreeway
         ' 
         Label8.AutoSize = True
         Label8.BorderStyle = BorderStyle.FixedSingle
-        Label8.Location = New Point(39, 650)
+        Label8.Location = New Point(12, 662)
         Label8.Name = "Label8"
         Label8.Size = New Size(236, 167)
         Label8.TabIndex = 146
@@ -249,39 +249,19 @@ Partial Class EastWestFreeway
         Label16.TabIndex = 145
         Label16.Text = "WESTBOUND"
         ' 
-        ' PictureBox7
-        ' 
-        PictureBox7.Image = My.Resources.Resources.blue_arrow_left
-        PictureBox7.Location = New Point(944, 359)
-        PictureBox7.Name = "PictureBox7"
-        PictureBox7.Size = New Size(87, 89)
-        PictureBox7.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox7.TabIndex = 144
-        PictureBox7.TabStop = False
-        ' 
         ' TextBox11
         ' 
         TextBox11.Location = New Point(537, 715)
         TextBox11.Name = "TextBox11"
         TextBox11.Size = New Size(100, 23)
-        TextBox11.TabIndex = 142
-        ' 
-        ' PictureBox8
-        ' 
-        PictureBox8.Image = My.Resources.Resources.blue_arrow_top
-        PictureBox8.Location = New Point(644, 673)
-        PictureBox8.Name = "PictureBox8"
-        PictureBox8.Size = New Size(150, 94)
-        PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox8.TabIndex = 143
-        PictureBox8.TabStop = False
+        TextBox11.TabIndex = 4
         ' 
         ' TextBox12
         ' 
-        TextBox12.Location = New Point(537, 671)
+        TextBox12.Location = New Point(537, 678)
         TextBox12.Name = "TextBox12"
         TextBox12.Size = New Size(100, 23)
-        TextBox12.TabIndex = 141
+        TextBox12.TabIndex = 3
         ' 
         ' Label15
         ' 
@@ -303,29 +283,19 @@ Partial Class EastWestFreeway
         Label4.TabIndex = 139
         Label4.Text = "EASTBOUND"
         ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.Image = My.Resources.Resources.blue_arrow_right
-        PictureBox3.Location = New Point(297, 452)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(104, 94)
-        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox3.TabIndex = 138
-        PictureBox3.TabStop = False
-        ' 
         ' TextBox9
         ' 
         TextBox9.Location = New Point(887, 176)
         TextBox9.Name = "TextBox9"
         TextBox9.Size = New Size(100, 23)
-        TextBox9.TabIndex = 137
+        TextBox9.TabIndex = 2
         ' 
         ' TextBox7
         ' 
         TextBox7.Location = New Point(887, 127)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(100, 23)
-        TextBox7.TabIndex = 136
+        TextBox7.TabIndex = 1
         ' 
         ' Label6
         ' 
@@ -347,29 +317,19 @@ Partial Class EastWestFreeway
         Label5.TabIndex = 134
         Label5.Text = "SOUTHBOUND"
         ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Image = My.Resources.Resources.blue_arrow_down
-        PictureBox2.Location = New Point(559, 125)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(150, 94)
-        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox2.TabIndex = 133
-        PictureBox2.TabStop = False
-        ' 
         ' TextBox6
         ' 
         TextBox6.Location = New Point(292, 417)
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(100, 23)
-        TextBox6.TabIndex = 132
+        TextBox6.TabIndex = 8
         ' 
         ' TextBox14
         ' 
-        TextBox14.Location = New Point(292, 375)
+        TextBox14.Location = New Point(292, 321)
         TextBox14.Name = "TextBox14"
         TextBox14.Size = New Size(100, 23)
-        TextBox14.TabIndex = 131
+        TextBox14.TabIndex = 6
         ' 
         ' Label3
         ' 
@@ -385,7 +345,7 @@ Partial Class EastWestFreeway
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(154, 377)
+        Label2.Location = New Point(154, 323)
         Label2.Name = "Label2"
         Label2.Size = New Size(121, 42)
         Label2.TabIndex = 129
@@ -534,11 +494,57 @@ Partial Class EastWestFreeway
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
+        ' PictureBox7
+        ' 
+        PictureBox7.BackColor = Color.WhiteSmoke
+        PictureBox7.Image = My.Resources.Resources.black_arrow_left
+        PictureBox7.Location = New Point(944, 377)
+        PictureBox7.Name = "PictureBox7"
+        PictureBox7.Size = New Size(87, 54)
+        PictureBox7.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox7.TabIndex = 167
+        PictureBox7.TabStop = False
+        ' 
+        ' PictureBox8
+        ' 
+        PictureBox8.BackColor = Color.WhiteSmoke
+        PictureBox8.Image = My.Resources.Resources.black_arrow_top
+        PictureBox8.Location = New Point(694, 678)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(55, 77)
+        PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox8.TabIndex = 168
+        PictureBox8.TabStop = False
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.BackColor = Color.WhiteSmoke
+        PictureBox3.Image = My.Resources.Resources.black_arrow_right
+        PictureBox3.Location = New Point(297, 474)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(104, 52)
+        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox3.TabIndex = 166
+        PictureBox3.TabStop = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.BackColor = Color.WhiteSmoke
+        PictureBox2.Image = My.Resources.Resources.down_arrow_608258
+        PictureBox2.Location = New Point(603, 135)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(53, 73)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 165
+        PictureBox2.TabStop = False
+        ' 
         ' EastWestFreeway
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(1351, 838)
+        Controls.Add(PictureBox8)
+        Controls.Add(PictureBox2)
         Controls.Add(ToolStrip1)
         Controls.Add(Label14)
         Controls.Add(Label10)
@@ -559,34 +565,32 @@ Partial Class EastWestFreeway
         Controls.Add(btnPrevious)
         Controls.Add(Label8)
         Controls.Add(Label16)
-        Controls.Add(PictureBox7)
         Controls.Add(TextBox11)
-        Controls.Add(PictureBox8)
         Controls.Add(TextBox12)
         Controls.Add(Label15)
         Controls.Add(Label4)
-        Controls.Add(PictureBox3)
         Controls.Add(TextBox9)
         Controls.Add(TextBox7)
         Controls.Add(Label6)
         Controls.Add(Label5)
-        Controls.Add(PictureBox2)
         Controls.Add(TextBox6)
         Controls.Add(TextBox14)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
+        Controls.Add(PictureBox7)
+        Controls.Add(PictureBox3)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "EastWestFreeway"
         Text = "CO Florida 2012 - Diamond Interchange : E-W Freeway"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        ToolStrip1.ResumeLayout(False)
+        ToolStrip1.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        ToolStrip1.ResumeLayout(False)
-        ToolStrip1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -609,18 +613,14 @@ Partial Class EastWestFreeway
     Friend WithEvents btnPrevious As Button
     Friend WithEvents Label8 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents TextBox11 As TextBox
-    Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents TextBox12 As TextBox
     Friend WithEvents Label15 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents TextBox9 As TextBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TextBox6 As TextBox
     Friend WithEvents TextBox14 As TextBox
     Friend WithEvents Label3 As Label
@@ -643,4 +643,8 @@ Partial Class EastWestFreeway
     Friend WithEvents AboutToolStripButton As ToolStripButton
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

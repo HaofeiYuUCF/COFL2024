@@ -6,7 +6,7 @@ Public Class District
     '*************************************************************************************************************************************
     Private Sub District_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Welcome.RoundButton(btnPrevious)
-        Welcome.RoundButton(btnNext)
+        'Welcome.RoundButton(btnNext)
         'Gets the primary directory
         Welcome.PrimaryDirectory = Directory.GetCurrentDirectory()
         Welcome.InputsCorrect(2) = False
@@ -302,6 +302,7 @@ Public Class District
         Welcome.DistrictNum = 1
         Welcome.Temperature = "48.3"
         Welcome.InputsCorrect(2) = True
+        autoClick()
     End Sub
 
     Private Sub Button2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button2.Click
@@ -317,6 +318,7 @@ Public Class District
         Welcome.DistrictNum = 2
         Welcome.Temperature = "41.1"
         Welcome.InputsCorrect(2) = True
+        autoClick()
     End Sub
 
     Private Sub Button3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button3.Click
@@ -332,6 +334,7 @@ Public Class District
         Welcome.DistrictNum = 3
         Welcome.Temperature = "39.3"
         Welcome.InputsCorrect(2) = True
+        autoClick()
     End Sub
 
     Private Sub Button4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button4.Click
@@ -347,6 +350,7 @@ Public Class District
         Welcome.DistrictNum = 4
         Welcome.Temperature = "53.9"
         Welcome.InputsCorrect(2) = True
+        autoClick()
     End Sub
 
     Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
@@ -362,6 +366,7 @@ Public Class District
         Welcome.DistrictNum = 5
         Welcome.Temperature = "47.8"
         Welcome.InputsCorrect(2) = True
+        autoClick()
     End Sub
 
     Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
@@ -377,6 +382,7 @@ Public Class District
         Welcome.DistrictNum = 6
         Welcome.Temperature = "53.9"
         Welcome.InputsCorrect(2) = True
+        autoClick()
     End Sub
 
     Private Sub Button7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button7.Click
@@ -392,7 +398,22 @@ Public Class District
         Welcome.DistrictNum = 7
         Welcome.Temperature = "48.8"
         Welcome.InputsCorrect(2) = True
+        autoClick()
     End Sub
+
+
+    Private Sub autoClick()
+        'Verifies that a district has been selected, then advances to selected form
+        If Welcome.InputsCorrect(2) = True Then
+            Welcome.FillEFArray()
+            My.Forms.IntersectionType.Show()
+            Me.Visible = False
+        Else
+            MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
+        End If
+    End Sub
+
+
 
 
     'Private Sub Button8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button8.Click
@@ -452,17 +473,17 @@ Public Class District
     End Sub
 
 
-    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
+    'Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
 
-        'Verifies that a district has been selected, then advances to selected form
-        If Welcome.InputsCorrect(2) = True Then
-            Welcome.FillEFArray()
-            My.Forms.IntersectionType.Show()
-            Me.Visible = False
-        Else
-            MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
-        End If
-    End Sub
+    '    'Verifies that a district has been selected, then advances to selected form
+    '    If Welcome.InputsCorrect(2) = True Then
+    '        Welcome.FillEFArray()
+    '        My.Forms.IntersectionType.Show()
+    '        Me.Visible = False
+    '    Else
+    '        MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
+    '    End If
+    'End Sub
 
 End Class
 

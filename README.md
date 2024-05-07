@@ -1,5 +1,5 @@
-# COFL2012
-COFL2012 is a software tool to estimate carbon monoxide (CO) concentrations at roadway intersections. It was developed by the Florida Department of Transportation (FDOT) and University of Central Florida(UCF).
+# COFL2024
+COFL2024 is a software tool to estimate carbon monoxide (CO) concentrations at roadway intersections. It was developed by the Florida Department of Transportation (FDOT) and University of Central Florida(UCF).
 
 ## Overview
 COFL2012 allows users to model CO concentrations for different roadway configurations:
@@ -16,6 +16,4 @@ COFL2012 allows users to model CO concentrations for different roadway configura
   - N-S freeway diamond
 The user inputs information about traffic volumes, speeds, and roadway geometry. COFL2012 then runs the CAL3QHC air dispersion model to estimate CO concentrations at receptor locations around the intersection.
 
-COFL2012 outputs the estimated 1-hour and 8-hour CO concentrations, which can be compared to National Ambient Air Quality Standards.
-
-### More information coming soon...
+COFL2024 outputs the estimated 1-hour and 8-hour CO concentrations, which can be compared to National Ambient Air Quality Standards.

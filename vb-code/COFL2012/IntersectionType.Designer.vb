@@ -22,7 +22,7 @@ Partial Class IntersectionType
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(IntersectionType))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(IntersectionType))
         Label1 = New Label()
         PictureBox1 = New PictureBox()
         Label2 = New Label()
@@ -47,7 +47,6 @@ Partial Class IntersectionType
         PictureBox10 = New PictureBox()
         PictureBox11 = New PictureBox()
         btnPrevious = New Button()
-        btnNext = New Button()
         ToolStrip1 = New ToolStrip()
         NewToolStripButton = New ToolStripButton()
         SaveToolStripButton = New ToolStripButton()
@@ -80,10 +79,10 @@ Partial Class IntersectionType
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Roboto Mono", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(346, 38)
+        Label1.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(362, 38)
         Label1.Name = "Label1"
-        Label1.Size = New Size(392, 32)
+        Label1.Size = New Size(434, 29)
         Label1.TabIndex = 0
         Label1.Text = "INTERSECTION TYPE SELECTION"
         ' 
@@ -93,7 +92,7 @@ Partial Class IntersectionType
         PictureBox1.BorderStyle = BorderStyle.FixedSingle
         PictureBox1.Cursor = Cursors.Hand
         PictureBox1.Image = My.Resources.Resources._4x4
-        PictureBox1.Location = New Point(31, 106)
+        PictureBox1.Location = New Point(28, 106)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(192, 135)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
@@ -103,20 +102,20 @@ Partial Class IntersectionType
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.Location = New Point(90, 244)
         Label2.Name = "Label2"
-        Label2.Size = New Size(67, 25)
+        Label2.Size = New Size(54, 24)
         Label2.TabIndex = 13
         Label2.Text = "4 X 4"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label3.Location = New Point(389, 244)
         Label3.Name = "Label3"
-        Label3.Size = New Size(67, 25)
+        Label3.Size = New Size(54, 24)
         Label3.TabIndex = 14
         Label3.Text = "4 X 6"
         ' 
@@ -125,7 +124,7 @@ Partial Class IntersectionType
         PictureBox3.BorderStyle = BorderStyle.FixedSingle
         PictureBox3.Cursor = Cursors.Hand
         PictureBox3.Image = My.Resources.Resources._4x6
-        PictureBox3.Location = New Point(312, 106)
+        PictureBox3.Location = New Point(326, 106)
         PictureBox3.Name = "PictureBox3"
         PictureBox3.Size = New Size(195, 135)
         PictureBox3.SizeMode = PictureBoxSizeMode.StretchImage
@@ -135,10 +134,10 @@ Partial Class IntersectionType
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(688, 244)
+        Label4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Location = New Point(701, 244)
         Label4.Name = "Label4"
-        Label4.Size = New Size(67, 25)
+        Label4.Size = New Size(54, 24)
         Label4.TabIndex = 16
         Label4.Text = "6 X 4"
         ' 
@@ -147,7 +146,7 @@ Partial Class IntersectionType
         PictureBox4.BorderStyle = BorderStyle.FixedSingle
         PictureBox4.Cursor = Cursors.Hand
         PictureBox4.Image = My.Resources.Resources._6x4
-        PictureBox4.Location = New Point(622, 106)
+        PictureBox4.Location = New Point(637, 106)
         PictureBox4.Name = "PictureBox4"
         PictureBox4.Size = New Size(195, 135)
         PictureBox4.SizeMode = PictureBoxSizeMode.StretchImage
@@ -157,10 +156,10 @@ Partial Class IntersectionType
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.Location = New Point(991, 244)
+        Label5.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Location = New Point(1005, 244)
         Label5.Name = "Label5"
-        Label5.Size = New Size(67, 25)
+        Label5.Size = New Size(54, 24)
         Label5.TabIndex = 18
         Label5.Text = "6 X 6"
         ' 
@@ -169,7 +168,7 @@ Partial Class IntersectionType
         PictureBox2.BorderStyle = BorderStyle.FixedSingle
         PictureBox2.Cursor = Cursors.Hand
         PictureBox2.Image = My.Resources.Resources._6x6
-        PictureBox2.Location = New Point(921, 106)
+        PictureBox2.Location = New Point(933, 106)
         PictureBox2.Name = "PictureBox2"
         PictureBox2.Size = New Size(195, 135)
         PictureBox2.SizeMode = PictureBoxSizeMode.StretchImage
@@ -180,10 +179,10 @@ Partial Class IntersectionType
         ' 
         Label6.AutoSize = True
         Label6.FlatStyle = FlatStyle.System
-        Label6.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.Location = New Point(162, 440)
+        Label6.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.Location = New Point(73, 440)
         Label6.Name = "Label6"
-        Label6.Size = New Size(100, 25)
+        Label6.Size = New Size(85, 24)
         Label6.TabIndex = 20
         Label6.Text = "East Tee"
         ' 
@@ -191,10 +190,10 @@ Partial Class IntersectionType
         ' 
         Label7.AutoSize = True
         Label7.FlatStyle = FlatStyle.System
-        Label7.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label7.Location = New Point(473, 440)
+        Label7.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label7.Location = New Point(372, 440)
         Label7.Name = "Label7"
-        Label7.Size = New Size(111, 25)
+        Label7.Size = New Size(95, 24)
         Label7.TabIndex = 21
         Label7.Text = "North Tee"
         ' 
@@ -202,10 +201,10 @@ Partial Class IntersectionType
         ' 
         Label8.AutoSize = True
         Label8.FlatStyle = FlatStyle.System
-        Label8.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.Location = New Point(796, 440)
+        Label8.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Location = New Point(231, 642)
         Label8.Name = "Label8"
-        Label8.Size = New Size(122, 25)
+        Label8.Size = New Size(95, 24)
         Label8.TabIndex = 22
         Label8.Text = "Toll Booth"
         ' 
@@ -213,10 +212,10 @@ Partial Class IntersectionType
         ' 
         Label9.AutoSize = True
         Label9.FlatStyle = FlatStyle.System
-        Label9.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label9.Location = New Point(92, 643)
+        Label9.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label9.Location = New Point(688, 440)
         Label9.Name = "Label9"
-        Label9.Size = New Size(100, 25)
+        Label9.Size = New Size(91, 24)
         Label9.TabIndex = 23
         Label9.Text = "West Tee"
         ' 
@@ -224,10 +223,10 @@ Partial Class IntersectionType
         ' 
         Label10.AutoSize = True
         Label10.FlatStyle = FlatStyle.System
-        Label10.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label10.Location = New Point(377, 643)
+        Label10.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label10.Location = New Point(984, 441)
         Label10.Name = "Label10"
-        Label10.Size = New Size(111, 25)
+        Label10.Size = New Size(98, 24)
         Label10.TabIndex = 24
         Label10.Text = "South Tee"
         ' 
@@ -235,10 +234,10 @@ Partial Class IntersectionType
         ' 
         Label11.AutoSize = True
         Label11.FlatStyle = FlatStyle.System
-        Label11.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label11.Location = New Point(611, 642)
+        Label11.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label11.Location = New Point(493, 642)
         Label11.Name = "Label11"
-        Label11.Size = New Size(243, 75)
+        Label11.Size = New Size(201, 72)
         Label11.TabIndex = 25
         Label11.Text = "Diamond Interchange: " & vbCrLf & "    N-S Freeway" & vbCrLf
         ' 
@@ -246,10 +245,10 @@ Partial Class IntersectionType
         ' 
         Label12.AutoSize = True
         Label12.FlatStyle = FlatStyle.System
-        Label12.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label12.Location = New Point(921, 642)
+        Label12.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label12.Location = New Point(811, 642)
         Label12.Name = "Label12"
-        Label12.Size = New Size(243, 75)
+        Label12.Size = New Size(201, 72)
         Label12.TabIndex = 26
         Label12.Text = "Diamond Interchange: " & vbCrLf & "    E-W Freeway" & vbCrLf
         ' 
@@ -258,7 +257,7 @@ Partial Class IntersectionType
         PictureBox5.BorderStyle = BorderStyle.FixedSingle
         PictureBox5.Cursor = Cursors.Hand
         PictureBox5.Image = My.Resources.Resources.East_Tee
-        PictureBox5.Location = New Point(116, 302)
+        PictureBox5.Location = New Point(28, 302)
         PictureBox5.Name = "PictureBox5"
         PictureBox5.Size = New Size(195, 135)
         PictureBox5.SizeMode = PictureBoxSizeMode.StretchImage
@@ -270,7 +269,7 @@ Partial Class IntersectionType
         PictureBox8.BorderStyle = BorderStyle.FixedSingle
         PictureBox8.Cursor = Cursors.Hand
         PictureBox8.Image = My.Resources.Resources.North_Tee
-        PictureBox8.Location = New Point(430, 302)
+        PictureBox8.Location = New Point(326, 302)
         PictureBox8.Name = "PictureBox8"
         PictureBox8.Size = New Size(195, 135)
         PictureBox8.SizeMode = PictureBoxSizeMode.StretchImage
@@ -282,7 +281,7 @@ Partial Class IntersectionType
         PictureBox9.BorderStyle = BorderStyle.FixedSingle
         PictureBox9.Cursor = Cursors.Hand
         PictureBox9.Image = My.Resources.Resources.Tool_Booth
-        PictureBox9.Location = New Point(757, 302)
+        PictureBox9.Location = New Point(182, 504)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(195, 135)
         PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
@@ -294,7 +293,7 @@ Partial Class IntersectionType
         PictureBox7.BorderStyle = BorderStyle.FixedSingle
         PictureBox7.Cursor = Cursors.Hand
         PictureBox7.Image = My.Resources.Resources.West_Tee
-        PictureBox7.Location = New Point(45, 504)
+        PictureBox7.Location = New Point(637, 302)
         PictureBox7.Name = "PictureBox7"
         PictureBox7.Size = New Size(195, 135)
         PictureBox7.SizeMode = PictureBoxSizeMode.StretchImage
@@ -306,7 +305,7 @@ Partial Class IntersectionType
         PictureBox6.BorderStyle = BorderStyle.FixedSingle
         PictureBox6.Cursor = Cursors.Hand
         PictureBox6.Image = My.Resources.Resources.South_Tee
-        PictureBox6.Location = New Point(334, 504)
+        PictureBox6.Location = New Point(933, 302)
         PictureBox6.Name = "PictureBox6"
         PictureBox6.Size = New Size(195, 135)
         PictureBox6.SizeMode = PictureBoxSizeMode.StretchImage
@@ -317,10 +316,10 @@ Partial Class IntersectionType
         ' 
         PictureBox10.BorderStyle = BorderStyle.FixedSingle
         PictureBox10.Cursor = Cursors.Hand
-        PictureBox10.Image = My.Resources.Resources.N_S_Freeway
-        PictureBox10.Location = New Point(609, 504)
+        PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
+        PictureBox10.Location = New Point(482, 504)
         PictureBox10.Name = "PictureBox10"
-        PictureBox10.Size = New Size(245, 135)
+        PictureBox10.Size = New Size(221, 135)
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox10.TabIndex = 32
         PictureBox10.TabStop = False
@@ -330,7 +329,7 @@ Partial Class IntersectionType
         PictureBox11.BorderStyle = BorderStyle.FixedSingle
         PictureBox11.Cursor = Cursors.Hand
         PictureBox11.Image = My.Resources.Resources.E_W_Freeway
-        PictureBox11.Location = New Point(921, 504)
+        PictureBox11.Location = New Point(799, 504)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(213, 135)
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
@@ -340,24 +339,13 @@ Partial Class IntersectionType
         ' btnPrevious
         ' 
         btnPrevious.BackColor = SystemColors.ButtonShadow
-        btnPrevious.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        btnPrevious.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         btnPrevious.Location = New Point(92, 720)
         btnPrevious.Name = "btnPrevious"
         btnPrevious.Size = New Size(131, 45)
         btnPrevious.TabIndex = 34
         btnPrevious.Text = "Previous"
         btnPrevious.UseVisualStyleBackColor = False
-        ' 
-        ' btnNext
-        ' 
-        btnNext.BackColor = SystemColors.ButtonShadow
-        btnNext.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        btnNext.Location = New Point(921, 720)
-        btnNext.Name = "btnNext"
-        btnNext.Size = New Size(131, 45)
-        btnNext.TabIndex = 35
-        btnNext.Text = "Next"
-        btnNext.UseVisualStyleBackColor = False
         ' 
         ' ToolStrip1
         ' 
@@ -476,11 +464,10 @@ Partial Class IntersectionType
         ' 
         AutoScaleDimensions = New SizeF(6F, 16F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGray
+        BackColor = Color.WhiteSmoke
         ClientSize = New Size(1158, 797)
         Controls.Add(PictureBox1)
         Controls.Add(ToolStrip1)
-        Controls.Add(btnNext)
         Controls.Add(btnPrevious)
         Controls.Add(PictureBox11)
         Controls.Add(PictureBox10)
@@ -550,7 +537,6 @@ Partial Class IntersectionType
     Friend WithEvents PictureBox10 As PictureBox
     Friend WithEvents PictureBox11 As PictureBox
     Friend WithEvents btnPrevious As Button
-    Friend WithEvents btnNext As Button
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents NewToolStripButton As ToolStripButton
     Friend WithEvents SaveToolStripButton As ToolStripButton

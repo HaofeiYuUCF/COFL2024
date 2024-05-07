@@ -22,7 +22,7 @@ Partial Class Title
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Title))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Title))
         Label1 = New Label()
         Label2 = New Label()
         Label3 = New Label()
@@ -60,176 +60,171 @@ Partial Class Title
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Roboto Mono", 15.75F, FontStyle.Underline, GraphicsUnit.Point)
-        Label1.Location = New Point(12, 73)
+        Label1.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Underline, GraphicsUnit.Point)
+        Label1.Location = New Point(49, 72)
         Label1.Name = "Label1"
-        Label1.Size = New Size(181, 28)
+        Label1.Size = New Size(126, 25)
         Label1.TabIndex = 1
         Label1.Text = "Project Title"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Roboto Mono", 15.75F, FontStyle.Underline, GraphicsUnit.Point)
-        Label2.Location = New Point(12, 206)
+        Label2.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Underline, GraphicsUnit.Point)
+        Label2.Location = New Point(49, 205)
         Label2.Name = "Label2"
-        Label2.Size = New Size(155, 28)
+        Label2.Size = New Size(131, 25)
         Label2.TabIndex = 2
         Label2.Text = "User's name"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Roboto Mono", 15.75F, FontStyle.Underline, GraphicsUnit.Point)
-        Label3.Location = New Point(12, 139)
+        Label3.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Underline, GraphicsUnit.Point)
+        Label3.Location = New Point(49, 138)
         Label3.Name = "Label3"
-        Label3.Size = New Size(181, 28)
+        Label3.Size = New Size(142, 25)
         Label3.TabIndex = 2
         Label3.Text = "Facility Name"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Roboto Mono", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(12, 271)
+        Label4.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Location = New Point(49, 270)
         Label4.Name = "Label4"
-        Label4.Size = New Size(116, 28)
+        Label4.Size = New Size(113, 25)
         Label4.TabIndex = 3
         Label4.Text = "Run Name"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Roboto Mono", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label5.Location = New Point(12, 337)
+        Label5.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label5.Location = New Point(43, 339)
         Label5.Name = "Label5"
-        Label5.Size = New Size(324, 28)
+        Label5.Size = New Size(254, 25)
         Label5.TabIndex = 4
         Label5.Text = "Project Year (2010-2050)"
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Roboto Mono", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
-        Label6.Location = New Point(12, 405)
+        Label6.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Regular, GraphicsUnit.Point)
+        Label6.Location = New Point(12, 418)
         Label6.Name = "Label6"
-        Label6.Size = New Size(272, 28)
+        Label6.Size = New Size(213, 25)
         Label6.TabIndex = 5
         Label6.Text = "Land Use (Click one)" & vbCrLf
         ' 
         ' TextBox1
         ' 
-        TextBox1.BackColor = Color.Gainsboro
+        TextBox1.BackColor = Color.White
         TextBox1.BorderStyle = BorderStyle.None
-        TextBox1.Font = New Font("Roboto Mono Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
-        TextBox1.Location = New Point(12, 104)
-        TextBox1.Multiline = True
+        TextBox1.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox1.Location = New Point(49, 103)
         TextBox1.Name = "TextBox1"
         TextBox1.RightToLeft = RightToLeft.No
-        TextBox1.Size = New Size(348, 32)
-        TextBox1.TabIndex = 6
-        TextBox1.Text = "Enter the project name"
+        TextBox1.Size = New Size(348, 17)
+        TextBox1.TabIndex = 0
+        TextBox1.Text = "Project Name"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Roboto Mono", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(187, 41)
+        Label7.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.Location = New Point(62, 34)
         Label7.Name = "Label7"
-        Label7.Size = New Size(280, 32)
+        Label7.Size = New Size(315, 29)
         Label7.TabIndex = 7
         Label7.Text = "PROJECT DESCRIPTION"
         ' 
         ' TextBox2
         ' 
-        TextBox2.BackColor = Color.Gainsboro
+        TextBox2.BackColor = Color.White
         TextBox2.BorderStyle = BorderStyle.None
-        TextBox2.Font = New Font("Roboto Mono Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
-        TextBox2.Location = New Point(12, 170)
-        TextBox2.Multiline = True
+        TextBox2.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox2.Location = New Point(49, 169)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(348, 33)
-        TextBox2.TabIndex = 8
-        TextBox2.Text = "Enter the facility name"
+        TextBox2.Size = New Size(348, 17)
+        TextBox2.TabIndex = 1
+        TextBox2.Text = "Facility Name"
         ' 
         ' TextBox3
         ' 
-        TextBox3.BackColor = Color.Gainsboro
+        TextBox3.BackColor = Color.White
         TextBox3.BorderStyle = BorderStyle.None
-        TextBox3.Font = New Font("Roboto Mono Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
-        TextBox3.Location = New Point(12, 237)
-        TextBox3.Multiline = True
+        TextBox3.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox3.Location = New Point(49, 236)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(348, 32)
-        TextBox3.TabIndex = 9
-        TextBox3.Text = "Enter the user name"
+        TextBox3.Size = New Size(348, 17)
+        TextBox3.TabIndex = 2
+        TextBox3.Text = "User Name"
         ' 
         ' TextBox4
         ' 
-        TextBox4.BackColor = Color.Gainsboro
+        TextBox4.BackColor = Color.White
         TextBox4.BorderStyle = BorderStyle.None
-        TextBox4.Font = New Font("Roboto Mono Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
-        TextBox4.Location = New Point(12, 302)
-        TextBox4.Multiline = True
+        TextBox4.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox4.Location = New Point(49, 301)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(348, 32)
-        TextBox4.TabIndex = 10
-        TextBox4.Text = "Enter run name"
+        TextBox4.Size = New Size(348, 17)
+        TextBox4.TabIndex = 3
+        TextBox4.Text = "Run Name"
         ' 
         ' TextBox5
         ' 
-        TextBox5.BackColor = Color.Gainsboro
+        TextBox5.BackColor = Color.White
         TextBox5.BorderStyle = BorderStyle.None
-        TextBox5.Font = New Font("Roboto Mono Light", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
-        TextBox5.Location = New Point(12, 368)
-        TextBox5.Multiline = True
+        TextBox5.Font = New Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
+        TextBox5.Location = New Point(49, 367)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(348, 34)
-        TextBox5.TabIndex = 11
-        TextBox5.Text = "Enter the project year"
+        TextBox5.Size = New Size(348, 17)
+        TextBox5.TabIndex = 4
+        TextBox5.Text = "2024"
         ' 
         ' Button1
         ' 
         Button1.BackColor = Color.Gainsboro
         Button1.FlatAppearance.BorderColor = Color.Black
-        Button1.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button1.Location = New Point(12, 446)
         Button1.Name = "Button1"
         Button1.Size = New Size(132, 34)
-        Button1.TabIndex = 12
+        Button1.TabIndex = 5
         Button1.Text = "Urban"
         Button1.UseVisualStyleBackColor = False
         ' 
         ' Button2
         ' 
         Button2.BackColor = Color.Gainsboro
-        Button2.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.Location = New Point(155, 446)
         Button2.Name = "Button2"
         Button2.Size = New Size(132, 34)
-        Button2.TabIndex = 13
+        Button2.TabIndex = 6
         Button2.Text = "Suburban"
         Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
         ' 
         Button3.BackColor = Color.Gainsboro
-        Button3.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button3.Location = New Point(303, 446)
         Button3.Name = "Button3"
         Button3.Size = New Size(132, 34)
-        Button3.TabIndex = 14
+        Button3.TabIndex = 7
         Button3.Text = "Rural"
         Button3.UseVisualStyleBackColor = False
         ' 
         ' Button4
         ' 
-        Button4.BackColor = Color.White
+        Button4.BackColor = Color.DarkGray
         Button4.FlatAppearance.BorderColor = Color.Black
-        Button4.Font = New Font("Roboto Mono", 21.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Button4.Location = New Point(233, 541)
+        Button4.Font = New Font("Microsoft Sans Serif", 21.75F, FontStyle.Bold, GraphicsUnit.Point)
+        Button4.Location = New Point(148, 522)
         Button4.Name = "Button4"
-        Button4.Size = New Size(164, 53)
+        Button4.Size = New Size(149, 53)
         Button4.TabIndex = 17
         Button4.Text = "Next"
         Button4.UseVisualStyleBackColor = False
@@ -240,7 +235,7 @@ Partial Class Title
         ToolStrip1.Items.AddRange(New ToolStripItem() {NewToolStripButton, SaveToolStripButton, OpenToolStripButton, ToolStripSeparator1, ToolStripLabel1, TitleToolStripButton, DistrictToolStripButton, IntersectionTypeToolStripButton, IntersectionDataToolStripButton, RunToolStripButton, ToolStripLabel2, AboutToolStripButton})
         ToolStrip1.Location = New Point(0, 0)
         ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(634, 25)
+        ToolStrip1.Size = New Size(461, 25)
         ToolStrip1.TabIndex = 18
         ToolStrip1.Text = "ToolStrip1"
         ' 
@@ -351,8 +346,8 @@ Partial Class Title
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGray
-        ClientSize = New Size(634, 623)
+        BackColor = Color.WhiteSmoke
+        ClientSize = New Size(461, 623)
         Controls.Add(ToolStrip1)
         Controls.Add(Button4)
         Controls.Add(Button3)

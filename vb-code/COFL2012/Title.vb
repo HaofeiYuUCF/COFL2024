@@ -65,15 +65,15 @@ Public Class Title
     '******************************************************Form Load and Close Subroutines***********************************************************
     '*************************************************************************************************************************************
     Private Sub Title_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        RoundedCornersForTextBox(TextBox1)
-        RoundedCornersForTextBox(TextBox2)
-        RoundedCornersForTextBox(TextBox3)
-        RoundedCornersForTextBox(TextBox4)
-        RoundedCornersForTextBox(TextBox5)
+        'RoundedCornersForTextBox(TextBox1)
+        'RoundedCornersForTextBox(TextBox2)
+        'RoundedCornersForTextBox(TextBox3)
+        'RoundedCornersForTextBox(TextBox4)
+        'RoundedCornersForTextBox(TextBox5)
         ' Welcome.RoundButton(Button1)
         ' Welcome.RoundButton(Button2)
         ' Welcome.RoundButton(Button3)
-        Welcome.RoundButton(Button4)
+        'Welcome.RoundButton(Button4)
 
         'Calls the subroutine to initialize the Title Form
         InitTitle()

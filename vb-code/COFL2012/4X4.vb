@@ -113,28 +113,29 @@ Public Class _4X4
 
     Sub Init4X4()
         'Load Stored Variables
-        TextBox1.Text = Welcome.SSB ' Speed South Bound
-        TextBox2.Text = Welcome.ATSB   ' Approach Traffic South Bound
-        TextBox4.Text = Welcome.SWB   ' Speed West Bound
-        TextBox3.Text = Welcome.ATWB ' Aproach Traffic West Bound
-        TextBox8.Text = Welcome.SEB   ' Speed East Bound
-        TextBox7.Text = Welcome.ATEB  ' Approach Traffic East Bound
-        TextBox5.Text = Welcome.SNB   ' Speed North Bound
-        TextBox6.Text = Welcome.ATNB  ' Approach Traffic North Bound
+        TextBox1.Text = Welcome.SSB
+        TextBox2.Text = Welcome.ATSB
+        TextBox3.Text = Welcome.ATWB
+        TextBox4.Text = Welcome.SWB
+        TextBox5.Text = Welcome.ATEB
+        TextBox6.Text = Welcome.SEB
+        TextBox7.Text = Welcome.ATNB
+        TextBox8.Text = Welcome.SNB
     End Sub
     '************************************************************************************************************************
     '********************************Verifies that proper data has been inputted*********************************************
     '************************************************************************************************************************
     Sub Verify4X4Form()
         'Extracts variables from form
-        Welcome.SSB = TextBox1.Text
-        Welcome.ATSB = TextBox2.Text
-        Welcome.ATWB = TextBox3.Text
-        Welcome.SWB = TextBox4.Text
-        Welcome.ATEB = TextBox7.Text
-        Welcome.SEB = TextBox8.Text
-        Welcome.ATNB = TextBox6.Text
-        Welcome.SNB = TextBox5.Text
+        'Extracts variables from form
+        'Welcome.SSB = TextBox1.Text
+        'Welcome.ATSB = TextBox2.Text
+        'Welcome.ATWB = TextBox3.Text
+        'Welcome.SWB = TextBox4.Text
+        'Welcome.ATEB = TextBox5.Text
+        'Welcome.SEB = TextBox6.Text
+        'Welcome.ATNB = TextBox7.Text
+        'Welcome.SNB = TextBox8.Text
 
         'Verifies that all fields have numeric inputs
         Try
@@ -174,7 +175,7 @@ Public Class _4X4
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
-                    TextBox8.Text = ""
+                    TextBox3.Text = ""
                     Exit Sub
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -189,7 +190,7 @@ Public Class _4X4
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
-                    TextBox7.Text = ""
+                    TextBox4.Text = ""
                     Exit Sub
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -322,28 +323,28 @@ Public Class _4X4
         Welcome.ATSB = TextBox2.Text
     End Sub
 
-    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
-        Welcome.SWB = TextBox4.Text
-    End Sub
-
     Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
         Welcome.ATWB = TextBox3.Text
     End Sub
 
-    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
-        Welcome.SNB = TextBox5.Text
-    End Sub
-
-    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
-        Welcome.ATNB = TextBox6.Text
-    End Sub
-
-    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
-        Welcome.SEB = TextBox8.Text
+    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
+        Welcome.SWB = TextBox4.Text
     End Sub
 
     Private Sub TextBox5_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox5.TextChanged
-        Welcome.ATEB = TextBox7.Text
+        Welcome.ATEB = TextBox5.Text
+    End Sub
+
+    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
+        Welcome.SEB = TextBox6.Text
+    End Sub
+
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+        Welcome.ATNB = TextBox7.Text
+    End Sub
+
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+        Welcome.SNB = TextBox8.Text
     End Sub
 
     '***************************************************************************************************************************

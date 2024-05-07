@@ -8,6 +8,7 @@ Public Class Welcome
     Public PassFail As Boolean
     Public StreamToDisplay As StreamReader
     Public PrimaryDirectory As String
+    Public Const WorkingDirectory As String = "C:\ProgramData\COFL2024"
     Public TestMsg As String
     Public EFArray(65, 40) As Single
     Public InputsCorrect(4) As Boolean
@@ -180,6 +181,11 @@ Public Class Welcome
         RoundButton(Button1)
         'Gets the primary directory
         PrimaryDirectory = Directory.GetCurrentDirectory()
+
+        'Ensure working directory for IO files is available
+        If Not System.IO.Directory.Exists(WorkingDirectory) Then
+            System.IO.Directory.CreateDirectory(WorkingDirectory)
+        End If
 
     End Sub
 
@@ -537,10 +543,11 @@ Public Class Welcome
     '********************************************************Writes CAL3QHC Input File*******************************************************
     '****************************************************************************************************************************************
     Sub WriteCAL3QHCIN()
-        Directory.SetCurrentDirectory(PrimaryDirectory)
 
         'Writes CALInputLine Array out to "incal3qhc.in"
-        Directory.SetCurrentDirectory(PrimaryDirectory)
+        'Directory.SetCurrentDirectory(PrimaryDirectory)
+        Directory.SetCurrentDirectory(WorkingDirectory)
+
         Dim sWriter As IO.StreamWriter = New IO.StreamWriter("incal3qhc.in")
         Dim i As Integer
 
@@ -557,7 +564,10 @@ Public Class Welcome
         'Runs CAL3QHC
         Directory.SetCurrentDirectory(PrimaryDirectory)
         'sAppPath = "CAL3QHC incal3qhc" & RunNumber & ".in outcal3qhc" & RunNumber & ".out"
-        sAppPath = "CAL3QHC incal3qhc.in outcal3qhc.out"
+        sAppPath = "CAL3QHC " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
+
+        'MessageBox.Show("Execute Command: " & sAppPath)
+
         Shell(sAppPath, vbMaximizedFocus)
 
         'Reads resulting concentrations from outcal3qhc.out
@@ -770,19 +780,21 @@ Public Class Welcome
         Dim PPMString As String
 
         PassFail = True
-        Directory.SetCurrentDirectory(PrimaryDirectory)
+        Directory.SetCurrentDirectory(WorkingDirectory)
 
         'Opens the CAL3QHC output file
         For i = 1 To Delay
         Next
         Try
-            StreamToDisplay = New StreamReader("outcal3qhc.out")
+            Dim StreamT As FileStream = New FileStream("outcal3qhc.out", FileMode.Open, FileAccess.Read, FileShare.ReadWrite)
+            StreamToDisplay = New StreamReader(StreamT)
         Catch
             For i = 1 To Delay
             Next i
             Try
                 StreamToDisplay = New StreamReader("outcal3qhc.out")
-            Catch
+            Catch ex As Exception
+                MessageBox.Show(ex.Message)
                 Exit Sub
             End Try
         End Try
@@ -794,7 +806,7 @@ Public Class Welcome
             i = i + 1
         Loop
 
-        StreamToDisplay.Close()
+        'StreamToDisplay.Close()
 
         PPMString = ReadLine(i - 4)
 
@@ -850,6 +862,7 @@ Public Class Welcome
                 If Conc8(i) >= 9 Then PassFail = False
             Next i
         End If
+
     End Sub
 
 

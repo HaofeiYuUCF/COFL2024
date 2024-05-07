@@ -127,14 +127,14 @@ Public Class _4X6
     '************************************************************************************************************************
     Sub Verify4X6Form()
         'Extracts variables from form
-        Welcome.SSB = TextBox1.Text
-        Welcome.ATSB = TextBox2.Text
-        Welcome.ATWB = TextBox3.Text
-        Welcome.SWB = TextBox4.Text
-        Welcome.ATEB = TextBox5.Text
-        Welcome.SEB = TextBox6.Text
-        Welcome.ATNB = TextBox7.Text
-        Welcome.SNB = TextBox8.Text
+        'Welcome.SSB = TextBox1.Text
+        'Welcome.ATSB = TextBox2.Text
+        'Welcome.ATWB = TextBox3.Text
+        'Welcome.SWB = TextBox4.Text
+        'Welcome.ATEB = TextBox5.Text
+        'Welcome.SEB = TextBox6.Text
+        'Welcome.ATNB = TextBox7.Text
+        'Welcome.SNB = TextBox8.Text
 
         'Verifies that all fields have numeric inputs
         Try
@@ -349,7 +349,7 @@ Public Class _4X6
     '*******************************************Changes to variables in input fields********************************************
     '***************************************************************************************************************************
 
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs)
+    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
         Welcome.SSB = TextBox1.Text
     End Sub
 
@@ -357,30 +357,28 @@ Public Class _4X6
         Welcome.ATSB = TextBox2.Text
     End Sub
 
-    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
-        Welcome.SWB = TextBox4.Text
-    End Sub
-
     Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
         Welcome.ATWB = TextBox3.Text
     End Sub
 
-    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
-        Welcome.SNB = TextBox8.Text
-    End Sub
-
-    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
-        Welcome.ATNB = TextBox7.Text
-    End Sub
-
-    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
-        Welcome.SEB = TextBox6.Text
+    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
+        Welcome.SWB = TextBox4.Text
     End Sub
 
     Private Sub TextBox5_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox5.TextChanged
         Welcome.ATEB = TextBox5.Text
     End Sub
 
+    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
+        Welcome.SEB = TextBox6.Text
+    End Sub
 
+    Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
+        Welcome.ATNB = TextBox7.Text
+    End Sub
+
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+        Welcome.SNB = TextBox8.Text
+    End Sub
 
 End Class

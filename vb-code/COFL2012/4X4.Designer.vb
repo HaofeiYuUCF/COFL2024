@@ -88,54 +88,52 @@ Partial Class _4X4
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Roboto Mono", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Font = New Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(474, 42)
         Label1.Name = "Label1"
-        Label1.Size = New Size(415, 35)
+        Label1.Size = New Size(331, 31)
         Label1.TabIndex = 1
         Label1.Text = "Intersection Data - 4 X 4"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.Location = New Point(704, 134)
         Label2.Name = "Label2"
-        Label2.Size = New Size(120, 21)
+        Label2.Size = New Size(112, 20)
         Label2.TabIndex = 2
         Label2.Text = "Speed (mph)"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(694, 181)
         Label3.Name = "Label3"
-        Label3.Size = New Size(170, 42)
+        Label3.Size = New Size(142, 40)
         Label3.TabIndex = 3
         Label3.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
         ' 
         ' TextBox1
         ' 
-        TextBox1.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox1.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox1.Location = New Point(861, 132)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
-        TextBox1.TabIndex = 4
-        TextBox1.TextAlign = HorizontalAlignment.Center
+        TextBox1.Size = New Size(100, 21)
+        TextBox1.TabIndex = 0
         ' 
         ' TextBox2
         ' 
-        TextBox2.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox2.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox2.Location = New Point(861, 181)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(100, 23)
-        TextBox2.TabIndex = 5
-        TextBox2.TextAlign = HorizontalAlignment.Center
+        TextBox2.Size = New Size(100, 21)
+        TextBox2.TabIndex = 1
         ' 
         ' PictureBox2
         ' 
-        PictureBox2.BackColor = Color.LightGray
+        PictureBox2.BackColor = Color.WhiteSmoke
         PictureBox2.Image = My.Resources.Resources.down_arrow_608258
         PictureBox2.Location = New Point(589, 151)
         PictureBox2.Name = "PictureBox2"
@@ -147,26 +145,26 @@ Partial Class _4X4
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.Location = New Point(557, 114)
         Label5.Name = "Label5"
-        Label5.Size = New Size(122, 25)
+        Label5.Size = New Size(153, 24)
         Label5.TabIndex = 8
         Label5.Text = "SOUTHBOUND"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label4.Location = New Point(182, 464)
         Label4.Name = "Label4"
-        Label4.Size = New Size(111, 25)
+        Label4.Size = New Size(136, 24)
         Label4.TabIndex = 14
         Label4.Text = "EASTBOUND"
         ' 
         ' PictureBox3
         ' 
-        PictureBox3.BackColor = Color.LightGray
+        PictureBox3.BackColor = Color.WhiteSmoke
         PictureBox3.Image = My.Resources.Resources.black_arrow_right
         PictureBox3.Location = New Point(299, 451)
         PictureBox3.Name = "PictureBox3"
@@ -177,82 +175,79 @@ Partial Class _4X4
         ' 
         ' TextBox8
         ' 
-        TextBox8.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox8.Location = New Point(299, 391)
+        TextBox8.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox8.Location = New Point(542, 676)
         TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(100, 23)
-        TextBox8.TabIndex = 12
-        TextBox8.TextAlign = HorizontalAlignment.Center
+        TextBox8.Size = New Size(100, 21)
+        TextBox8.TabIndex = 2
         ' 
         ' TextBox7
         ' 
-        TextBox7.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox7.Location = New Point(299, 342)
+        TextBox7.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox7.Location = New Point(542, 729)
         TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(100, 23)
-        TextBox7.TabIndex = 11
-        TextBox7.TextAlign = HorizontalAlignment.Center
+        TextBox7.Size = New Size(100, 21)
+        TextBox7.TabIndex = 3
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label6.Location = New Point(123, 391)
         Label6.Name = "Label6"
-        Label6.Size = New Size(170, 42)
+        Label6.Size = New Size(142, 40)
         Label6.TabIndex = 10
         Label6.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label7.Location = New Point(179, 342)
         Label7.Name = "Label7"
-        Label7.Size = New Size(120, 21)
+        Label7.Size = New Size(112, 20)
         Label7.TabIndex = 9
         Label7.Text = "Speed (mph)"
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label14.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label14.Location = New Point(1048, 453)
         Label14.Name = "Label14"
-        Label14.Size = New Size(120, 21)
+        Label14.Size = New Size(112, 20)
         Label14.TabIndex = 15
         Label14.Text = "Speed (mph)"
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(1048, 493)
         Label15.Name = "Label15"
-        Label15.Size = New Size(170, 42)
+        Label15.Size = New Size(142, 40)
         Label15.TabIndex = 16
         Label15.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
         ' 
         ' TextBox3
         ' 
-        TextBox3.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox3.Location = New Point(942, 451)
+        TextBox3.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox3.Location = New Point(942, 493)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(100, 23)
-        TextBox3.TabIndex = 17
-        TextBox3.TextAlign = HorizontalAlignment.Center
+        TextBox3.Size = New Size(100, 21)
+        TextBox3.TabIndex = 7
         ' 
         ' TextBox4
         ' 
-        TextBox4.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox4.Location = New Point(942, 493)
+        TextBox4.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox4.Location = New Point(942, 453)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(100, 23)
-        TextBox4.TabIndex = 18
-        TextBox4.TextAlign = HorizontalAlignment.Center
+        TextBox4.Size = New Size(100, 21)
+        TextBox4.TabIndex = 6
         ' 
         ' PictureBox7
         ' 
+        PictureBox7.BackColor = Color.WhiteSmoke
         PictureBox7.Image = My.Resources.Resources.black_arrow_left
         PictureBox7.Location = New Point(942, 379)
         PictureBox7.Name = "PictureBox7"
@@ -264,53 +259,52 @@ Partial Class _4X4
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label16.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label16.Location = New Point(1035, 391)
         Label16.Name = "Label16"
-        Label16.Size = New Size(111, 25)
+        Label16.Size = New Size(141, 24)
         Label16.TabIndex = 20
         Label16.Text = "WESTBOUND"
         ' 
         ' Label17
         ' 
         Label17.AutoSize = True
-        Label17.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label17.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label17.Location = New Point(418, 676)
         Label17.Name = "Label17"
-        Label17.Size = New Size(120, 21)
+        Label17.Size = New Size(112, 20)
         Label17.TabIndex = 15
         Label17.Text = "Speed (mph)"
         ' 
         ' Label18
         ' 
         Label18.AutoSize = True
-        Label18.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label18.Location = New Point(368, 727)
         Label18.Name = "Label18"
-        Label18.Size = New Size(170, 42)
+        Label18.Size = New Size(142, 40)
         Label18.TabIndex = 16
         Label18.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
         ' 
         ' TextBox5
         ' 
-        TextBox5.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox5.Location = New Point(542, 678)
+        TextBox5.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox5.Location = New Point(299, 391)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(100, 23)
-        TextBox5.TabIndex = 17
-        TextBox5.TextAlign = HorizontalAlignment.Center
+        TextBox5.Size = New Size(100, 21)
+        TextBox5.TabIndex = 5
         ' 
         ' TextBox6
         ' 
-        TextBox6.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox6.Location = New Point(542, 727)
+        TextBox6.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox6.Location = New Point(299, 342)
         TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(100, 23)
-        TextBox6.TabIndex = 18
-        TextBox6.TextAlign = HorizontalAlignment.Center
+        TextBox6.Size = New Size(100, 21)
+        TextBox6.TabIndex = 4
         ' 
         ' PictureBox8
         ' 
+        PictureBox8.BackColor = Color.WhiteSmoke
         PictureBox8.Image = My.Resources.Resources.black_arrow_top
         PictureBox8.Location = New Point(694, 673)
         PictureBox8.Name = "PictureBox8"
@@ -322,10 +316,10 @@ Partial Class _4X4
         ' Label19
         ' 
         Label19.AutoSize = True
-        Label19.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label19.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label19.Location = New Point(662, 761)
         Label19.Name = "Label19"
-        Label19.Size = New Size(122, 25)
+        Label19.Size = New Size(155, 24)
         Label19.TabIndex = 20
         Label19.Text = "NORTHBOUND"
         ' 
@@ -333,34 +327,34 @@ Partial Class _4X4
         ' 
         Label8.AutoSize = True
         Label8.BorderStyle = BorderStyle.FixedSingle
-        Label8.Font = New Font("Roboto Mono", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.Location = New Point(12, 651)
+        Label8.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Location = New Point(12, 662)
         Label8.Name = "Label8"
-        Label8.Size = New Size(317, 178)
+        Label8.Size = New Size(235, 167)
         Label8.TabIndex = 21
         Label8.Text = resources.GetString("Label8.Text")
         ' 
         ' btnPrevious
         ' 
         btnPrevious.BackColor = SystemColors.AppWorkspace
-        btnPrevious.Font = New Font("Roboto Mono", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        btnPrevious.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         btnPrevious.ForeColor = SystemColors.ControlText
         btnPrevious.Location = New Point(1048, 750)
         btnPrevious.Name = "btnPrevious"
         btnPrevious.Size = New Size(136, 36)
-        btnPrevious.TabIndex = 22
+        btnPrevious.TabIndex = 9
         btnPrevious.Text = "Previous"
         btnPrevious.UseVisualStyleBackColor = False
         ' 
         ' btnNext
         ' 
         btnNext.BackColor = SystemColors.AppWorkspace
-        btnNext.Font = New Font("Roboto Mono", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        btnNext.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         btnNext.ForeColor = SystemColors.ControlText
         btnNext.Location = New Point(1190, 750)
         btnNext.Name = "btnNext"
         btnNext.Size = New Size(122, 36)
-        btnNext.TabIndex = 25
+        btnNext.TabIndex = 8
         btnNext.Text = "Run"
         btnNext.UseVisualStyleBackColor = False
         ' 
@@ -481,7 +475,7 @@ Partial Class _4X4
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGray
+        BackColor = Color.WhiteSmoke
         ClientSize = New Size(1351, 838)
         Controls.Add(ToolStrip1)
         Controls.Add(btnNext)

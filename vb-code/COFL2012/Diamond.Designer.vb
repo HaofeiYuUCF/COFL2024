@@ -72,10 +72,10 @@ Partial Class Diamond
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Roboto Mono", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Font = New Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(379, 32)
         Label1.Name = "Label1"
-        Label1.Size = New Size(607, 35)
+        Label1.Size = New Size(511, 31)
         Label1.TabIndex = 2
         Label1.Text = "Intersection Data - Diverging Diamond"
         ' 
@@ -102,16 +102,16 @@ Partial Class Diamond
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.Location = New Point(486, 112)
         Label5.Name = "Label5"
-        Label5.Size = New Size(122, 25)
+        Label5.Size = New Size(153, 24)
         Label5.TabIndex = 10
         Label5.Text = "SOUTHBOUND"
         ' 
         ' PictureBox3
         ' 
-        PictureBox3.BackColor = Color.LightGray
+        PictureBox3.BackColor = SystemColors.Control
         PictureBox3.Image = My.Resources.Resources.down_arrow_608258
         PictureBox3.Location = New Point(520, 150)
         PictureBox3.Name = "PictureBox3"
@@ -123,10 +123,10 @@ Partial Class Diamond
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label16.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label16.Location = New Point(1007, 349)
         Label16.Name = "Label16"
-        Label16.Size = New Size(111, 25)
+        Label16.Size = New Size(141, 24)
         Label16.TabIndex = 22
         Label16.Text = "WESTBOUND"
         ' 
@@ -143,16 +143,16 @@ Partial Class Diamond
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label4.Location = New Point(140, 413)
         Label4.Name = "Label4"
-        Label4.Size = New Size(111, 25)
+        Label4.Size = New Size(136, 24)
         Label4.TabIndex = 24
         Label4.Text = "EASTBOUND"
         ' 
         ' PictureBox4
         ' 
-        PictureBox4.BackColor = Color.LightGray
+        PictureBox4.BackColor = SystemColors.Control
         PictureBox4.Image = My.Resources.Resources.black_arrow_right
         PictureBox4.Location = New Point(257, 400)
         PictureBox4.Name = "PictureBox4"
@@ -164,10 +164,10 @@ Partial Class Diamond
         ' Label19
         ' 
         Label19.AutoSize = True
-        Label19.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label19.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label19.Location = New Point(709, 680)
         Label19.Name = "Label19"
-        Label19.Size = New Size(122, 25)
+        Label19.Size = New Size(155, 24)
         Label19.TabIndex = 26
         Label19.Text = "NORTHBOUND"
         ' 
@@ -196,7 +196,7 @@ Partial Class Diamond
         TextBox10.Location = New Point(229, 479)
         TextBox10.Name = "TextBox10"
         TextBox10.Size = New Size(100, 23)
-        TextBox10.TabIndex = 129
+        TextBox10.TabIndex = 6
         ' 
         ' Label9
         ' 
@@ -213,14 +213,14 @@ Partial Class Diamond
         TextBox12.Location = New Point(229, 591)
         TextBox12.Name = "TextBox12"
         TextBox12.Size = New Size(100, 23)
-        TextBox12.TabIndex = 127
+        TextBox12.TabIndex = 8
         ' 
         ' TextBox11
         ' 
         TextBox11.Location = New Point(229, 531)
         TextBox11.Name = "TextBox11"
         TextBox11.Size = New Size(100, 23)
-        TextBox11.TabIndex = 126
+        TextBox11.TabIndex = 7
         ' 
         ' Label6
         ' 
@@ -247,7 +247,7 @@ Partial Class Diamond
         TextBox4.Location = New Point(578, 613)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(100, 23)
-        TextBox4.TabIndex = 135
+        TextBox4.TabIndex = 3
         ' 
         ' Label3
         ' 
@@ -264,14 +264,14 @@ Partial Class Diamond
         TextBox6.Location = New Point(579, 716)
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(100, 23)
-        TextBox6.TabIndex = 133
+        TextBox6.TabIndex = 5
         ' 
         ' TextBox5
         ' 
         TextBox5.Location = New Point(578, 650)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(100, 23)
-        TextBox5.TabIndex = 132
+        TextBox5.TabIndex = 4
         ' 
         ' Label7
         ' 
@@ -298,7 +298,7 @@ Partial Class Diamond
         TextBox1.Location = New Point(958, 413)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(100, 23)
-        TextBox1.TabIndex = 141
+        TextBox1.TabIndex = 9
         ' 
         ' Label10
         ' 
@@ -315,14 +315,14 @@ Partial Class Diamond
         TextBox3.Location = New Point(958, 512)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(100, 23)
-        TextBox3.TabIndex = 139
+        TextBox3.TabIndex = 11
         ' 
         ' TextBox2
         ' 
         TextBox2.Location = New Point(958, 456)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 23)
-        TextBox2.TabIndex = 138
+        TextBox2.TabIndex = 10
         ' 
         ' Label11
         ' 
@@ -349,14 +349,14 @@ Partial Class Diamond
         TextBox8.Location = New Point(805, 149)
         TextBox8.Name = "TextBox8"
         TextBox8.Size = New Size(100, 23)
-        TextBox8.TabIndex = 162
+        TextBox8.TabIndex = 1
         ' 
         ' TextBox9
         ' 
         TextBox9.Location = New Point(805, 198)
         TextBox9.Name = "TextBox9"
         TextBox9.Size = New Size(100, 23)
-        TextBox9.TabIndex = 163
+        TextBox9.TabIndex = 2
         ' 
         ' Label17
         ' 
@@ -373,7 +373,7 @@ Partial Class Diamond
         TextBox7.Location = New Point(805, 112)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(100, 23)
-        TextBox7.TabIndex = 165
+        TextBox7.TabIndex = 0
         ' 
         ' Label20
         ' 
@@ -389,34 +389,34 @@ Partial Class Diamond
         ' 
         Label12.AutoSize = True
         Label12.BorderStyle = BorderStyle.FixedSingle
-        Label12.Font = New Font("Roboto Mono", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label12.Location = New Point(2, 637)
+        Label12.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label12.Location = New Point(12, 639)
         Label12.Name = "Label12"
-        Label12.Size = New Size(317, 178)
+        Label12.Size = New Size(235, 167)
         Label12.TabIndex = 167
         Label12.Text = resources.GetString("Label12.Text")
         ' 
         ' btnNext
         ' 
         btnNext.BackColor = SystemColors.AppWorkspace
-        btnNext.Font = New Font("Roboto Mono", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        btnNext.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         btnNext.ForeColor = SystemColors.ControlText
         btnNext.Location = New Point(1191, 716)
         btnNext.Name = "btnNext"
         btnNext.Size = New Size(122, 36)
-        btnNext.TabIndex = 169
+        btnNext.TabIndex = 12
         btnNext.Text = "Run"
         btnNext.UseVisualStyleBackColor = False
         ' 
         ' btnPrevious
         ' 
         btnPrevious.BackColor = SystemColors.AppWorkspace
-        btnPrevious.Font = New Font("Roboto Mono", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        btnPrevious.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         btnPrevious.ForeColor = SystemColors.ControlText
         btnPrevious.Location = New Point(1049, 716)
         btnPrevious.Name = "btnPrevious"
         btnPrevious.Size = New Size(136, 36)
-        btnPrevious.TabIndex = 168
+        btnPrevious.TabIndex = 13
         btnPrevious.Text = "Previous"
         btnPrevious.UseVisualStyleBackColor = False
         ' 

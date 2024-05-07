@@ -22,7 +22,7 @@ Partial Class About
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(About))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(About))
         Label2 = New Label()
         Label3 = New Label()
         Label4 = New Label()
@@ -35,21 +35,21 @@ Partial Class About
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Roboto Mono", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
         Label2.Location = New Point(235, 81)
         Label2.Name = "Label2"
         Label2.RightToLeft = RightToLeft.No
-        Label2.Size = New Size(770, 21)
+        Label2.Size = New Size(549, 20)
         Label2.TabIndex = 1
-        Label2.Text = "CO Florida 2012 is the FDOT's latest version of Florida's CO screening model"
+        Label2.Text = "CO Florida 2024 is the FDOT's latest version of Florida's CO screening model"
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Roboto Mono", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(222, 130)
+        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label3.Location = New Point(157, 127)
         Label3.Name = "Label3"
-        Label3.Size = New Size(850, 63)
+        Label3.Size = New Size(703, 100)
         Label3.TabIndex = 2
         Label3.Text = resources.GetString("Label3.Text")
         Label3.TextAlign = ContentAlignment.MiddleCenter
@@ -57,10 +57,10 @@ Partial Class About
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Roboto Mono", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(46, 227)
+        Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
+        Label4.Location = New Point(73, 246)
         Label4.Name = "Label4"
-        Label4.Size = New Size(1250, 42)
+        Label4.Size = New Size(864, 40)
         Label4.TabIndex = 3
         Label4.Text = resources.GetString("Label4.Text")
         Label4.TextAlign = ContentAlignment.MiddleCenter
@@ -68,28 +68,28 @@ Partial Class About
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Roboto Mono", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label1.Location = New Point(511, 21)
+        Label1.Font = New Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Location = New Point(366, 23)
         Label1.Name = "Label1"
-        Label1.Size = New Size(351, 35)
+        Label1.Size = New Size(311, 31)
         Label1.TabIndex = 4
-        Label1.Text = "About CO Florida 2012"
+        Label1.Text = "About CO Florida 2024"
         ' 
         ' Button1
         ' 
         Button1.BackColor = SystemColors.ButtonShadow
-        Button1.Font = New Font("Roboto Mono", 18.0F, FontStyle.Bold, GraphicsUnit.Point)
-        Button1.Location = New Point(581, 597)
+        Button1.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        Button1.Location = New Point(406, 592)
         Button1.Name = "Button1"
         Button1.Size = New Size(201, 39)
         Button1.TabIndex = 7
-        Button1.Text = "Close"
+        Button1.Text = "Back"
         Button1.UseVisualStyleBackColor = False
         ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.fdot_logo
-        PictureBox1.Location = New Point(418, 285)
+        PictureBox1.Location = New Point(244, 313)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(527, 252)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom
@@ -100,8 +100,8 @@ Partial Class About
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGray
-        ClientSize = New Size(1351, 670)
+        BackColor = Color.WhiteSmoke
+        ClientSize = New Size(1015, 670)
         Controls.Add(PictureBox1)
         Controls.Add(Button1)
         Controls.Add(Label1)

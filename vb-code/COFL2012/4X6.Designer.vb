@@ -22,15 +22,13 @@ Partial Class _4X6
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(_4X6))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(_4X6))
         btnNext = New Button()
         btnPrevious = New Button()
         Label8 = New Label()
         Label16 = New Label()
         Label19 = New Label()
-        PictureBox7 = New PictureBox()
         TextBox3 = New TextBox()
-        PictureBox8 = New PictureBox()
         TextBox4 = New TextBox()
         TextBox5 = New TextBox()
         Label15 = New Label()
@@ -39,13 +37,11 @@ Partial Class _4X6
         Label18 = New Label()
         Label17 = New Label()
         Label4 = New Label()
-        PictureBox3 = New PictureBox()
         TextBox7 = New TextBox()
         TextBox8 = New TextBox()
         Label6 = New Label()
         Label7 = New Label()
         Label5 = New Label()
-        PictureBox2 = New PictureBox()
         TextBox2 = New TextBox()
         Label3 = New Label()
         Label2 = New Label()
@@ -67,35 +63,39 @@ Partial Class _4X6
         OpenFileDialog1 = New OpenFileDialog()
         SaveFileDialog1 = New SaveFileDialog()
         TextBox1 = New TextBox()
+        PictureBox7 = New PictureBox()
+        PictureBox8 = New PictureBox()
+        PictureBox3 = New PictureBox()
+        PictureBox2 = New PictureBox()
+        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
+        ToolStrip1.SuspendLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).BeginInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
-        ToolStrip1.SuspendLayout()
         SuspendLayout()
         ' 
         ' btnNext
         ' 
         btnNext.BackColor = SystemColors.AppWorkspace
-        btnNext.Font = New Font("Roboto Mono", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        btnNext.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         btnNext.ForeColor = SystemColors.ControlText
         btnNext.Location = New Point(1184, 794)
         btnNext.Name = "btnNext"
         btnNext.Size = New Size(128, 38)
-        btnNext.TabIndex = 54
+        btnNext.TabIndex = 8
         btnNext.Text = "Run"
         btnNext.UseVisualStyleBackColor = False
         ' 
         ' btnPrevious
         ' 
         btnPrevious.BackColor = SystemColors.AppWorkspace
-        btnPrevious.Font = New Font("Roboto Mono", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
+        btnPrevious.Font = New Font("Microsoft Sans Serif", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
         btnPrevious.ForeColor = SystemColors.ControlText
         btnPrevious.Location = New Point(1049, 794)
         btnPrevious.Name = "btnPrevious"
         btnPrevious.Size = New Size(129, 38)
-        btnPrevious.TabIndex = 53
+        btnPrevious.TabIndex = 9
         btnPrevious.Text = "Previous"
         btnPrevious.UseVisualStyleBackColor = False
         ' 
@@ -103,244 +103,198 @@ Partial Class _4X6
         ' 
         Label8.AutoSize = True
         Label8.BorderStyle = BorderStyle.FixedSingle
-        Label8.Font = New Font("Roboto Mono", 9F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.Location = New Point(12, 694)
+        Label8.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
+        Label8.Location = New Point(12, 718)
         Label8.Name = "Label8"
-        Label8.Size = New Size(317, 178)
+        Label8.Size = New Size(235, 167)
         Label8.TabIndex = 52
         Label8.Text = resources.GetString("Label8.Text")
         ' 
         ' Label16
         ' 
         Label16.AutoSize = True
-        Label16.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label16.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label16.Location = New Point(1037, 412)
         Label16.Name = "Label16"
-        Label16.Size = New Size(111, 25)
+        Label16.Size = New Size(141, 24)
         Label16.TabIndex = 51
         Label16.Text = "WESTBOUND"
         ' 
         ' Label19
         ' 
         Label19.AutoSize = True
-        Label19.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label19.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label19.Location = New Point(680, 801)
         Label19.Name = "Label19"
-        Label19.Size = New Size(122, 25)
+        Label19.Size = New Size(155, 24)
         Label19.TabIndex = 50
         Label19.Text = "NORTHBOUND"
-        ' 
-        ' PictureBox7
-        ' 
-        PictureBox7.Image = My.Resources.Resources.black_arrow_left
-        PictureBox7.Location = New Point(944, 392)
-        PictureBox7.Name = "PictureBox7"
-        PictureBox7.Size = New Size(87, 71)
-        PictureBox7.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox7.TabIndex = 49
-        PictureBox7.TabStop = False
         ' 
         ' TextBox3
         ' 
         TextBox3.BorderStyle = BorderStyle.FixedSingle
-        TextBox3.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox3.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox3.Location = New Point(944, 521)
         TextBox3.Name = "TextBox3"
-        TextBox3.Size = New Size(100, 23)
-        TextBox3.TabIndex = 47
-        TextBox3.TextAlign = HorizontalAlignment.Center
-        ' 
-        ' PictureBox8
-        ' 
-        PictureBox8.Image = My.Resources.Resources.black_arrow_top
-        PictureBox8.Location = New Point(696, 715)
-        PictureBox8.Name = "PictureBox8"
-        PictureBox8.Size = New Size(85, 75)
-        PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox8.TabIndex = 48
-        PictureBox8.TabStop = False
+        TextBox3.Size = New Size(100, 21)
+        TextBox3.TabIndex = 7
         ' 
         ' TextBox4
         ' 
         TextBox4.BorderStyle = BorderStyle.FixedSingle
-        TextBox4.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox4.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox4.Location = New Point(944, 478)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(100, 23)
-        TextBox4.TabIndex = 45
-        TextBox4.TextAlign = HorizontalAlignment.Center
+        TextBox4.Size = New Size(100, 21)
+        TextBox4.TabIndex = 6
         ' 
         ' TextBox5
         ' 
-        TextBox5.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox5.Location = New Point(544, 770)
+        TextBox5.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox5.Location = New Point(301, 415)
         TextBox5.Name = "TextBox5"
-        TextBox5.Size = New Size(100, 23)
-        TextBox5.TabIndex = 46
-        TextBox5.TextAlign = HorizontalAlignment.Center
+        TextBox5.Size = New Size(100, 21)
+        TextBox5.TabIndex = 5
         ' 
         ' Label15
         ' 
         Label15.AutoSize = True
-        Label15.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(1063, 518)
         Label15.Name = "Label15"
-        Label15.Size = New Size(170, 42)
+        Label15.Size = New Size(142, 40)
         Label15.TabIndex = 42
         Label15.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
         ' 
         ' TextBox6
         ' 
-        TextBox6.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox6.Location = New Point(544, 718)
+        TextBox6.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox6.Location = New Point(301, 363)
         TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(100, 23)
-        TextBox6.TabIndex = 44
-        TextBox6.TextAlign = HorizontalAlignment.Center
+        TextBox6.Size = New Size(100, 21)
+        TextBox6.TabIndex = 4
         ' 
         ' Label14
         ' 
         Label14.AutoSize = True
-        Label14.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label14.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label14.Location = New Point(1073, 476)
         Label14.Name = "Label14"
-        Label14.Size = New Size(120, 21)
+        Label14.Size = New Size(112, 20)
         Label14.TabIndex = 41
         Label14.Text = "Speed (mph)"
         ' 
         ' Label18
         ' 
         Label18.AutoSize = True
-        Label18.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label18.Location = New Point(359, 770)
+        Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label18.Location = New Point(390, 771)
         Label18.Name = "Label18"
-        Label18.Size = New Size(170, 42)
+        Label18.Size = New Size(142, 40)
         Label18.TabIndex = 43
         Label18.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
         ' 
         ' Label17
         ' 
         Label17.AutoSize = True
-        Label17.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label17.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label17.Location = New Point(420, 716)
         Label17.Name = "Label17"
-        Label17.Size = New Size(120, 21)
+        Label17.Size = New Size(112, 20)
         Label17.TabIndex = 40
         Label17.Text = "Speed (mph)"
         ' 
         ' Label4
         ' 
         Label4.AutoSize = True
-        Label4.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
-        Label4.Location = New Point(184, 492)
+        Label4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label4.Location = New Point(166, 492)
         Label4.Name = "Label4"
-        Label4.Size = New Size(111, 25)
+        Label4.Size = New Size(136, 24)
         Label4.TabIndex = 39
         Label4.Text = "EASTBOUND"
         ' 
-        ' PictureBox3
-        ' 
-        PictureBox3.Image = My.Resources.Resources.black_arrow_right
-        PictureBox3.Location = New Point(308, 464)
-        PictureBox3.Name = "PictureBox3"
-        PictureBox3.Size = New Size(93, 80)
-        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox3.TabIndex = 38
-        PictureBox3.TabStop = False
-        ' 
         ' TextBox7
         ' 
-        TextBox7.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox7.Location = New Point(301, 412)
+        TextBox7.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox7.Location = New Point(544, 771)
         TextBox7.Name = "TextBox7"
-        TextBox7.Size = New Size(100, 23)
-        TextBox7.TabIndex = 37
-        TextBox7.TextAlign = HorizontalAlignment.Center
+        TextBox7.Size = New Size(100, 21)
+        TextBox7.TabIndex = 3
         ' 
         ' TextBox8
         ' 
-        TextBox8.Location = New Point(301, 359)
+        TextBox8.Location = New Point(544, 718)
         TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(100, 23)
-        TextBox8.TabIndex = 36
+        TextBox8.Size = New Size(100, 21)
+        TextBox8.TabIndex = 2
         ' 
         ' Label6
         ' 
         Label6.AutoSize = True
-        Label6.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label6.Location = New Point(125, 410)
         Label6.Name = "Label6"
-        Label6.Size = New Size(170, 42)
+        Label6.Size = New Size(142, 40)
         Label6.TabIndex = 35
         Label6.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
-        Label7.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label7.Location = New Point(163, 359)
         Label7.Name = "Label7"
-        Label7.Size = New Size(120, 21)
+        Label7.Size = New Size(112, 20)
         Label7.TabIndex = 34
         Label7.Text = "Speed (mph)"
         ' 
         ' Label5
         ' 
         Label5.AutoSize = True
-        Label5.Font = New Font("Roboto Mono", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label5.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.Location = New Point(544, 128)
         Label5.Name = "Label5"
-        Label5.Size = New Size(122, 25)
+        Label5.Size = New Size(153, 24)
         Label5.TabIndex = 33
         Label5.Text = "SOUTHBOUND"
-        ' 
-        ' PictureBox2
-        ' 
-        PictureBox2.Image = My.Resources.Resources.down_arrow_608258
-        PictureBox2.Location = New Point(563, 162)
-        PictureBox2.Name = "PictureBox2"
-        PictureBox2.Size = New Size(81, 71)
-        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
-        PictureBox2.TabIndex = 32
-        PictureBox2.TabStop = False
         ' 
         ' TextBox2
         ' 
         TextBox2.BorderStyle = BorderStyle.FixedSingle
-        TextBox2.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox2.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox2.Location = New Point(872, 190)
         TextBox2.Name = "TextBox2"
-        TextBox2.Size = New Size(100, 23)
-        TextBox2.TabIndex = 31
-        TextBox2.TextAlign = HorizontalAlignment.Center
+        TextBox2.Size = New Size(100, 21)
+        TextBox2.TabIndex = 1
         ' 
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(696, 188)
         Label3.Name = "Label3"
-        Label3.Size = New Size(170, 42)
+        Label3.Size = New Size(142, 40)
         Label3.TabIndex = 29
         Label3.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Font = New Font("Roboto Mono", 12F, FontStyle.Bold, GraphicsUnit.Point)
+        Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.Location = New Point(706, 135)
         Label2.Name = "Label2"
-        Label2.Size = New Size(120, 21)
+        Label2.Size = New Size(112, 20)
         Label2.TabIndex = 28
         Label2.Text = "Speed (mph)"
         ' 
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Roboto Mono", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Font = New Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(494, 58)
         Label1.Name = "Label1"
-        Label1.Size = New Size(415, 35)
+        Label1.Size = New Size(331, 31)
         Label1.TabIndex = 27
         Label1.Text = "Intersection Data - 4 X 6"
         ' 
@@ -470,29 +424,74 @@ Partial Class _4X6
         ' TextBox1
         ' 
         TextBox1.BorderStyle = BorderStyle.FixedSingle
-        TextBox1.Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        TextBox1.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
         TextBox1.Location = New Point(872, 133)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(100, 23)
-        TextBox1.TabIndex = 56
-        TextBox1.TextAlign = HorizontalAlignment.Center
+        TextBox1.Size = New Size(100, 21)
+        TextBox1.TabIndex = 0
+        ' 
+        ' PictureBox7
+        ' 
+        PictureBox7.BackColor = Color.WhiteSmoke
+        PictureBox7.Image = My.Resources.Resources.black_arrow_left
+        PictureBox7.Location = New Point(957, 396)
+        PictureBox7.Name = "PictureBox7"
+        PictureBox7.Size = New Size(87, 54)
+        PictureBox7.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox7.TabIndex = 58
+        PictureBox7.TabStop = False
+        ' 
+        ' PictureBox8
+        ' 
+        PictureBox8.BackColor = Color.WhiteSmoke
+        PictureBox8.Image = My.Resources.Resources.black_arrow_top
+        PictureBox8.Location = New Point(729, 715)
+        PictureBox8.Name = "PictureBox8"
+        PictureBox8.Size = New Size(55, 77)
+        PictureBox8.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox8.TabIndex = 59
+        PictureBox8.TabStop = False
+        ' 
+        ' PictureBox3
+        ' 
+        PictureBox3.BackColor = Color.WhiteSmoke
+        PictureBox3.Image = My.Resources.Resources.black_arrow_right
+        PictureBox3.Location = New Point(301, 476)
+        PictureBox3.Name = "PictureBox3"
+        PictureBox3.Size = New Size(104, 52)
+        PictureBox3.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox3.TabIndex = 57
+        PictureBox3.TabStop = False
+        ' 
+        ' PictureBox2
+        ' 
+        PictureBox2.BackColor = Color.WhiteSmoke
+        PictureBox2.Image = My.Resources.Resources.down_arrow_608258
+        PictureBox2.Location = New Point(591, 155)
+        PictureBox2.Name = "PictureBox2"
+        PictureBox2.Size = New Size(53, 73)
+        PictureBox2.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox2.TabIndex = 56
+        PictureBox2.TabStop = False
         ' 
         ' _4X6
         ' 
-        AutoScaleDimensions = New SizeF(7F, 16F)
+        AutoScaleDimensions = New SizeF(8F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGray
+        BackColor = Color.WhiteSmoke
         ClientSize = New Size(1351, 894)
+        Controls.Add(Label16)
+        Controls.Add(PictureBox7)
+        Controls.Add(PictureBox8)
+        Controls.Add(PictureBox3)
+        Controls.Add(PictureBox2)
         Controls.Add(TextBox1)
         Controls.Add(ToolStrip1)
         Controls.Add(btnNext)
         Controls.Add(btnPrevious)
         Controls.Add(Label8)
-        Controls.Add(Label16)
         Controls.Add(Label19)
-        Controls.Add(PictureBox7)
         Controls.Add(TextBox3)
-        Controls.Add(PictureBox8)
         Controls.Add(TextBox4)
         Controls.Add(TextBox5)
         Controls.Add(Label15)
@@ -501,29 +500,27 @@ Partial Class _4X6
         Controls.Add(Label18)
         Controls.Add(Label17)
         Controls.Add(Label4)
-        Controls.Add(PictureBox3)
         Controls.Add(TextBox7)
         Controls.Add(TextBox8)
         Controls.Add(Label6)
         Controls.Add(Label7)
         Controls.Add(Label5)
-        Controls.Add(PictureBox2)
         Controls.Add(TextBox2)
         Controls.Add(Label3)
         Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(PictureBox1)
-        Font = New Font("Roboto Mono Medium", 9F, FontStyle.Bold, GraphicsUnit.Point)
+        Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "_4X6"
         Text = "CO Florida 2012 - Intesection Data - 4 X 6"
+        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
+        ToolStrip1.ResumeLayout(False)
+        ToolStrip1.PerformLayout()
         CType(PictureBox7, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox8, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
-        CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
-        ToolStrip1.ResumeLayout(False)
-        ToolStrip1.PerformLayout()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -533,9 +530,7 @@ Partial Class _4X6
     Friend WithEvents Label8 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label19 As Label
-    Friend WithEvents PictureBox7 As PictureBox
     Friend WithEvents TextBox3 As TextBox
-    Friend WithEvents PictureBox8 As PictureBox
     Friend WithEvents TextBox4 As TextBox
     Friend WithEvents TextBox5 As TextBox
     Friend WithEvents Label15 As Label
@@ -544,13 +539,11 @@ Partial Class _4X6
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents PictureBox3 As PictureBox
     Friend WithEvents TextBox7 As TextBox
     Friend WithEvents TextBox8 As TextBox
     Friend WithEvents Label6 As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents Label5 As Label
-    Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
@@ -572,4 +565,8 @@ Partial Class _4X6
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents PictureBox7 As PictureBox
+    Friend WithEvents PictureBox8 As PictureBox
+    Friend WithEvents PictureBox3 As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
 End Class

@@ -113,7 +113,7 @@ Public Class Diamond
     End Sub
 
 
-    Private Sub btnRun_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRun.Click
+    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
         'Call the routine to check form inputs
         EastWestFreeway.VerifyEWDiamondForm()
 

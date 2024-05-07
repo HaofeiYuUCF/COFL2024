@@ -22,7 +22,7 @@ Partial Class District
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(District))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(District))
         Label1 = New Label()
         Panel1 = New Panel()
         Button7 = New Button()
@@ -34,7 +34,6 @@ Partial Class District
         Button1 = New Button()
         PictureBox1 = New PictureBox()
         btnPrevious = New Button()
-        btnNext = New Button()
         ToolStrip1 = New ToolStrip()
         NewToolStripButton = New ToolStripButton()
         SaveToolStripButton = New ToolStripButton()
@@ -58,10 +57,10 @@ Partial Class District
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Font = New Font("Roboto Mono", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        Label1.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point)
         Label1.Location = New Point(424, 53)
         Label1.Name = "Label1"
-        Label1.Size = New Size(266, 32)
+        Label1.Size = New Size(285, 29)
         Label1.TabIndex = 0
         Label1.Text = "DISTRICT SELECTION"
         ' 
@@ -85,12 +84,12 @@ Partial Class District
         ' 
         Button7.BackColor = Color.LightGray
         Button7.Cursor = Cursors.Hand
-        Button7.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button7.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button7.ImageAlign = ContentAlignment.TopCenter
         Button7.Location = New Point(16, 334)
         Button7.Name = "Button7"
         Button7.Size = New Size(164, 47)
-        Button7.TabIndex = 10
+        Button7.TabIndex = 6
         Button7.Text = "District 7"
         Button7.UseVisualStyleBackColor = False
         ' 
@@ -98,12 +97,12 @@ Partial Class District
         ' 
         Button6.BackColor = Color.LightGray
         Button6.Cursor = Cursors.Hand
-        Button6.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button6.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button6.ImageAlign = ContentAlignment.TopCenter
         Button6.Location = New Point(16, 289)
         Button6.Name = "Button6"
         Button6.Size = New Size(164, 39)
-        Button6.TabIndex = 9
+        Button6.TabIndex = 5
         Button6.Text = "District 6"
         Button6.UseVisualStyleBackColor = False
         ' 
@@ -111,12 +110,12 @@ Partial Class District
         ' 
         Button5.BackColor = Color.LightGray
         Button5.Cursor = Cursors.Hand
-        Button5.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button5.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button5.ImageAlign = ContentAlignment.TopCenter
         Button5.Location = New Point(16, 237)
         Button5.Name = "Button5"
         Button5.Size = New Size(164, 46)
-        Button5.TabIndex = 8
+        Button5.TabIndex = 4
         Button5.Text = "District 5"
         Button5.UseVisualStyleBackColor = False
         ' 
@@ -124,12 +123,12 @@ Partial Class District
         ' 
         Button4.BackColor = Color.LightGray
         Button4.Cursor = Cursors.Hand
-        Button4.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button4.ImageAlign = ContentAlignment.TopCenter
         Button4.Location = New Point(18, 180)
         Button4.Name = "Button4"
         Button4.Size = New Size(163, 51)
-        Button4.TabIndex = 7
+        Button4.TabIndex = 3
         Button4.Text = "District 4"
         Button4.UseVisualStyleBackColor = False
         ' 
@@ -137,12 +136,12 @@ Partial Class District
         ' 
         Button3.BackColor = Color.LightGray
         Button3.Cursor = Cursors.Hand
-        Button3.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button3.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button3.ImageAlign = ContentAlignment.TopCenter
         Button3.Location = New Point(16, 126)
         Button3.Name = "Button3"
         Button3.Size = New Size(164, 48)
-        Button3.TabIndex = 6
+        Button3.TabIndex = 2
         Button3.Text = "District 3"
         Button3.UseVisualStyleBackColor = False
         ' 
@@ -150,12 +149,12 @@ Partial Class District
         ' 
         Button2.BackColor = Color.LightGray
         Button2.Cursor = Cursors.Hand
-        Button2.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button2.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button2.ImageAlign = ContentAlignment.TopCenter
         Button2.Location = New Point(17, 73)
         Button2.Name = "Button2"
         Button2.Size = New Size(164, 47)
-        Button2.TabIndex = 5
+        Button2.TabIndex = 1
         Button2.Text = "District 2"
         Button2.UseVisualStyleBackColor = False
         ' 
@@ -163,12 +162,12 @@ Partial Class District
         ' 
         Button1.BackColor = Color.LightGray
         Button1.Cursor = Cursors.Hand
-        Button1.Font = New Font("Roboto Mono", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Button1.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Button1.ImageAlign = ContentAlignment.TopCenter
         Button1.Location = New Point(17, 20)
         Button1.Name = "Button1"
         Button1.Size = New Size(163, 47)
-        Button1.TabIndex = 4
+        Button1.TabIndex = 0
         Button1.Text = "District 1"
         Button1.UseVisualStyleBackColor = False
         ' 
@@ -186,26 +185,14 @@ Partial Class District
         ' btnPrevious
         ' 
         btnPrevious.BackColor = SystemColors.ButtonShadow
-        btnPrevious.Font = New Font("Roboto Mono", 18F, FontStyle.Bold, GraphicsUnit.Point)
+        btnPrevious.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point)
         btnPrevious.ImageAlign = ContentAlignment.TopCenter
         btnPrevious.Location = New Point(188, 634)
         btnPrevious.Name = "btnPrevious"
         btnPrevious.Size = New Size(168, 47)
-        btnPrevious.TabIndex = 11
+        btnPrevious.TabIndex = 7
         btnPrevious.Text = "Previous"
         btnPrevious.UseVisualStyleBackColor = False
-        ' 
-        ' btnNext
-        ' 
-        btnNext.BackColor = SystemColors.ButtonShadow
-        btnNext.Font = New Font("Roboto Mono", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        btnNext.ImageAlign = ContentAlignment.TopCenter
-        btnNext.Location = New Point(759, 635)
-        btnNext.Name = "btnNext"
-        btnNext.Size = New Size(168, 47)
-        btnNext.TabIndex = 12
-        btnNext.Text = "Next"
-        btnNext.UseVisualStyleBackColor = False
         ' 
         ' ToolStrip1
         ' 
@@ -213,7 +200,7 @@ Partial Class District
         ToolStrip1.Items.AddRange(New ToolStripItem() {NewToolStripButton, SaveToolStripButton, OpenToolStripButton, ToolStripSeparator1, ToolStripLabel1, TitleToolStripButton, DistrictToolStripButton, IntersectionTypeToolStripButton, IntersectionDataToolStripButton, RunToolStripButton, ToolStripLabel2, AboutToolStripButton})
         ToolStrip1.Location = New Point(0, 0)
         ToolStrip1.Name = "ToolStrip1"
-        ToolStrip1.Size = New Size(1118, 25)
+        ToolStrip1.Size = New Size(1047, 25)
         ToolStrip1.TabIndex = 19
         ToolStrip1.Text = "ToolStrip1"
         ' 
@@ -324,10 +311,9 @@ Partial Class District
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        BackColor = Color.LightGray
-        ClientSize = New Size(1118, 723)
+        BackColor = Color.WhiteSmoke
+        ClientSize = New Size(1047, 723)
         Controls.Add(ToolStrip1)
-        Controls.Add(btnNext)
         Controls.Add(btnPrevious)
         Controls.Add(PictureBox1)
         Controls.Add(Panel1)
@@ -354,7 +340,6 @@ Partial Class District
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents btnPrevious As Button
-    Friend WithEvents btnNext As Button
     Friend WithEvents ToolStrip1 As ToolStrip
     Friend WithEvents NewToolStripButton As ToolStripButton
     Friend WithEvents SaveToolStripButton As ToolStripButton

@@ -22,7 +22,7 @@ Partial Class Results
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Results))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Results))
         Label1 = New Label()
         Label3 = New Label()
         Label4 = New Label()
@@ -44,7 +44,6 @@ Partial Class Results
         Label51 = New Label()
         Label52 = New Label()
         Label53 = New Label()
-        Button5 = New Button()
         Button2 = New Button()
         Button3 = New Button()
         TextBox18 = New TextBox()
@@ -374,26 +373,15 @@ Partial Class Results
         Label53.TabIndex = 62
         Label53.Text = "Temperature"
         ' 
-        ' Button5
-        ' 
-        Button5.BackColor = SystemColors.ControlDark
-        Button5.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Button5.Location = New Point(400, 909)
-        Button5.Name = "Button5"
-        Button5.Size = New Size(242, 34)
-        Button5.TabIndex = 78
-        Button5.Text = "Save Output"
-        Button5.UseVisualStyleBackColor = False
-        ' 
         ' Button2
         ' 
         Button2.BackColor = SystemColors.ControlDark
         Button2.Font = New Font("Segoe UI Semibold", 15.75F, FontStyle.Bold, GraphicsUnit.Point)
-        Button2.Location = New Point(725, 908)
+        Button2.Location = New Point(554, 908)
         Button2.Name = "Button2"
-        Button2.Size = New Size(242, 34)
+        Button2.Size = New Size(242, 35)
         Button2.TabIndex = 79
-        Button2.Text = "Print Output"
+        Button2.Text = "Save Output"
         Button2.UseVisualStyleBackColor = False
         ' 
         ' Button3
@@ -409,6 +397,7 @@ Partial Class Results
         ' 
         ' TextBox18
         ' 
+        TextBox18.BackColor = Color.WhiteSmoke
         TextBox18.BorderStyle = BorderStyle.None
         TextBox18.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox18.Location = New Point(315, 644)
@@ -418,6 +407,7 @@ Partial Class Results
         ' 
         ' TextBox2
         ' 
+        TextBox2.BackColor = Color.WhiteSmoke
         TextBox2.BorderStyle = BorderStyle.None
         TextBox2.Location = New Point(586, 80)
         TextBox2.Name = "TextBox2"
@@ -426,69 +416,77 @@ Partial Class Results
         ' 
         ' TextBox10
         ' 
+        TextBox10.BackColor = Color.WhiteSmoke
         TextBox10.BorderStyle = BorderStyle.None
         TextBox10.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox10.Location = New Point(315, 148)
         TextBox10.Name = "TextBox10"
-        TextBox10.Size = New Size(100, 20)
+        TextBox10.Size = New Size(206, 20)
         TextBox10.TabIndex = 83
         ' 
         ' TextBox8
         ' 
+        TextBox8.BackColor = Color.WhiteSmoke
         TextBox8.BorderStyle = BorderStyle.None
         TextBox8.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox8.Location = New Point(315, 177)
         TextBox8.Name = "TextBox8"
-        TextBox8.Size = New Size(100, 20)
+        TextBox8.Size = New Size(206, 20)
         TextBox8.TabIndex = 84
         ' 
         ' TextBox6
         ' 
+        TextBox6.BackColor = Color.WhiteSmoke
         TextBox6.BorderStyle = BorderStyle.None
         TextBox6.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox6.Location = New Point(315, 210)
         TextBox6.Name = "TextBox6"
-        TextBox6.Size = New Size(100, 20)
+        TextBox6.Size = New Size(206, 20)
         TextBox6.TabIndex = 85
         ' 
         ' TextBox4
         ' 
+        TextBox4.BackColor = Color.WhiteSmoke
         TextBox4.BorderStyle = BorderStyle.None
         TextBox4.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox4.Location = New Point(315, 241)
         TextBox4.Name = "TextBox4"
-        TextBox4.Size = New Size(100, 20)
+        TextBox4.Size = New Size(206, 20)
         TextBox4.TabIndex = 86
         ' 
         ' TextBox26
         ' 
+        TextBox26.BackColor = Color.WhiteSmoke
         TextBox26.BorderStyle = BorderStyle.None
         TextBox26.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox26.Location = New Point(315, 276)
         TextBox26.Name = "TextBox26"
-        TextBox26.Size = New Size(100, 20)
+        TextBox26.Size = New Size(206, 20)
         TextBox26.TabIndex = 87
         ' 
         ' TextBox28
         ' 
+        TextBox28.BackColor = Color.WhiteSmoke
         TextBox28.BorderStyle = BorderStyle.None
         TextBox28.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox28.Location = New Point(315, 309)
         TextBox28.Name = "TextBox28"
-        TextBox28.Size = New Size(100, 20)
+        TextBox28.Size = New Size(206, 20)
         TextBox28.TabIndex = 88
         ' 
         ' TextBox30
         ' 
+        TextBox30.BackColor = Color.WhiteSmoke
         TextBox30.BorderStyle = BorderStyle.None
         TextBox30.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox30.Location = New Point(315, 343)
         TextBox30.Name = "TextBox30"
-        TextBox30.Size = New Size(100, 20)
+        TextBox30.Size = New Size(206, 20)
         TextBox30.TabIndex = 89
         ' 
         ' TextBox38
         ' 
+        TextBox38.BackColor = Color.WhiteSmoke
         TextBox38.BorderStyle = BorderStyle.None
         TextBox38.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox38.Location = New Point(315, 379)
@@ -498,6 +496,7 @@ Partial Class Results
         ' 
         ' TextBox37
         ' 
+        TextBox37.BackColor = Color.WhiteSmoke
         TextBox37.BorderStyle = BorderStyle.None
         TextBox37.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox37.Location = New Point(315, 415)
@@ -507,6 +506,7 @@ Partial Class Results
         ' 
         ' TextBox40
         ' 
+        TextBox40.BackColor = Color.WhiteSmoke
         TextBox40.BorderStyle = BorderStyle.None
         TextBox40.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox40.Location = New Point(421, 378)
@@ -516,6 +516,7 @@ Partial Class Results
         ' 
         ' TextBox39
         ' 
+        TextBox39.BackColor = Color.WhiteSmoke
         TextBox39.BorderStyle = BorderStyle.None
         TextBox39.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox39.Location = New Point(421, 415)
@@ -525,6 +526,7 @@ Partial Class Results
         ' 
         ' TextBox36
         ' 
+        TextBox36.BackColor = Color.WhiteSmoke
         TextBox36.BorderStyle = BorderStyle.None
         TextBox36.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox36.Location = New Point(675, 377)
@@ -534,6 +536,7 @@ Partial Class Results
         ' 
         ' TextBox34
         ' 
+        TextBox34.BackColor = Color.WhiteSmoke
         TextBox34.BorderStyle = BorderStyle.None
         TextBox34.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox34.Location = New Point(569, 378)
@@ -543,6 +546,7 @@ Partial Class Results
         ' 
         ' TextBox41
         ' 
+        TextBox41.BackColor = Color.WhiteSmoke
         TextBox41.BorderStyle = BorderStyle.None
         TextBox41.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox41.Location = New Point(675, 415)
@@ -552,6 +556,7 @@ Partial Class Results
         ' 
         ' TextBox42
         ' 
+        TextBox42.BackColor = Color.WhiteSmoke
         TextBox42.BorderStyle = BorderStyle.None
         TextBox42.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox42.Location = New Point(569, 415)
@@ -561,6 +566,7 @@ Partial Class Results
         ' 
         ' TextBox43
         ' 
+        TextBox43.BackColor = Color.WhiteSmoke
         TextBox43.BorderStyle = BorderStyle.None
         TextBox43.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox43.Location = New Point(675, 444)
@@ -570,6 +576,7 @@ Partial Class Results
         ' 
         ' TextBox44
         ' 
+        TextBox44.BackColor = Color.WhiteSmoke
         TextBox44.BorderStyle = BorderStyle.None
         TextBox44.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox44.Location = New Point(569, 444)
@@ -579,6 +586,7 @@ Partial Class Results
         ' 
         ' TextBox35
         ' 
+        TextBox35.BackColor = Color.WhiteSmoke
         TextBox35.BorderStyle = BorderStyle.None
         TextBox35.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox35.Location = New Point(421, 444)
@@ -588,6 +596,7 @@ Partial Class Results
         ' 
         ' TextBox32
         ' 
+        TextBox32.BackColor = Color.WhiteSmoke
         TextBox32.BorderStyle = BorderStyle.None
         TextBox32.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox32.Location = New Point(315, 444)
@@ -597,6 +606,7 @@ Partial Class Results
         ' 
         ' TextBox14
         ' 
+        TextBox14.BackColor = Color.WhiteSmoke
         TextBox14.BorderStyle = BorderStyle.None
         TextBox14.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox14.Location = New Point(315, 587)
@@ -606,6 +616,7 @@ Partial Class Results
         ' 
         ' TextBox16
         ' 
+        TextBox16.BackColor = Color.WhiteSmoke
         TextBox16.BorderStyle = BorderStyle.None
         TextBox16.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox16.Location = New Point(315, 616)
@@ -615,6 +626,7 @@ Partial Class Results
         ' 
         ' TextBox20
         ' 
+        TextBox20.BackColor = Color.WhiteSmoke
         TextBox20.BorderStyle = BorderStyle.None
         TextBox20.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox20.Location = New Point(315, 676)
@@ -624,6 +636,7 @@ Partial Class Results
         ' 
         ' TextBox22
         ' 
+        TextBox22.BackColor = Color.WhiteSmoke
         TextBox22.BorderStyle = BorderStyle.None
         TextBox22.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox22.Location = New Point(315, 711)
@@ -633,6 +646,7 @@ Partial Class Results
         ' 
         ' TextBox24
         ' 
+        TextBox24.BackColor = Color.WhiteSmoke
         TextBox24.BorderStyle = BorderStyle.None
         TextBox24.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox24.Location = New Point(315, 745)
@@ -642,6 +656,7 @@ Partial Class Results
         ' 
         ' TextBox173
         ' 
+        TextBox173.BackColor = Color.WhiteSmoke
         TextBox173.BorderStyle = BorderStyle.None
         TextBox173.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox173.Location = New Point(315, 778)
@@ -651,6 +666,7 @@ Partial Class Results
         ' 
         ' TextBox1
         ' 
+        TextBox1.BackColor = SystemColors.Control
         TextBox1.BorderStyle = BorderStyle.None
         TextBox1.Location = New Point(1038, 136)
         TextBox1.Name = "TextBox1"
@@ -660,6 +676,7 @@ Partial Class Results
         ' 
         ' TextBox3
         ' 
+        TextBox3.BackColor = Color.WhiteSmoke
         TextBox3.BorderStyle = BorderStyle.None
         TextBox3.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox3.Location = New Point(970, 173)
@@ -670,6 +687,7 @@ Partial Class Results
         ' 
         ' TextBox5
         ' 
+        TextBox5.BackColor = Color.WhiteSmoke
         TextBox5.BorderStyle = BorderStyle.None
         TextBox5.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox5.Location = New Point(1084, 173)
@@ -680,6 +698,7 @@ Partial Class Results
         ' 
         ' TextBox7
         ' 
+        TextBox7.BackColor = Color.WhiteSmoke
         TextBox7.BorderStyle = BorderStyle.None
         TextBox7.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox7.Location = New Point(1198, 173)
@@ -690,6 +709,7 @@ Partial Class Results
         ' 
         ' TextBox113
         ' 
+        TextBox113.BackColor = Color.WhiteSmoke
         TextBox113.BorderStyle = BorderStyle.None
         TextBox113.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox113.Location = New Point(1104, 759)
@@ -700,6 +720,7 @@ Partial Class Results
         ' 
         ' TextBox114
         ' 
+        TextBox114.BackColor = Color.WhiteSmoke
         TextBox114.BorderStyle = BorderStyle.None
         TextBox114.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox114.Location = New Point(1104, 730)
@@ -710,6 +731,7 @@ Partial Class Results
         ' 
         ' TextBox115
         ' 
+        TextBox115.BackColor = Color.WhiteSmoke
         TextBox115.BorderStyle = BorderStyle.None
         TextBox115.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox115.Location = New Point(1104, 701)
@@ -720,6 +742,7 @@ Partial Class Results
         ' 
         ' TextBox116
         ' 
+        TextBox116.BackColor = Color.WhiteSmoke
         TextBox116.BorderStyle = BorderStyle.None
         TextBox116.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox116.Location = New Point(1104, 672)
@@ -730,6 +753,7 @@ Partial Class Results
         ' 
         ' TextBox117
         ' 
+        TextBox117.BackColor = Color.WhiteSmoke
         TextBox117.BorderStyle = BorderStyle.None
         TextBox117.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox117.Location = New Point(1104, 641)
@@ -740,6 +764,7 @@ Partial Class Results
         ' 
         ' TextBox118
         ' 
+        TextBox118.BackColor = Color.WhiteSmoke
         TextBox118.BorderStyle = BorderStyle.None
         TextBox118.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox118.Location = New Point(1104, 612)
@@ -750,6 +775,7 @@ Partial Class Results
         ' 
         ' TextBox119
         ' 
+        TextBox119.BackColor = Color.WhiteSmoke
         TextBox119.BorderStyle = BorderStyle.None
         TextBox119.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox119.Location = New Point(1104, 583)
@@ -760,6 +786,7 @@ Partial Class Results
         ' 
         ' TextBox120
         ' 
+        TextBox120.BackColor = Color.WhiteSmoke
         TextBox120.BorderStyle = BorderStyle.None
         TextBox120.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox120.Location = New Point(1104, 554)
@@ -770,6 +797,7 @@ Partial Class Results
         ' 
         ' TextBox121
         ' 
+        TextBox121.BackColor = Color.WhiteSmoke
         TextBox121.BorderStyle = BorderStyle.None
         TextBox121.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox121.Location = New Point(1104, 525)
@@ -780,6 +808,7 @@ Partial Class Results
         ' 
         ' TextBox122
         ' 
+        TextBox122.BackColor = Color.WhiteSmoke
         TextBox122.BorderStyle = BorderStyle.None
         TextBox122.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox122.Location = New Point(1104, 496)
@@ -790,6 +819,7 @@ Partial Class Results
         ' 
         ' TextBox143
         ' 
+        TextBox143.BackColor = Color.WhiteSmoke
         TextBox143.BorderStyle = BorderStyle.None
         TextBox143.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox143.Location = New Point(1104, 467)
@@ -800,6 +830,7 @@ Partial Class Results
         ' 
         ' TextBox144
         ' 
+        TextBox144.BackColor = Color.WhiteSmoke
         TextBox144.BorderStyle = BorderStyle.None
         TextBox144.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox144.Location = New Point(1104, 438)
@@ -810,6 +841,7 @@ Partial Class Results
         ' 
         ' TextBox145
         ' 
+        TextBox145.BackColor = Color.WhiteSmoke
         TextBox145.BorderStyle = BorderStyle.None
         TextBox145.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox145.Location = New Point(1104, 409)
@@ -820,6 +852,7 @@ Partial Class Results
         ' 
         ' TextBox146
         ' 
+        TextBox146.BackColor = Color.WhiteSmoke
         TextBox146.BorderStyle = BorderStyle.None
         TextBox146.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox146.Location = New Point(1104, 380)
@@ -830,6 +863,7 @@ Partial Class Results
         ' 
         ' TextBox147
         ' 
+        TextBox147.BackColor = Color.WhiteSmoke
         TextBox147.BorderStyle = BorderStyle.None
         TextBox147.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox147.Location = New Point(1104, 351)
@@ -840,6 +874,7 @@ Partial Class Results
         ' 
         ' TextBox148
         ' 
+        TextBox148.BackColor = Color.WhiteSmoke
         TextBox148.BorderStyle = BorderStyle.None
         TextBox148.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox148.Location = New Point(1104, 322)
@@ -850,6 +885,7 @@ Partial Class Results
         ' 
         ' TextBox149
         ' 
+        TextBox149.BackColor = Color.WhiteSmoke
         TextBox149.BorderStyle = BorderStyle.None
         TextBox149.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox149.Location = New Point(1104, 293)
@@ -860,6 +896,7 @@ Partial Class Results
         ' 
         ' TextBox150
         ' 
+        TextBox150.BackColor = Color.WhiteSmoke
         TextBox150.BorderStyle = BorderStyle.None
         TextBox150.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox150.Location = New Point(1104, 264)
@@ -870,6 +907,7 @@ Partial Class Results
         ' 
         ' TextBox151
         ' 
+        TextBox151.BackColor = Color.WhiteSmoke
         TextBox151.BorderStyle = BorderStyle.None
         TextBox151.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox151.Location = New Point(1104, 235)
@@ -880,6 +918,7 @@ Partial Class Results
         ' 
         ' TextBox152
         ' 
+        TextBox152.BackColor = Color.WhiteSmoke
         TextBox152.BorderStyle = BorderStyle.None
         TextBox152.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox152.Location = New Point(1104, 206)
@@ -890,6 +929,7 @@ Partial Class Results
         ' 
         ' TextBox103
         ' 
+        TextBox103.BackColor = Color.WhiteSmoke
         TextBox103.BorderStyle = BorderStyle.None
         TextBox103.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox103.Location = New Point(1219, 759)
@@ -900,6 +940,7 @@ Partial Class Results
         ' 
         ' TextBox104
         ' 
+        TextBox104.BackColor = Color.WhiteSmoke
         TextBox104.BorderStyle = BorderStyle.None
         TextBox104.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox104.Location = New Point(1219, 730)
@@ -910,6 +951,7 @@ Partial Class Results
         ' 
         ' TextBox105
         ' 
+        TextBox105.BackColor = Color.WhiteSmoke
         TextBox105.BorderStyle = BorderStyle.None
         TextBox105.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox105.Location = New Point(1219, 701)
@@ -920,6 +962,7 @@ Partial Class Results
         ' 
         ' TextBox106
         ' 
+        TextBox106.BackColor = Color.WhiteSmoke
         TextBox106.BorderStyle = BorderStyle.None
         TextBox106.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox106.Location = New Point(1219, 672)
@@ -930,6 +973,7 @@ Partial Class Results
         ' 
         ' TextBox107
         ' 
+        TextBox107.BackColor = Color.WhiteSmoke
         TextBox107.BorderStyle = BorderStyle.None
         TextBox107.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox107.Location = New Point(1219, 641)
@@ -940,6 +984,7 @@ Partial Class Results
         ' 
         ' TextBox108
         ' 
+        TextBox108.BackColor = Color.WhiteSmoke
         TextBox108.BorderStyle = BorderStyle.None
         TextBox108.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox108.Location = New Point(1219, 612)
@@ -950,6 +995,7 @@ Partial Class Results
         ' 
         ' TextBox109
         ' 
+        TextBox109.BackColor = Color.WhiteSmoke
         TextBox109.BorderStyle = BorderStyle.None
         TextBox109.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox109.Location = New Point(1219, 583)
@@ -960,6 +1006,7 @@ Partial Class Results
         ' 
         ' TextBox110
         ' 
+        TextBox110.BackColor = Color.WhiteSmoke
         TextBox110.BorderStyle = BorderStyle.None
         TextBox110.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox110.Location = New Point(1219, 554)
@@ -970,6 +1017,7 @@ Partial Class Results
         ' 
         ' TextBox111
         ' 
+        TextBox111.BackColor = Color.WhiteSmoke
         TextBox111.BorderStyle = BorderStyle.None
         TextBox111.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox111.Location = New Point(1219, 525)
@@ -980,6 +1028,7 @@ Partial Class Results
         ' 
         ' TextBox112
         ' 
+        TextBox112.BackColor = Color.WhiteSmoke
         TextBox112.BorderStyle = BorderStyle.None
         TextBox112.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox112.Location = New Point(1219, 496)
@@ -990,6 +1039,7 @@ Partial Class Results
         ' 
         ' TextBox133
         ' 
+        TextBox133.BackColor = Color.WhiteSmoke
         TextBox133.BorderStyle = BorderStyle.None
         TextBox133.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox133.Location = New Point(1219, 467)
@@ -1000,6 +1050,7 @@ Partial Class Results
         ' 
         ' TextBox134
         ' 
+        TextBox134.BackColor = Color.WhiteSmoke
         TextBox134.BorderStyle = BorderStyle.None
         TextBox134.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox134.Location = New Point(1219, 438)
@@ -1010,6 +1061,7 @@ Partial Class Results
         ' 
         ' TextBox135
         ' 
+        TextBox135.BackColor = Color.WhiteSmoke
         TextBox135.BorderStyle = BorderStyle.None
         TextBox135.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox135.Location = New Point(1219, 409)
@@ -1020,6 +1072,7 @@ Partial Class Results
         ' 
         ' TextBox136
         ' 
+        TextBox136.BackColor = Color.WhiteSmoke
         TextBox136.BorderStyle = BorderStyle.None
         TextBox136.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox136.Location = New Point(1219, 380)
@@ -1030,6 +1083,7 @@ Partial Class Results
         ' 
         ' TextBox137
         ' 
+        TextBox137.BackColor = Color.WhiteSmoke
         TextBox137.BorderStyle = BorderStyle.None
         TextBox137.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox137.Location = New Point(1219, 351)
@@ -1040,6 +1094,7 @@ Partial Class Results
         ' 
         ' TextBox138
         ' 
+        TextBox138.BackColor = Color.WhiteSmoke
         TextBox138.BorderStyle = BorderStyle.None
         TextBox138.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox138.Location = New Point(1219, 322)
@@ -1050,6 +1105,7 @@ Partial Class Results
         ' 
         ' TextBox139
         ' 
+        TextBox139.BackColor = Color.WhiteSmoke
         TextBox139.BorderStyle = BorderStyle.None
         TextBox139.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox139.Location = New Point(1219, 293)
@@ -1060,6 +1116,7 @@ Partial Class Results
         ' 
         ' TextBox140
         ' 
+        TextBox140.BackColor = Color.WhiteSmoke
         TextBox140.BorderStyle = BorderStyle.None
         TextBox140.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox140.Location = New Point(1219, 264)
@@ -1070,6 +1127,7 @@ Partial Class Results
         ' 
         ' TextBox141
         ' 
+        TextBox141.BackColor = Color.WhiteSmoke
         TextBox141.BorderStyle = BorderStyle.None
         TextBox141.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox141.Location = New Point(1219, 235)
@@ -1080,6 +1138,7 @@ Partial Class Results
         ' 
         ' TextBox142
         ' 
+        TextBox142.BackColor = Color.WhiteSmoke
         TextBox142.BorderStyle = BorderStyle.None
         TextBox142.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox142.Location = New Point(1219, 206)
@@ -1090,6 +1149,7 @@ Partial Class Results
         ' 
         ' TextBox91
         ' 
+        TextBox91.BackColor = Color.WhiteSmoke
         TextBox91.BorderStyle = BorderStyle.None
         TextBox91.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox91.Location = New Point(981, 206)
@@ -1101,6 +1161,7 @@ Partial Class Results
         ' 
         ' TextBox92
         ' 
+        TextBox92.BackColor = Color.WhiteSmoke
         TextBox92.BorderStyle = BorderStyle.None
         TextBox92.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox92.Location = New Point(981, 235)
@@ -1112,6 +1173,7 @@ Partial Class Results
         ' 
         ' TextBox93
         ' 
+        TextBox93.BackColor = Color.WhiteSmoke
         TextBox93.BorderStyle = BorderStyle.None
         TextBox93.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox93.Location = New Point(981, 264)
@@ -1123,6 +1185,7 @@ Partial Class Results
         ' 
         ' TextBox94
         ' 
+        TextBox94.BackColor = Color.WhiteSmoke
         TextBox94.BorderStyle = BorderStyle.None
         TextBox94.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox94.Location = New Point(981, 293)
@@ -1134,6 +1197,7 @@ Partial Class Results
         ' 
         ' TextBox95
         ' 
+        TextBox95.BackColor = Color.WhiteSmoke
         TextBox95.BorderStyle = BorderStyle.None
         TextBox95.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox95.Location = New Point(981, 322)
@@ -1145,6 +1209,7 @@ Partial Class Results
         ' 
         ' TextBox96
         ' 
+        TextBox96.BackColor = Color.WhiteSmoke
         TextBox96.BorderStyle = BorderStyle.None
         TextBox96.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox96.Location = New Point(981, 351)
@@ -1156,6 +1221,7 @@ Partial Class Results
         ' 
         ' TextBox97
         ' 
+        TextBox97.BackColor = Color.WhiteSmoke
         TextBox97.BorderStyle = BorderStyle.None
         TextBox97.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox97.Location = New Point(981, 380)
@@ -1167,6 +1233,7 @@ Partial Class Results
         ' 
         ' TextBox98
         ' 
+        TextBox98.BackColor = Color.WhiteSmoke
         TextBox98.BorderStyle = BorderStyle.None
         TextBox98.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox98.Location = New Point(981, 409)
@@ -1178,6 +1245,7 @@ Partial Class Results
         ' 
         ' TextBox99
         ' 
+        TextBox99.BackColor = Color.WhiteSmoke
         TextBox99.BorderStyle = BorderStyle.None
         TextBox99.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox99.Location = New Point(981, 438)
@@ -1189,6 +1257,7 @@ Partial Class Results
         ' 
         ' TextBox100
         ' 
+        TextBox100.BackColor = Color.WhiteSmoke
         TextBox100.BorderStyle = BorderStyle.None
         TextBox100.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox100.Location = New Point(981, 467)
@@ -1200,6 +1269,7 @@ Partial Class Results
         ' 
         ' TextBox101
         ' 
+        TextBox101.BackColor = Color.WhiteSmoke
         TextBox101.BorderStyle = BorderStyle.None
         TextBox101.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox101.Location = New Point(981, 496)
@@ -1211,6 +1281,7 @@ Partial Class Results
         ' 
         ' TextBox102
         ' 
+        TextBox102.BackColor = Color.WhiteSmoke
         TextBox102.BorderStyle = BorderStyle.None
         TextBox102.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox102.Location = New Point(981, 525)
@@ -1222,6 +1293,7 @@ Partial Class Results
         ' 
         ' TextBox1031
         ' 
+        TextBox1031.BackColor = Color.WhiteSmoke
         TextBox1031.BorderStyle = BorderStyle.None
         TextBox1031.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox1031.Location = New Point(981, 554)
@@ -1233,6 +1305,7 @@ Partial Class Results
         ' 
         ' TextBox1041
         ' 
+        TextBox1041.BackColor = Color.WhiteSmoke
         TextBox1041.BorderStyle = BorderStyle.None
         TextBox1041.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox1041.Location = New Point(981, 583)
@@ -1244,6 +1317,7 @@ Partial Class Results
         ' 
         ' TextBox1051
         ' 
+        TextBox1051.BackColor = Color.WhiteSmoke
         TextBox1051.BorderStyle = BorderStyle.None
         TextBox1051.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox1051.Location = New Point(981, 612)
@@ -1255,6 +1329,7 @@ Partial Class Results
         ' 
         ' TextBox1061
         ' 
+        TextBox1061.BackColor = Color.WhiteSmoke
         TextBox1061.BorderStyle = BorderStyle.None
         TextBox1061.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox1061.Location = New Point(981, 641)
@@ -1266,6 +1341,7 @@ Partial Class Results
         ' 
         ' TextBox1071
         ' 
+        TextBox1071.BackColor = Color.WhiteSmoke
         TextBox1071.BorderStyle = BorderStyle.None
         TextBox1071.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox1071.Location = New Point(981, 672)
@@ -1277,6 +1353,7 @@ Partial Class Results
         ' 
         ' TextBox125
         ' 
+        TextBox125.BackColor = Color.WhiteSmoke
         TextBox125.BorderStyle = BorderStyle.None
         TextBox125.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox125.Location = New Point(981, 701)
@@ -1287,6 +1364,7 @@ Partial Class Results
         ' 
         ' TextBox124
         ' 
+        TextBox124.BackColor = Color.WhiteSmoke
         TextBox124.BorderStyle = BorderStyle.None
         TextBox124.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox124.Location = New Point(981, 730)
@@ -1297,6 +1375,7 @@ Partial Class Results
         ' 
         ' TextBox123
         ' 
+        TextBox123.BackColor = Color.WhiteSmoke
         TextBox123.BorderStyle = BorderStyle.None
         TextBox123.Font = New Font("Segoe UI", 11.25F, FontStyle.Regular, GraphicsUnit.Point)
         TextBox123.Location = New Point(981, 759)
@@ -1319,7 +1398,7 @@ Partial Class Results
         ' TextBox169
         ' 
         TextBox169.Font = New Font("Segoe UI Semibold", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox169.Location = New Point(346, 806)
+        TextBox169.Location = New Point(287, 806)
         TextBox169.Multiline = True
         TextBox169.Name = "TextBox169"
         TextBox169.Size = New Size(777, 72)
@@ -1451,6 +1530,7 @@ Partial Class Results
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
+        BackColor = Color.WhiteSmoke
         ClientSize = New Size(1351, 966)
         Controls.Add(ToolStrip1)
         Controls.Add(TextBox169)
@@ -1548,7 +1628,6 @@ Partial Class Results
         Controls.Add(TextBox18)
         Controls.Add(Button3)
         Controls.Add(Button2)
-        Controls.Add(Button5)
         Controls.Add(Label47)
         Controls.Add(Label48)
         Controls.Add(Label49)
@@ -1601,7 +1680,6 @@ Partial Class Results
     Friend WithEvents Label51 As Label
     Friend WithEvents Label52 As Label
     Friend WithEvents Label53 As Label
-    Friend WithEvents Button5 As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents TextBox18 As TextBox
