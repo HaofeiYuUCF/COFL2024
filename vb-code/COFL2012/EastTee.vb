@@ -24,7 +24,6 @@ Public Class East_Tee
     Private Sub NewToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NewToolStripButton.Click
         Welcome.ClearAll()
         District.InitDistrict()
-        IntersectionType.InitIntType()
         My.Forms.Title.Show()
         Me.Visible = False
         Title.InitTitle()
@@ -43,7 +42,6 @@ Public Class East_Tee
             Me.Visible = False
             Title.InitTitle()
             District.InitDistrict()
-            IntersectionType.InitIntType()
         End If
     End Sub
 
@@ -122,14 +120,6 @@ Public Class East_Tee
     '********************************Verifies that proper data has been inputted*********************************************
     '************************************************************************************************************************
     Sub VerifyEastTeeForm()
-        'Extracts variables from form
-        Welcome.SSB = TextBox1.Text
-        Welcome.ATSB = TextBox2.Text
-        Welcome.ATWB = TextBox3.Text
-        Welcome.SWB = TextBox4.Text
-        Welcome.ATNB = TextBox7.Text
-        Welcome.SNB = TextBox8.Text
-
         'Verifies that all fields have numeric inputs***********************************************************************
         Try
             Welcome.SSB = CInt(Welcome.SSB)

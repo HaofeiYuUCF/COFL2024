@@ -24,7 +24,6 @@ Public Class NorthSouthFreeway
     Private Sub NewToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NewToolStripButton.Click
         Welcome.ClearAll()
         District.InitDistrict()
-        IntersectionType.InitIntType()
         My.Forms.Title.Show()
         Me.Visible = False
         Title.InitTitle()
@@ -42,7 +41,6 @@ Public Class NorthSouthFreeway
             Me.Visible = False
             Title.InitTitle()
             District.InitDistrict()
-            IntersectionType.InitIntType()
         End If
     End Sub
 
@@ -129,20 +127,6 @@ Public Class NorthSouthFreeway
     '********************************Verifies that proper data has been inputted*********************************************
     '************************************************************************************************************************
     Sub VerifyNSDiamondForm()
-        'Extracts variables from form
-        'Welcome.SSB = TextBox8.Text
-        'Welcome.ATSB = TextBox7.Text
-        'Welcome.ORSB = TextBox9.Text
-        'Welcome.ATWB = TextBox15.Text
-        'Welcome.SWB = TextBox16.Text
-        'Welcome.ORWB = TextBox4.Text
-        'Welcome.ATEB = TextBox13.Text
-        'Welcome.SEB = TextBox14.Text
-        'Welcome.OREB = TextBox6.Text
-        'Welcome.ATNB = TextBox11.Text
-        'Welcome.SNB = TextBox12.Text
-        'Welcome.ORNB = TextBox2.Text
-
         'Verifies that all fields have numeric inputs
         Try
             Welcome.SSB = CInt(Welcome.SSB)

@@ -20,7 +20,6 @@ Public Class TollBoothEW
     Private Sub NewToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NewToolStripButton.Click
         Welcome.ClearAll()
         District.InitDistrict()
-        IntersectionType.InitIntType()
         My.Forms.Title.Show()
         Me.Visible = False
         Title.InitTitle()
@@ -38,7 +37,6 @@ Public Class TollBoothEW
             Me.Visible = False
             Title.InitTitle()
             District.InitDistrict()
-            IntersectionType.InitIntType()
         End If
     End Sub
 

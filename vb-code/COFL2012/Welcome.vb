@@ -20,6 +20,7 @@ Public Class Welcome
     Public LineOfText As String
     Public CALInputLine(111) As String
     Public RandNum As Integer
+    Public dirz As String
 
     'Global Constants
     Public Const ZR = 6
@@ -304,19 +305,19 @@ Public Class Welcome
 
         Select Case DistrictNum
             Case 1
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist1EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist1EF.txt")
             Case 2
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist2EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist2EF.txt")
             Case 3
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist3EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist3EF.txt")
             Case 4
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist4EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist4EF.txt")
             Case 5
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist5EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist5EF.txt")
             Case 6
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist6EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist6EF.txt")
             Case 7
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist7EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist7EF.txt")
         End Select
 
         'Reads EF's from the Appropriate District Input File
@@ -2758,7 +2759,7 @@ Public Class Welcome
 
         StreamToDisplay.Close()
 
-        FillEFArray()
+
 
         Select Case IntType
             Case "4 X 4"
@@ -2784,6 +2785,8 @@ Public Class Welcome
             Case ("E-W Diamond")
                 EastWestFreeway.InitEWDiamond()
         End Select
+
+        FillEFArray()
     End Sub
 
 

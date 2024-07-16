@@ -23,7 +23,6 @@ Public Class _4X6
     Private Sub ToolStripButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton1.Click
         Welcome.ClearAll()
         District.InitDistrict()
-        IntersectionType.InitIntType()
         My.Forms.Title.Show()
         Me.Visible = False
         Title.InitTitle()
@@ -41,7 +40,6 @@ Public Class _4X6
             Me.Visible = False
             Title.InitTitle()
             District.InitDistrict()
-            IntersectionType.InitIntType()
         End If
     End Sub
 
@@ -126,16 +124,6 @@ Public Class _4X6
     '********************************Verifies that proper data has been inputted*********************************************
     '************************************************************************************************************************
     Sub Verify4X6Form()
-        'Extracts variables from form
-        'Welcome.SSB = TextBox1.Text
-        'Welcome.ATSB = TextBox2.Text
-        'Welcome.ATWB = TextBox3.Text
-        'Welcome.SWB = TextBox4.Text
-        'Welcome.ATEB = TextBox5.Text
-        'Welcome.SEB = TextBox6.Text
-        'Welcome.ATNB = TextBox7.Text
-        'Welcome.SNB = TextBox8.Text
-
         'Verifies that all fields have numeric inputs
         Try
             Welcome.SSB = CInt(Welcome.SSB)
