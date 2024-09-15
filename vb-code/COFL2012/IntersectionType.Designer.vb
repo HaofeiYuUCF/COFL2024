@@ -62,6 +62,8 @@ Partial Class IntersectionType
         AboutToolStripButton = New ToolStripButton()
         SaveFileDialog1 = New SaveFileDialog()
         OpenFileDialog1 = New OpenFileDialog()
+        PictureBox12 = New PictureBox()
+        Label13 = New Label()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox4, ComponentModel.ISupportInitialize).BeginInit()
@@ -74,6 +76,7 @@ Partial Class IntersectionType
         CType(PictureBox10, ComponentModel.ISupportInitialize).BeginInit()
         CType(PictureBox11, ComponentModel.ISupportInitialize).BeginInit()
         ToolStrip1.SuspendLayout()
+        CType(PictureBox12, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
         ' 
         ' Label1
@@ -202,7 +205,7 @@ Partial Class IntersectionType
         Label8.AutoSize = True
         Label8.FlatStyle = FlatStyle.System
         Label8.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label8.Location = New Point(231, 642)
+        Label8.Location = New Point(77, 639)
         Label8.Name = "Label8"
         Label8.Size = New Size(95, 24)
         Label8.TabIndex = 22
@@ -235,7 +238,7 @@ Partial Class IntersectionType
         Label11.AutoSize = True
         Label11.FlatStyle = FlatStyle.System
         Label11.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label11.Location = New Point(493, 642)
+        Label11.Location = New Point(325, 639)
         Label11.Name = "Label11"
         Label11.Size = New Size(201, 72)
         Label11.TabIndex = 25
@@ -246,7 +249,7 @@ Partial Class IntersectionType
         Label12.AutoSize = True
         Label12.FlatStyle = FlatStyle.System
         Label12.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
-        Label12.Location = New Point(811, 642)
+        Label12.Location = New Point(643, 639)
         Label12.Name = "Label12"
         Label12.Size = New Size(201, 72)
         Label12.TabIndex = 26
@@ -281,7 +284,7 @@ Partial Class IntersectionType
         PictureBox9.BorderStyle = BorderStyle.FixedSingle
         PictureBox9.Cursor = Cursors.Hand
         PictureBox9.Image = My.Resources.Resources.Tool_Booth
-        PictureBox9.Location = New Point(182, 504)
+        PictureBox9.Location = New Point(28, 501)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(195, 135)
         PictureBox9.SizeMode = PictureBoxSizeMode.StretchImage
@@ -317,7 +320,7 @@ Partial Class IntersectionType
         PictureBox10.BorderStyle = BorderStyle.FixedSingle
         PictureBox10.Cursor = Cursors.Hand
         PictureBox10.Image = CType(resources.GetObject("PictureBox10.Image"), Image)
-        PictureBox10.Location = New Point(482, 504)
+        PictureBox10.Location = New Point(314, 501)
         PictureBox10.Name = "PictureBox10"
         PictureBox10.Size = New Size(221, 135)
         PictureBox10.SizeMode = PictureBoxSizeMode.StretchImage
@@ -329,7 +332,7 @@ Partial Class IntersectionType
         PictureBox11.BorderStyle = BorderStyle.FixedSingle
         PictureBox11.Cursor = Cursors.Hand
         PictureBox11.Image = My.Resources.Resources.E_W_Freeway
-        PictureBox11.Location = New Point(799, 504)
+        PictureBox11.Location = New Point(631, 501)
         PictureBox11.Name = "PictureBox11"
         PictureBox11.Size = New Size(213, 135)
         PictureBox11.SizeMode = PictureBoxSizeMode.StretchImage
@@ -460,12 +463,35 @@ Partial Class IntersectionType
         ' 
         OpenFileDialog1.FileName = "OpenFileDialog1"
         ' 
+        ' PictureBox12
+        ' 
+        PictureBox12.BackgroundImageLayout = ImageLayout.None
+        PictureBox12.Image = CType(resources.GetObject("PictureBox12.Image"), Image)
+        PictureBox12.Location = New Point(933, 501)
+        PictureBox12.Name = "PictureBox12"
+        PictureBox12.Size = New Size(195, 135)
+        PictureBox12.SizeMode = PictureBoxSizeMode.Zoom
+        PictureBox12.TabIndex = 37
+        PictureBox12.TabStop = False
+        ' 
+        ' Label13
+        ' 
+        Label13.AutoSize = True
+        Label13.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
+        Label13.Location = New Point(944, 648)
+        Label13.Name = "Label13"
+        Label13.Size = New Size(171, 24)
+        Label13.TabIndex = 38
+        Label13.Text = "Divergent Diamond"
+        ' 
         ' IntersectionType
         ' 
         AutoScaleDimensions = New SizeF(6F, 16F)
         AutoScaleMode = AutoScaleMode.Font
         BackColor = Color.WhiteSmoke
         ClientSize = New Size(1158, 797)
+        Controls.Add(Label13)
+        Controls.Add(PictureBox12)
         Controls.Add(PictureBox1)
         Controls.Add(ToolStrip1)
         Controls.Add(btnPrevious)
@@ -509,6 +535,7 @@ Partial Class IntersectionType
         CType(PictureBox11, ComponentModel.ISupportInitialize).EndInit()
         ToolStrip1.ResumeLayout(False)
         ToolStrip1.PerformLayout()
+        CType(PictureBox12, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -552,4 +579,6 @@ Partial Class IntersectionType
     Friend WithEvents AboutToolStripButton As ToolStripButton
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents PictureBox12 As PictureBox
+    Friend WithEvents Label13 As Label
 End Class

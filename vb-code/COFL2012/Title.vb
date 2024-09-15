@@ -65,16 +65,6 @@ Public Class Title
     '******************************************************Form Load and Close Subroutines***********************************************************
     '*************************************************************************************************************************************
     Private Sub Title_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        'RoundedCornersForTextBox(TextBox1)
-        'RoundedCornersForTextBox(TextBox2)
-        'RoundedCornersForTextBox(TextBox3)
-        'RoundedCornersForTextBox(TextBox4)
-        'RoundedCornersForTextBox(TextBox5)
-        ' Welcome.RoundButton(Button1)
-        ' Welcome.RoundButton(Button2)
-        ' Welcome.RoundButton(Button3)
-        'Welcome.RoundButton(Button4)
-
         'Calls the subroutine to initialize the Title Form
         InitTitle()
 
@@ -193,6 +183,8 @@ Public Class Title
                         My.Forms.NorthSouthFreeway.Show()
                     Case "E-W Diamond"
                         My.Forms.EastWestFreeway.Show()
+                    Case "D Diamond"
+                        My.Forms.dDiamond.Show()
                 End Select
 
                 Me.Visible = False
@@ -235,6 +227,8 @@ Public Class Title
                         My.Forms.NorthSouthFreeway.Show()
                     Case "E-W Diamond"
                         My.Forms.EastWestFreeway.Show()
+                    Case "D Diamond"
+                        My.Forms.dDiamond.Show()
                 End Select
 
                 Me.Visible = False
@@ -273,106 +267,6 @@ Public Class Title
         TextBox3.Text = Welcome.UsersName
         TextBox4.Text = Welcome.RunName
         TextBox5.Text = Welcome.ProjectYear
-
-        ''Select Case WLandUse
-        'Case "Urban"
-        '        Button4.Visible = True
-        '        Button1.Visible = False
-        '    Case "Suburban"
-        '        Button5.Visible = True
-        '        Button2.Visible = False
-        '    Case "Rural"
-        '        Button6.Visible = True
-        '        Button3.Visible = False
-        'End Select
-
-        ''Sets picturebox1 to visible and hides the rest
-        'PictureBox1.Visible = True
-        'PictureBox2.Visible = False
-        'PictureBox3.Visible = False
-        'PictureBox4.Visible = False
-        'PictureBox5.Visible = False
-        'PictureBox6.Visible = False
-        'PictureBox7.Visible = False
-        'PictureBox8.Visible = False
-        'PictureBox9.Visible = False
-        'PictureBox10.Visible = False
-        'PictureBox11.Visible = False
-        'PictureBox12.Visible = False
-        'PictureBox13.Visible = False
-        'PictureBox14.Visible = False
-        'PictureBox15.Visible = False
-        'PictureBox16.Visible = False
-        'PictureBox17.Visible = False
-        'PictureBox18.Visible = False
-        'PictureBox19.Visible = False
-        'PictureBox20.Visible = False
-
-        ''Creates a random number to choose the picturebox to display
-        'Randomize()
-        'RandNum = Int(Rnd() * 20)
-
-        'Select Case RandNum
-        '    Case 1
-        '        'Do nothing
-        '    Case 2
-        '        PictureBox1.Visible = False
-        '        PictureBox2.Visible = True
-        '    Case 3
-        '        PictureBox1.Visible = False
-        '        PictureBox3.Visible = True
-        '    Case 4
-        '        PictureBox1.Visible = False
-        '        PictureBox4.Visible = True
-        '    Case 5
-        '        PictureBox1.Visible = False
-        '        PictureBox5.Visible = True
-        '    Case 6
-        '        PictureBox1.Visible = False
-        '        PictureBox6.Visible = True
-        '    Case 7
-        '        PictureBox1.Visible = False
-        '        PictureBox7.Visible = True
-        '    Case 8
-        '        PictureBox1.Visible = False
-        '        PictureBox8.Visible = True
-        '    Case 9
-        '        PictureBox1.Visible = False
-        '        PictureBox9.Visible = True
-        '    Case 10
-        '        PictureBox1.Visible = False
-        '        PictureBox10.Visible = True
-        '    Case 11
-        '        PictureBox1.Visible = False
-        '        PictureBox11.Visible = True
-        '    Case 12
-        '        PictureBox1.Visible = False
-        '        PictureBox12.Visible = True
-        '    Case 13
-        '        PictureBox1.Visible = False
-        '        PictureBox13.Visible = True
-        '    Case 14
-        '        PictureBox1.Visible = False
-        '        PictureBox14.Visible = True
-        '    Case 15
-        '        PictureBox1.Visible = False
-        '        PictureBox15.Visible = True
-        '    Case 16
-        '        PictureBox1.Visible = False
-        '        PictureBox16.Visible = True
-        '    Case 17
-        '        PictureBox1.Visible = False
-        '        PictureBox17.Visible = True
-        '    Case 18
-        '        PictureBox1.Visible = False
-        '        PictureBox18.Visible = True
-        '    Case 19
-        '        PictureBox1.Visible = False
-        '        PictureBox19.Visible = True
-        '    Case 20
-        '        PictureBox1.Visible = False
-        '        PictureBox20.Visible = True
-        'End Select
     End Sub
 
 
@@ -481,28 +375,6 @@ Public Class Title
             Me.Visible = False
         End If
     End Sub
-
-    'Private Sub Button5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button5.Click
-    '    'Call the routine to check form inputs
-    '    VerifyTitleForm()
-
-    '    If Welcome.InputsCorrect(1) = True Then
-    '        My.Forms.District.Show()
-    '        Me.Visible = False
-    '    End If
-    'End Sub
-
-    'Private Sub Button6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Button6.Click
-    '    'Call the routine to check form inputs
-    '    VerifyTitleForm()
-
-    '    If InputsCorrect(1) = True Then
-    '        My.Forms.District.Show()
-    '        Me.Visible = False
-    '    End If
-    'End Sub
-
-
 
     '******************************************************************************************************************
     '********************************Verifies that Form Inputs are Appropriate*****************************************

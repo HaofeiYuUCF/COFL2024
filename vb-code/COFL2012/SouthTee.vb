@@ -117,14 +117,6 @@ Public Class SouthTee
     '********************************Verifies that proper data has been inputted*********************************************
     '************************************************************************************************************************
     Sub VerifySouthTeeForm()
-        'Extracts variables from form
-        'Welcome.ATWB = TextBox3.Text
-        'Welcome.SWB = TextBox4.Text
-        'Welcome.ATEB = TextBox5.Text
-        'Welcome.SEB = TextBox6.Text
-        'Welcome.ATNB = TextBox7.Text
-        'Welcome.SNB = TextBox8.Text
-
         'Verifies that all fields have numeric inputs
         Try
             Welcome.ATWB = CInt(Welcome.ATWB)

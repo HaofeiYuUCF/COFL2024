@@ -1,15 +1,16 @@
 ﻿Imports System.Runtime.Intrinsics.X86
 Imports System.Text.Encodings
 
-Public Class _4X6
+Public Class dDiamond
+
 
     '*************************************************************************************************************************************
     '******************************************************Form Load and Close Subroutines***********************************************************
     '*************************************************************************************************************************************
-    Private Sub I02_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
-        Init4X6()
+    Private Sub dDiamond_Load(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles MyBase.Load
         Welcome.RoundButton(btnPrevious)
-        Welcome.RoundButton(btnNext)
+        Welcome.RoundButton(btnRun)
+        InitdDiamond()
     End Sub
 
     Private Sub Form_FormClosing(ByVal sender As Object, ByVal e As System.Windows.Forms.FormClosingEventArgs) Handles MyBase.FormClosing
@@ -17,10 +18,10 @@ Public Class _4X6
     End Sub
 
 
-    ''*************************************************************************************************************************************
-    ''************************************************Top Navigation Menus and Buttons*****************************************************
-    ''*************************************************************************************************************************************
-    Private Sub ToolStripButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton1.Click
+    '*************************************************************************************************************************************
+    '************************************************Top Navigation Menus and Buttons*****************************************************
+    '*************************************************************************************************************************************
+    Private Sub NewToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NewToolStripButton.Click
         Welcome.ClearAll()
         District.InitDistrict()
         IntersectionType.InitIntType()
@@ -29,7 +30,7 @@ Public Class _4X6
         Title.InitTitle()
     End Sub
 
-    Private Sub ToolStripButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton2.Click
+    Private Sub ToolStripButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpenToolStripButton.Click
         OpenFileDialog1.InitialDirectory = Welcome.PrimaryDirectory & "\UsrFiles\"
         OpenFileDialog1.Filter = "Input files (*in)|*.in|All files (*.*)|*.*"
         OpenFileDialog1.FileName = ""
@@ -45,59 +46,54 @@ Public Class _4X6
         End If
     End Sub
 
-    Private Sub ToolStripButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton3.Click
+    Private Sub ToolStripButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveToolStripButton.Click
         'Writes user program run inputs to text file
         SaveFileDialog1.InitialDirectory = Welcome.PrimaryDirectory & "\UsrFiles\"
         SaveFileDialog1.Filter = "Input files (*.in)|*.in|All files (*.*)|*.*"
         SaveFileDialog1.FileName = ""
 
         If SaveFileDialog1.ShowDialog() = DialogResult.OK Then
+            Welcome.ClearAll()
             Welcome.FDOTin = SaveFileDialog1.FileName
             Welcome.SaveFile()
         End If
     End Sub
 
-    'Private Sub AboutToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripButton.Click
-    '    My.Forms.About.Show()
-    'End Sub
-
-
-    Private Sub ToolStripButton9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton9.Click
+    Private Sub AboutToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AboutToolStripButton.Click
         My.Forms.About.Show()
     End Sub
 
-    Private Sub ToolStripButton4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton4.Click
+    Private Sub ToolStripButton7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TitleToolStripButton.Click
         Welcome.QuickVerify = True
-        Verify4X6Form()
+        VerifydDiamondForm()
         Welcome.QuickVerify = False
         My.Forms.Title.Show()
         Me.Visible = False
     End Sub
 
-    Private Sub ToolStripButton5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton5.Click
+    Private Sub ToolStripButton8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles DistrictToolStripButton.Click
         Welcome.QuickVerify = True
-        Verify4X6Form()
+        VerifydDiamondForm()
         Welcome.QuickVerify = False
         My.Forms.District.Show()
         Me.Visible = False
     End Sub
 
-
-    Private Sub ToolStripButton6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton6.Click
+    Private Sub ToolStripButton9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles IntersectionTypeToolStripButton.Click
         Welcome.QuickVerify = True
-        Verify4X6Form()
+        VerifydDiamondForm()
         Welcome.QuickVerify = False
         My.Forms.IntersectionType.Show()
         Me.Visible = False
     End Sub
 
-    Private Sub ToolStripButton8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton8.Click
-        'Call the routine to check form C
-        Verify4X6Form()
+    Private Sub ToolStripButton11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles RunToolStripButton.Click
+        'Call the routine to check form inputs
+        VerifydDiamondForm()
 
         'Verifies that all input forms have been completed before making a run
         If (Welcome.InputsCorrect(1) = True And Welcome.InputsCorrect(2) = True And Welcome.InputsCorrect(3) = True And Welcome.InputsCorrect(4) = True) Then
-            Welcome.Build4X6()
+            Welcome.BuildNSDiamond()
             Welcome.MakeARun()
             Me.Visible = False
         Else
@@ -105,27 +101,34 @@ Public Class _4X6
                 MsgBox("A run cannot be made until all input forms have been completed.", 0, "CO Florida 2012")
             End If
         End If
-
     End Sub
 
+
+
+
     '************************************************************************************************************************
-    '***************************************Initializes 4X6 Form*************************************************************
+    '*****************************************Initializes N-S Diamond*******************************************************
     '************************************************************************************************************************
-    Sub Init4X6()
-        'Load Stored Variables
-        TextBox1.Text = Welcome.SSB
-        TextBox2.Text = Welcome.ATSB
-        TextBox3.Text = Welcome.ATWB
-        TextBox4.Text = Welcome.SWB
-        TextBox5.Text = Welcome.ATEB
-        TextBox6.Text = Welcome.SEB
-        TextBox7.Text = Welcome.ATNB
-        TextBox8.Text = Welcome.SNB
+    Sub InitdDiamond()
+        'Load stored variables
+        TextBox8.Text = Welcome.SSB
+        TextBox7.Text = Welcome.ATSB
+        TextBox9.Text = Welcome.ORSB
+        TextBox15.Text = Welcome.ATWB
+        TextBox16.Text = Welcome.SWB
+        TextBox4.Text = Welcome.ORWB
+        TextBox13.Text = Welcome.ATEB
+        TextBox14.Text = Welcome.SEB
+        TextBox6.Text = Welcome.OREB
+        TextBox11.Text = Welcome.ATNB
+        TextBox12.Text = Welcome.SNB
+        TextBox2.Text = Welcome.ORNB
     End Sub
+
     '************************************************************************************************************************
     '********************************Verifies that proper data has been inputted*********************************************
     '************************************************************************************************************************
-    Sub Verify4X6Form()
+    Sub VerifydDiamondForm()
         'Verifies that all fields have numeric inputs
         Try
             Welcome.SSB = CInt(Welcome.SSB)
@@ -134,7 +137,7 @@ Public Class _4X6
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
-                    TextBox1.Text = ""
+                    TextBox8.Text = ""
                     Exit Sub
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -149,7 +152,22 @@ Public Class _4X6
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
-                    TextBox2.Text = ""
+                    TextBox7.Text = ""
+                    Exit Sub
+                Else
+                    Welcome.InputsCorrect(4) = False
+                End If
+            End If
+        End Try
+
+        Try
+            Welcome.ORSB = CInt(Welcome.ORSB)
+        Catch ex As Exception
+            If Welcome.ORSB <> "" Then
+                If Welcome.QuickVerify = False Then
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    Welcome.InputsCorrect(4) = False
+                    TextBox9.Text = ""
                     Exit Sub
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -164,7 +182,7 @@ Public Class _4X6
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
-                    TextBox3.Text = ""
+                    TextBox15.Text = ""
                     Exit Sub
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -176,6 +194,21 @@ Public Class _4X6
             Welcome.SWB = CInt(Welcome.SWB)
         Catch ex As Exception
             If Welcome.SWB <> "" Then
+                If Welcome.QuickVerify = False Then
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    Welcome.InputsCorrect(4) = False
+                    TextBox16.Text = ""
+                    Exit Sub
+                Else
+                    Welcome.InputsCorrect(4) = False
+                End If
+            End If
+        End Try
+
+        Try
+            Welcome.ORWB = CInt(Welcome.ORWB)
+        Catch ex As Exception
+            If Welcome.ORWB <> "" Then
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
@@ -194,7 +227,7 @@ Public Class _4X6
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
-                    TextBox5.Text = ""
+                    TextBox13.Text = ""
                     Exit Sub
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -206,6 +239,21 @@ Public Class _4X6
             Welcome.SEB = CInt(Welcome.SEB)
         Catch ex As Exception
             If Welcome.SEB <> "" Then
+                If Welcome.QuickVerify = False Then
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    Welcome.InputsCorrect(4) = False
+                    TextBox14.Text = ""
+                    Exit Sub
+                Else
+                    Welcome.InputsCorrect(4) = False
+                End If
+            End If
+        End Try
+
+        Try
+            Welcome.OREB = CInt(Welcome.OREB)
+        Catch ex As Exception
+            If Welcome.OREB <> "" Then
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
@@ -224,7 +272,7 @@ Public Class _4X6
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
-                    TextBox7.Text = ""
+                    TextBox11.Text = ""
                     Exit Sub
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -239,7 +287,7 @@ Public Class _4X6
                 If Welcome.QuickVerify = False Then
                     MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
-                    TextBox8.Text = ""
+                    TextBox12.Text = ""
                     Exit Sub
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -247,12 +295,26 @@ Public Class _4X6
             End If
         End Try
 
-        '************************************************************************************************************************
+        Try
+            Welcome.ORNB = CInt(Welcome.ORNB)
+        Catch ex As Exception
+            If Welcome.ORNB <> "" Then
+                If Welcome.QuickVerify = False Then
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    Welcome.InputsCorrect(4) = False
+                    TextBox2.Text = ""
+                    Exit Sub
+                Else
+                    Welcome.InputsCorrect(4) = False
+                End If
+            End If
+        End Try
 
-
-        'Checks other input conditions*******************************************************************************************
-        'Check that at least one speed and one approach traffic volume have been inputted
-        If Not (Welcome.SSB <> "" And Welcome.SWB <> "" And Welcome.SNB <> "" And Welcome.SEB <> "" And Welcome.ATSB <> "" And Welcome.ATWB <> "" And Welcome.ATNB <> "" And Welcome.ATEB <> "") Then
+        'Checks other input conditions
+        'Verify that all data fields have been completed
+        If Not (Welcome.SSB <> "" And Welcome.SWB <> "" And Welcome.SNB <> "" And Welcome.SEB <> "" And Welcome.ATSB <> "" And Welcome.ORSB <> "" _
+                And Welcome.ATWB <> "" And Welcome.ORWB <> "" And Welcome.ATNB <> "" And Welcome.ORWB <> "" _
+                And Welcome.ATEB <> "" And Welcome.OREB <> "") Then
             If Welcome.QuickVerify = False Then
                 MsgBox("All fields must be completed in order to proceed.", 0, "CO Florida 2012")
                 Welcome.InputsCorrect(4) = False
@@ -260,9 +322,9 @@ Public Class _4X6
                 Welcome.InputsCorrect(4) = False
             End If
         Else
-
             'verifies that traffic volumes are positive numbers
-            If Welcome.ATSB < 0 Or Welcome.ATWB < 0 Or Welcome.ATNB < 0 Or Welcome.ATEB < 0 Then
+            If Welcome.ATSB < 0 Or Welcome.ORSB < 0 Or Welcome.ORWB < 0 Or Welcome.ORWB < 0 Or
+                Welcome.ATNB < 0 Or Welcome.ORNB < 0 Or Welcome.ATEB < 0 Or Welcome.OREB < 0 Then
                 If Welcome.QuickVerify = False Then
                     MsgBox("Traffic volumes must be positive numbers.  Please re-enter.", 0, "CO Florida 2012")
                     Welcome.InputsCorrect(4) = False
@@ -270,7 +332,6 @@ Public Class _4X6
                     Welcome.InputsCorrect(4) = False
                 End If
             Else
-
                 'Verifies that cruise speeds are between 15 and 65 mph
                 If (Welcome.SSB < 15 Or Welcome.SWB < 15 Or Welcome.SNB < 15 Or Welcome.SEB < 15) Or (Welcome.SSB > 65 Or Welcome.SWB > 65 Or Welcome.SNB > 65 Or Welcome.SEB > 65) Then
                     If Welcome.QuickVerify = False Then
@@ -289,33 +350,48 @@ Public Class _4X6
                             Welcome.InputsCorrect(4) = False
                         End If
                     Else
-                        'Assigns "true" to InputsCorrect, if all tests were passed
-                        Welcome.InputsCorrect(4) = True
+                        'Verifies that all AT's are > OR's
+                        If (CInt(Welcome.ORSB) > CInt(Welcome.ATSB) Or CInt(Welcome.ORWB) > CInt(Welcome.ATWB) Or CInt(Welcome.ORNB) > CInt(Welcome.ATNB) Or CInt(Welcome.OREB) > CInt(Welcome.ATEB)) Then
+                            If Welcome.QuickVerify = False Then
+                                MsgBox("Ramp volumes may not exceed approach volumes.  Please re-enter.", 0, "CO Florida 2012")
+                                Welcome.InputsCorrect(4) = False
+                            Else
+                                Welcome.InputsCorrect(4) = False
+                            End If
+                        Else
+                            'Assigns "true" to InputsCorrect, if all tests were passed
+                            Welcome.InputsCorrect(4) = True
 
-                        'Determines traffic volume to be used for all directions in the CAL3QHC input file
-                        Welcome.ATMax = 0
-                        If Welcome.ATMax < CInt(Welcome.ATSB) Then Welcome.ATMax = CInt(Welcome.ATSB)
-                        If Welcome.ATMax < CInt(Welcome.ATWB) Then Welcome.ATMax = CInt(Welcome.ATWB)
-                        If Welcome.ATMax < CInt(Welcome.ATNB) Then Welcome.ATMax = CInt(Welcome.ATNB)
-                        If Welcome.ATMax < CInt(Welcome.ATEB) Then Welcome.ATMax = CInt(Welcome.ATEB)
-
-                        Welcome.ATLeft = CInt(Welcome.ATMax * 0.15)
-                        Welcome.ATQ = CInt(Welcome.ATMax * 0.85)
+                            'Determines traffic volume to be used for all directions in the CAL3QHC input file
+                            Welcome.ATMax = 0
+                            Welcome.FTMax = 0
+                            If Welcome.ATMax < CInt(Welcome.ATSB) Then Welcome.ATMax = CInt(Welcome.ATSB)
+                            If Welcome.ATMax < CInt(Welcome.ATNB) Then Welcome.ATMax = CInt(Welcome.ATNB)
+                            If Welcome.FTMax < CInt(Welcome.ATEB) Then Welcome.ATMax = CInt(Welcome.ATEB)
+                            If Welcome.FTMax < CInt(Welcome.ATWB) Then Welcome.ATMax = CInt(Welcome.ATWB)
+                        End If
                     End If
                 End If
             End If
         End If
     End Sub
-    '***************************************************************************************************************************
-    '***********************************************Bottom navigation buttons***************************************************
-    '***************************************************************************************************************************
-    Private Sub btnNext_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnNext.Click
+
+    Private Sub btnPrevious_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrevious.Click
+        Welcome.QuickVerify = True
+        VerifydDiamondForm()
+        Welcome.QuickVerify = False
+        My.Forms.IntersectionType.Show()
+        Me.Visible = False
+    End Sub
+
+
+    Private Sub btnRun_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnRun.Click
         'Call the routine to check form inputs
-        Verify4X6Form()
+        VerifydDiamondForm()
 
         'Verifies that all input forms have been completed before making a run
         If (Welcome.InputsCorrect(1) = True And Welcome.InputsCorrect(2) = True And Welcome.InputsCorrect(3) = True And Welcome.InputsCorrect(4) = True) Then
-            Welcome.Build4X6()
+            Welcome.BuilddDiamond()
             Welcome.MakeARun()
             Me.Visible = False
         Else
@@ -325,50 +401,56 @@ Public Class _4X6
         End If
     End Sub
 
-
-    Private Sub btnPrevious_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles btnPrevious.Click
-        Welcome.QuickVerify = True
-        Verify4X6Form()
-        Welcome.QuickVerify = False
-        My.Forms.IntersectionType.Show()
-        Me.Visible = False
-    End Sub
-
-
     '***************************************************************************************************************************
     '*******************************************Changes to variables in input fields********************************************
     '***************************************************************************************************************************
-
-    Private Sub TextBox1_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox1.TextChanged
-        Welcome.SSB = TextBox1.Text
-    End Sub
-
-    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
-        Welcome.ATSB = TextBox2.Text
-    End Sub
-
-    Private Sub TextBox3_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox3.TextChanged
-        Welcome.ATWB = TextBox3.Text
-    End Sub
-
-    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
-        Welcome.SWB = TextBox4.Text
-    End Sub
-
-    Private Sub TextBox5_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox5.TextChanged
-        Welcome.ATEB = TextBox5.Text
-    End Sub
-
-    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
-        Welcome.SEB = TextBox6.Text
+    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
+        Welcome.SSB = TextBox8.Text
     End Sub
 
     Private Sub TextBox7_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox7.TextChanged
-        Welcome.ATNB = TextBox7.Text
+        Welcome.ATSB = TextBox7.Text
     End Sub
 
-    Private Sub TextBox8_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox8.TextChanged
-        Welcome.SNB = TextBox8.Text
+    Private Sub TextBox9_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox9.TextChanged
+        Welcome.ORSB = TextBox9.Text
     End Sub
+
+    Private Sub TextBox16_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox16.TextChanged
+        Welcome.SWB = TextBox16.Text
+    End Sub
+
+    Private Sub TextBox15_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox15.TextChanged
+        Welcome.ATWB = TextBox15.Text
+    End Sub
+
+    Private Sub TextBox4_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox4.TextChanged
+        Welcome.ORWB = TextBox4.Text
+    End Sub
+
+    Private Sub TextBox12_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox12.TextChanged
+        Welcome.SNB = TextBox12.Text
+    End Sub
+
+    Private Sub TextBox11_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox11.TextChanged
+        Welcome.ATNB = TextBox11.Text
+    End Sub
+
+    Private Sub TextBox2_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox2.TextChanged
+        Welcome.ORNB = TextBox2.Text
+    End Sub
+
+    Private Sub TextBox14_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox14.TextChanged
+        Welcome.SEB = TextBox14.Text
+    End Sub
+
+    Private Sub TextBox13_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox13.TextChanged
+        Welcome.ATEB = TextBox13.Text
+    End Sub
+
+    Private Sub TextBox6_TextChanged(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles TextBox6.TextChanged
+        Welcome.OREB = TextBox6.Text
+    End Sub
+
 
 End Class

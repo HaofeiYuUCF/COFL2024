@@ -3,68 +3,6 @@ Imports System.IO
 Imports System.Collections
 
 Public Class IntersectionType
-    'Private Sub PictureBox_Click(sender As Object, e As EventArgs)
-    '    Select Case DirectCast(sender, PictureBox).Name
-    '        Case "fourByFourPic"
-    '            Dim fourByFour As New _4X4()
-    '            Welcome.IntType = "4X4"
-    '            Me.Hide()
-    '            fourByFour.Show()
-    '        Case "fourbySixPic"
-    '            ' Codfor fourbySixPic
-    '            Dim fourBySix As New _4X6()
-    '            Welcome.IntType = "4X6"
-    '            Me.Hide()
-    '            fourBySix.Show()
-    '        Case "sixByFourPic"
-    '            Dim sixByFour As New _6X4()
-    '            Welcome.IntType = "6X4"
-    '            Me.Hide()
-    '            sixByFour.Show()
-    '        Case "sixBySixPic"
-    '            Dim sixBySix As New _6X6()
-    '            Welcome.IntType = "6X6"
-    '            Me.Hide()
-    '            sixBySix.Show()
-    '        Case "eastTeePic"
-    '            Dim eastTee As New East_Tee()
-    '            Welcome.IntType = "East Tee"
-    '            Me.Hide()
-    '            eastTee.Show()
-    '        Case "northTeePic"
-    '            Dim northTee As New North_Tee()
-    '            Welcome.IntType = "North Tee"
-    '            Me.Hide()
-    '            northTee.Show()
-    '        Case "tollBoothPic"
-    '            Dim tollBooth As New TollBoothEW()
-    '            Welcome.IntType = "Toll Booth"
-    '            Me.Hide()
-    '            tollBooth.Show()
-    '        Case "westTeePic"
-    '            Dim westTee As New WestTee()
-    '            Welcome.IntType = "West Tee"
-    '            Me.Hide()
-    '            westTee.Show()
-    '        Case "southTeePic"
-    '            ' Code for southTeePic
-    '            Dim southTee As New SouthTee()
-    '            Welcome.IntType = "South Tee"
-    '            Me.Hide()
-    '            southTee.Show()
-    '        Case "northSouthFreewayPic"
-    '            Dim northSouthFreeway As New NorthSouthFreeway()
-    '            Welcome.IntType = "Diamond Interchange N-S Freeway"
-    '            Me.Hide()
-    '            northSouthFreeway.Show()
-    '        Case "eastWestFreewayPic"
-    '            Dim eastWestFreeway As New EastWestFreeway()
-    '            Welcome.IntType = "Diamond Interchange E-W Freeway"
-    '            Me.Hide()
-    '            eastWestFreeway.Show()
-    '    End Select
-    'End Sub
-
     '*************************************************************************************************************************************
     '******************************************************Form Load and Close Subroutines***********************************************************
     '*************************************************************************************************************************************
@@ -169,6 +107,8 @@ Public Class IntersectionType
                     My.Forms.NorthSouthFreeway.Show()
                 Case "E-W Diamond"
                     My.Forms.EastWestFreeway.Show()
+                Case "D Diamond"
+                    My.Forms.dDiamond.Show()
             End Select
 
             Me.Visible = False
@@ -205,6 +145,8 @@ Public Class IntersectionType
                     My.Forms.NorthSouthFreeway.Show()
                 Case "E-W Diamond"
                     My.Forms.EastWestFreeway.Show()
+                Case "D Diamond"
+                    My.Forms.dDiamond.Show()
             End Select
 
             Me.Visible = False
@@ -779,23 +721,60 @@ Public Class IntersectionType
         Welcome.YR(20) = 361
     End Sub
 
+    Private Sub SelectdDiamond()
+        Welcome.InputsCorrect(3) = True
+        Welcome.IntType = "D Diamond"
+
+        'Fills the receptor coordinate arrays for selected intersection type
+        Welcome.XR(1) = -100
+        Welcome.XR(2) = -200
+        Welcome.XR(3) = -250
+        Welcome.XR(4) = -350
+        Welcome.XR(5) = -400
+        Welcome.XR(6) = -400
+        Welcome.XR(7) = -350
+        Welcome.XR(8) = -250
+        Welcome.XR(9) = -200
+        Welcome.XR(10) = -100
+        Welcome.XR(11) = 100
+        Welcome.XR(12) = 200
+        Welcome.XR(13) = 250
+        Welcome.XR(14) = 350
+        Welcome.XR(15) = 400
+        Welcome.XR(16) = 400
+        Welcome.XR(17) = 350
+        Welcome.XR(18) = 250
+        Welcome.XR(19) = 200
+        Welcome.XR(20) = 100
+        Welcome.YR(1) = -1200
+        Welcome.YR(2) = -200
+        Welcome.YR(3) = -80
+        Welcome.YR(4) = -60
+        Welcome.YR(5) = -60
+        Welcome.YR(6) = 60
+        Welcome.YR(7) = 60
+        Welcome.YR(8) = 80
+        Welcome.YR(9) = 200
+        Welcome.YR(10) = 1200
+        Welcome.YR(11) = 1200
+        Welcome.YR(12) = 200
+        Welcome.YR(13) = 80
+        Welcome.YR(14) = 60
+        Welcome.YR(15) = 60
+        Welcome.YR(16) = -60
+        Welcome.YR(17) = -60
+        Welcome.YR(18) = -80
+        Welcome.YR(19) = -200
+        Welcome.YR(20) = -1200
+    End Sub
+
 
 
     '*************************************************************************************************************************************
     '********************************************Sets all Picture Buttons to Unselected***************************************************
     '*************************************************************************************************************************************
     Sub AllSmallPics()
-        'PictureBox12.Visible = False
-        'PictureBox13.Visible = False
-        'PictureBox14.Visible = False
-        'PictureBox15.Visible = False
-        'PictureBox16.Visible = False
-        'PictureBox17.Visible = False
-        'PictureBox18.Visible = False
-        'PictureBox19.Visible = False
-        'PictureBox20.Visible = False
-        'PictureBox21.Visible = False
-        'PictureBox22.Visible = False
+
     End Sub
 
 
@@ -804,33 +783,7 @@ Public Class IntersectionType
     '********************************************Initializes Intersection Type Form*******************************************************
     '************************************************************************************************************************************
     Sub InitIntType()
-        AllSmallPics()
 
-        ''Loads Stored Intersection Type
-        'Select Case Welcome.IntType
-        '    Case "4 X 4"
-        '        PictureBox12.Visible = True
-        '    Case "4 X 6"
-        '        PictureBox13.Visible = True
-        '    Case "6 X 4"
-        '        PictureBox14.Visible = True
-        '    Case "6 X 6"
-        '        PictureBox15.Visible = True
-        '    Case "East Tee"
-        '        PictureBox16.Visible = True
-        '    Case "North Tee"
-        '        PictureBox17.Visible = True
-        '    Case "Toll Booth"
-        '        PictureBox18.Visible = True
-        '    Case "West Tee"
-        '        PictureBox19.Visible = True
-        '    Case "South Tee"
-        '        PictureBox20.Visible = True
-        '    Case "N-S Diamond"
-        '        PictureBox21.Visible = True
-        '    Case "E-W Diamond"
-        '        PictureBox22.Visible = True
-        'End Select
     End Sub
 
 
@@ -869,6 +822,8 @@ Public Class IntersectionType
                     My.Forms.NorthSouthFreeway.Show()
                 Case "E-W Diamond"
                     My.Forms.EastWestFreeway.Show()
+                Case "D Diamond"
+                    My.Forms.dDiamond.Show()
             End Select
             Me.Visible = False
         Else
@@ -927,49 +882,49 @@ Public Class IntersectionType
     '    SelectEWDiamond()
     'End Sub
 
-    Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
-        Select4X4()
-    End Sub
+    'Private Sub Label2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label2.Click
+    '    Select4X4()
+    'End Sub
 
-    Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
-        Select4X6()
-    End Sub
+    'Private Sub Label3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label3.Click
+    '    Select4X6()
+    'End Sub
 
-    Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
-        Select6X4()
-    End Sub
+    'Private Sub Label4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label4.Click
+    '    Select6X4()
+    'End Sub
 
-    Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
-        Select6X6()
-    End Sub
+    'Private Sub Label5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label5.Click
+    '    Select6X6()
+    'End Sub
 
-    Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label6.Click
-        SelectEastTee()
-    End Sub
+    'Private Sub Label6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label6.Click
+    '    SelectEastTee()
+    'End Sub
 
-    Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
-        SelectNorthTee()
-    End Sub
+    'Private Sub Label7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label7.Click
+    '    SelectNorthTee()
+    'End Sub
 
-    Private Sub Label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label8.Click
-        SelectTollBooth()
-    End Sub
+    'Private Sub Label8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label8.Click
+    '    SelectTollBooth()
+    'End Sub
 
-    Private Sub Label9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label9.Click
-        SelectWestTee()
-    End Sub
+    'Private Sub Label9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label9.Click
+    '    SelectWestTee()
+    'End Sub
 
-    Private Sub Label10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label10.Click
-        SelectSouthTee()
-    End Sub
+    'Private Sub Label10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label10.Click
+    '    SelectSouthTee()
+    'End Sub
 
-    Private Sub Label11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label11.Click
-        SelectNSDiamond()
-    End Sub
+    'Private Sub Label11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label11.Click
+    '    SelectNSDiamond()
+    'End Sub
 
-    Private Sub Label12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label12.Click
-        SelectEWDiamond()
-    End Sub
+    'Private Sub Label12_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles Label12.Click
+    '    SelectEWDiamond()
+    'End Sub
 
 
 
@@ -978,6 +933,8 @@ Public Class IntersectionType
     '**************************************************************************************************************************
     Private Sub PictureBox1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox1.Click
         Select4X4()
+        Welcome.dirz = "unrestricted"
+        Welcome.FillEFArray()
         My.Forms._4X4.Show()
         Me.Visible = False
     End Sub
@@ -985,65 +942,91 @@ Public Class IntersectionType
 
     Private Sub PictureBox3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox3.Click
         Select4X6()
+        Welcome.dirz = "unrestricted"
+        Welcome.FillEFArray()
         My.Forms._4X6.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox4_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox4.Click
         Select6X4()
+        Welcome.dirz = "unrestricted"
+        Welcome.FillEFArray()
         My.Forms._6X4.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox2.Click
         Select6X6()
+        Welcome.dirz = "unrestricted"
+        Welcome.FillEFArray()
         My.Forms._6X6.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox5_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox5.Click
         SelectEastTee()
+        Welcome.dirz = "unrestricted"
+        Welcome.FillEFArray()
         My.Forms.East_Tee.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox8_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox8.Click
         SelectNorthTee()
+        Welcome.dirz = "unrestricted"
+        Welcome.FillEFArray()
         My.Forms.North_Tee.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox9_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox9.Click
         SelectTollBooth()
+        Welcome.dirz = "restricted"
+        Welcome.FillEFArray()
         My.Forms.TollBoothEW.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox7_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox7.Click
         SelectWestTee()
+        Welcome.dirz = "unrestricted"
+        Welcome.FillEFArray()
         My.Forms.WestTee.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox6.Click
         SelectSouthTee()
+        Welcome.dirz = "unrestricted"
+        Welcome.FillEFArray()
         My.Forms.SouthTee.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox10_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox10.Click
         SelectNSDiamond()
+        Welcome.dirz = "restricted"
+        Welcome.FillEFArray()
         My.Forms.NorthSouthFreeway.Show()
         Me.Visible = False
     End Sub
 
     Private Sub PictureBox11_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles PictureBox11.Click
         SelectEWDiamond()
+        Welcome.dirz = "restricted"
+        Welcome.FillEFArray()
         My.Forms.EastWestFreeway.Show()
         Me.Visible = False
     End Sub
 
-
+    Private Sub PictureBox12_Click(sender As Object, e As EventArgs) Handles PictureBox12.Click
+        SelectdDiamond()
+        Welcome.dirz = "restricted"
+        Welcome.FillEFArray()
+        My.Forms.dDiamond.Show()
+        Me.Visible = False
+    End Sub
 End Class
 
 

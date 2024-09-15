@@ -124,14 +124,6 @@ Public Class North_Tee
     '********************************Verifies that proper data has been inputted*********************************************
     '************************************************************************************************************************
     Sub VerifyNorthTeeForm()
-        'Extracts variables from form
-        'Welcome.SSB = TextBox1.Text
-        'Welcome.ATSB = TextBox2.Text
-        'Welcome.ATWB = TextBox3.Text
-        'Welcome.SWB = TextBox4.Text
-        'Welcome.ATEB = TextBox5.Text
-        'Welcome.SEB = TextBox6.Text
-
         'Verifies that all fields have numeric inputs
         Try
             Welcome.SSB = CInt(Welcome.SSB)

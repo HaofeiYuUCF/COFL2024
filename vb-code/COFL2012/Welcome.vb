@@ -8,7 +8,9 @@ Public Class Welcome
     Public PassFail As Boolean
     Public StreamToDisplay As StreamReader
     Public PrimaryDirectory As String
-    Public Const WorkingDirectory As String = "C:\ProgramData\COFL2024"
+    Public InstallDirectory As String = Path.GetDirectoryName(Application.ExecutablePath)
+    Public WorkingDirectory As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "COFL2024")
+    'Public Const WorkingDirectory As String = "C:\ProgramData\COFL2024"
     Public TestMsg As String
     Public EFArray(65, 40) As Single
     Public InputsCorrect(4) As Boolean
@@ -20,6 +22,7 @@ Public Class Welcome
     Public LineOfText As String
     Public CALInputLine(111) As String
     Public RandNum As Integer
+    Public dirz As String
 
     'Global Constants
     Public Const ZR = 6
@@ -279,8 +282,8 @@ Public Class Welcome
                 NorthSouthFreeway.InitNSDiamond()
             Case ("E-W Diamond")
                 EastWestFreeway.InitEWDiamond()
-            Case ("Diamond")
-                'Diamond.InitDiamond()
+            Case "D Diamond"
+                dDiamond.InitdDiamond()
         End Select
     End Sub
 
@@ -304,19 +307,19 @@ Public Class Welcome
 
         Select Case DistrictNum
             Case 1
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist1EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist1EF.txt")
             Case 2
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist2EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist2EF.txt")
             Case 3
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist3EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist3EF.txt")
             Case 4
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist4EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist4EF.txt")
             Case 5
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist5EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist5EF.txt")
             Case 6
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist6EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist6EF.txt")
             Case 7
-                StreamToDisplay = New StreamReader("EFTextFiles\Dist7EF.txt")
+                StreamToDisplay = New StreamReader("EFTextFiles\" & dirz & "\Dist7EF.txt")
         End Select
 
         'Reads EF's from the Appropriate District Input File
@@ -496,6 +499,42 @@ Public Class Welcome
             End If
         End If
 
+        If IntType = "D Diamond" Then
+            If EFFree < EFWB Then
+                EFFree = EFWB
+                Speed = CInt(SWB)
+            End If
+            If EFFree < EFEB Then
+                EFFree = EFEB
+                Speed = CInt(SEB)
+            End If
+            If EFHwy < EFSB Then
+                EFHwy = EFSB
+                HwySpeed = CInt(SSB)
+            End If
+            If EFHwy < EFNB Then
+                EFHwy = EFNB
+                HwySpeed = CInt(SNB)
+            End If
+        Else
+            If EFHwy < EFWB Then
+                EFHwy = EFWB
+                HwySpeed = CInt(SWB)
+            End If
+            If EFHwy < EFEB Then
+                EFHwy = EFEB
+                HwySpeed = CInt(SEB)
+            End If
+            If EFFree < EFSB Then
+                EFFree = EFSB
+                Speed = CInt(SSB)
+            End If
+            If EFFree < EFNB Then
+                EFFree = EFNB
+                Speed = CInt(SNB)
+            End If
+        End If
+
         'Calculates Multipliers
         'First calculates as a function of speed
         MultAcc = (-0.0007 * Speed ^ 3) + (0.0417 * Speed ^ 2) + (0.4407 * Speed) - 23.493
@@ -548,6 +587,8 @@ Public Class Welcome
         'Directory.SetCurrentDirectory(PrimaryDirectory)
         Directory.SetCurrentDirectory(WorkingDirectory)
 
+        'MessageBox.Show(InstallDirectory)
+
         Dim sWriter As IO.StreamWriter = New IO.StreamWriter("incal3qhc.in")
         Dim i As Integer
 
@@ -564,7 +605,8 @@ Public Class Welcome
         'Runs CAL3QHC
         Directory.SetCurrentDirectory(PrimaryDirectory)
         'sAppPath = "CAL3QHC incal3qhc" & RunNumber & ".in outcal3qhc" & RunNumber & ".out"
-        sAppPath = "CAL3QHC " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
+        sAppPath = InstallDirectory & "\CAL3QHC.exe " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
+        'sAppPath = "\CAL3QHC.exe " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
 
         'MessageBox.Show("Execute Command: " & sAppPath)
 
@@ -2690,6 +2732,214 @@ Public Class Welcome
         CALInputLine(111) = U & " , " & BRG & " , " & CLAS & " , " & MIXH & " , " & AMB & " ," & VAR & ", " & DEGR & " , " & VAL1 & " , " & VAL2
     End Sub
 
+    '****************************************************************************************************************************************
+    '*************************************Builds input string array for CAL3QHC input files - N-S DIAMOND************************************
+    '****************************************************************************************************************************************
+    Sub BuilddDiamond()
+        Dim i As Integer
+
+        'Calls subroutine GetDiamondEF's
+        GetDiamondEFs()
+
+        'Determines traffic volume to be used for all directions in the CAL3QHC input file
+        ATMax = ATEB
+        If ATWB > ATMax Then ATMax = ATWB
+
+        ATLeft = CSng(0.5 * OREB)
+        If CSng(0.5 * ORWB) > ATLeft Then ATLeft = CSng(0.5 * ORWB)
+
+        ATRight = ATLeft
+
+        FTMax = ATSB
+        If ATNB > FTMax Then FTMax = ATNB
+
+        FTRight = CSng(0.5 * ORSB)
+        If CSng(0.5 * ORNB) > FTRight Then FTRight = CSng(0.5 * ORNB)
+
+        FTLeft = FTRight
+
+        FTDep = CInt(FTMax) + (CInt(ATRight) + CInt(ATLeft)) - (CInt(FTRight) + CInt(FTLeft))
+        ATDep = CInt(ATMax) - (CInt(ATRight) + CInt(ATLeft)) + (CInt(FTRight) + CInt(FTLeft))
+
+        'N-S Diamond particular parameters
+        NR = 20
+        NumInputLines = 111
+        NL = 38
+
+        'First Line
+        CALInputLine(1) = "'" & Job & "', " & ATIM & " , " & ZO & " , " & VS & " , " & VD & " , " & NR & " , " & SCAL & " , " & IOPT & " , " & IDEBUG
+
+        'Receptor Lines
+        For i = 2 To 21
+            CALInputLine(i) = "'Receptor " & (i - 1) & "', " & XR(i - 1) & " , " & YR(i - 1) & " , " & ZR
+        Next
+
+        'RunName Title Line
+        CALInputLine(22) = "'" & RunName & "', " & NL & " , " & NM & " , " & PRINT2 & " ," & MODE
+
+        'NEXT, Write all Queue Links
+        'SB OffRamp RightQ
+        CALInputLine(23) = 2
+        CALInputLine(24) = "'SB OffRamp RightQ'" & "," & TYP & ", " & -208 & " , " & 45 & " , " & -55 & " , " & 1020 & " , " & HL & " , " & 24 & " , " & 1
+        CALInputLine(25) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(FTRight) & " , " & EFId & " , " & SFRRamps & " , " & ST & " , " & AT
+
+        'SB OffRamp LeftQ
+        CALInputLine(26) = 2
+        CALInputLine(27) = "'SB OffRamp LeftQ'" & "," & TYP & ", " & -180 & " , " & 45 & " , " & -55 & " , " & 1020 & " , " & HL & " , " & 12 & " , " & 1
+        CALInputLine(28) = 120 & " , " & 105 & " , " & YFAC & " , " & CInt(FTLeft) & " , " & EFId & " , " & SFRRamps & " , " & ST & " , " & AT
+
+        'WB Leg Thru1Q
+        CALInputLine(29) = 2
+        CALInputLine(30) = "'WB Leg Thru1Q'" & "," & TYP & ", " & 232 & " , " & 0 & " , " & 810 & " , " & 0 & " , " & HL & " , " & 24 & " , " & 2
+        CALInputLine(31) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(ATMax) & " , " & EFId & " , " & SFR & " , " & ST & " , " & AT
+
+        'WB Leg Thru2Q
+        CALInputLine(32) = 2
+        CALInputLine(33) = "'WB Leg Thru2Q'" & "," & TYP & ", " & -120 & " , " & 0 & " , " & 232 & " , " & 0 & " , " & HL & " , " & 24 & " , " & 2
+        CALInputLine(34) = 120 & " , " & 105 & " , " & YFAC & " , " & CInt(ATMax) & " , " & EFId & " , " & SFR & " , " & ST & " , " & AT
+
+        'WB Leg Left1Q
+        CALInputLine(35) = 2
+        CALInputLine(36) = "'WB Leg Left1Q'" & "," & TYP & ", " & -130 & " , " & -40 & " , " & 250 & " , " & -5 & " , " & HL & " , " & 12 & " , " & 1
+        CALInputLine(37) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(ATLeft) & " , " & EFId & " , " & SFR & " , " & ST & " , " & AT
+
+        'WB Leg Left2Q
+        CALInputLine(38) = 2
+        CALInputLine(39) = "'WB Leg Left2Q'" & "," & TYP & ", " & 250 & " , " & -5 & " , " & 810 & " , " & 0 & " , " & HL & " , " & 12 & " , " & 1
+        CALInputLine(40) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(ATLeft) & " , " & EFId & " , " & SFR & " , " & ST & " , " & AT
+
+        'NB OffRamp RightQ
+        CALInputLine(41) = 2
+        CALInputLine(42) = "'NB OffRamp RightQ'" & "," & TYP & ", " & 220 & " , " & -60 & " , " & 50 & " , " & -1000 & " , " & HL & " , " & 12 & " , " & 1
+        CALInputLine(43) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(FTRight) & " , " & EFId & " , " & SFRRamps & " , " & ST & " , " & AT
+
+        'NB OffRamp LeftQ
+        CALInputLine(44) = 2
+        CALInputLine(45) = "'NB OffRamp LeftQ'" & "," & TYP & ", " & 145 & " , " & -55 & " , " & 50 & " , " & -1000 & " , " & HL & " , " & 24 & " , " & 2
+        CALInputLine(46) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(FTLeft) & " , " & EFId & " , " & SFRRamps & " , " & ST & " , " & AT
+
+        'EB Leg Thru1Q
+        CALInputLine(47) = 2
+        CALInputLine(48) = "'EB Leg Thru1Q'" & "," & TYP & ", " & -230 & " , " & -20 & " , " & -610 & " , " & -20 & " , " & HL & " , " & 24 & " , " & 2
+        CALInputLine(49) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(ATMax) & " , " & EFId & " , " & SFR & " , " & ST & " , " & AT
+
+        'EB Leg Thru2Q
+        CALInputLine(50) = 2
+        CALInputLine(51) = "'EB Leg Thru2Q'" & "," & TYP & ", " & 130 & " , " & 5 & " , " & -230 & " , " & -20 & " , " & HL & " , " & 24 & " , " & 2
+        CALInputLine(52) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(ATMax) & " , " & EFId & " , " & SFR & " , " & ST & " , " & AT
+
+        'EB Leg Left1Q
+        CALInputLine(53) = 2
+        CALInputLine(54) = "'EB Leg Left1Q'" & "," & TYP & ", " & -215 & " , " & -25 & " , " & -610 & " , " & -25 & " , " & HL & " , " & 12 & " , " & 1
+        CALInputLine(55) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(ATLeft) & " , " & EFId & " , " & SFR & " , " & ST & " , " & AT
+
+        'EB Leg Left2Q
+        CALInputLine(56) = 2
+        CALInputLine(57) = "'EB Leg Left2Q'" & "," & TYP & ", " & 130 & " , " & 20 & " , " & -215 & " , " & -25 & " , " & HL & " , " & 12 & " , " & 1
+        CALInputLine(58) = 120 & " , " & 75 & " , " & YFAC & " , " & CInt(ATLeft) & " , " & EFId & " , " & SFR & " , " & ST & " , " & AT
+
+
+        'NEXT, Write all SOUTH Bound Free Flow Links
+        'SB Fwy Thru1
+        CALInputLine(59) = 1
+        CALInputLine(60) = "'SB Fwy Thru1'" & "," & TYP & ", " & -30 & " , " & 0 & " , " & -30 & " , " & 4000 & " , " & CInt(FTMax) & " , " & EFHwy & " , " & HL & " , " & 56
+
+        'SB Fwy Thru2
+        CALInputLine(61) = 1
+        CALInputLine(62) = "'SB Fwy Thru2'" & "," & TYP & ", " & -30 & " , " & 0 & " , " & -30 & " , " & -2750 & " , " & CInt(FTMax) & " , " & EFHwy & " , " & HL & " , " & 56
+
+        'SB OffRamp Right
+        CALInputLine(63) = 1
+        CALInputLine(64) = "'SB OffRamp Right'" & "," & TYP & ", " & -208 & " , " & 45 & " , " & -55 & " , " & 1020 & " , " & CInt(FTRight) & " , " & EFHwy & " , " & HL & " , " & 44
+
+        'SB OffRamp Left1
+        CALInputLine(65) = 1
+        CALInputLine(66) = "'SB OffRamp Left1'" & "," & TYP & ", " & -180 & " , " & 45 & " , " & -55 & " , " & 1020 & " , " & CInt(FTLeft) & " , " & EFHwy & " , " & HL & " , " & 32
+
+        'SB OnRamp
+        CALInputLine(69) = 1
+        CALInputLine(70) = "'SB OnRamp'" & "," & TYP & ", " & -180 & " , " & -50 & " , " & -55 & " , " & -2750 & " , " & (CInt(ATLeft) + CInt(ATRight)) & " , " & EFHwyOn & " , " & HL & " , " & 44
+
+        'SB Leg Dep
+        CALInputLine(71) = 1
+        CALInputLine(72) = "'SB Leg Dep'" & "," & TYP & ", " & 30 & " , " & 1020 & " , " & 30 & " , " & 4000 & " , " & CInt(FTDep) & " , " & EFHwy & " , " & HL & " , " & 56
+
+
+        'NEXT, Write all WEST Bound Free Flow Links
+        'WB Leg Thru1
+        CALInputLine(73) = 1
+        CALInputLine(74) = "'WB Leg Thru1'" & "," & TYP & ", " & 232 & " , " & 0 & " , " & 810 & " , " & 0 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
+
+        'WB Leg Thru2
+        CALInputLine(75) = 1
+        CALInputLine(76) = "'WB Leg Thru2'" & "," & TYP & ", " & -120 & " , " & 0 & " , " & 232 & " , " & 0 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
+
+        'WB Leg Left1
+        CALInputLine(77) = 1
+        CALInputLine(78) = "'WB Leg Left1'" & "," & TYP & ", " & -130 & " , " & -40 & " , " & 250 & " , " & -5 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
+
+        'WB Leg Left2
+        CALInputLine(79) = 1
+        CALInputLine(80) = "'WB Leg Left2'" & "," & TYP & ", " & 250 & " , " & -5 & " , " & 810 & " , " & 0 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
+
+        'WB Leg Dep
+        CALInputLine(83) = 1
+        CALInputLine(84) = "'WB Leg Dep'" & "," & TYP & ", " & 250 & " , " & -25 & " , " & 810 & " , " & -25 & " , " & CInt(ATDep) & " , " & EFFreeAcc & " , " & HL & " , " & 44
+
+
+        'NEXT, Write all NORTH Bound Free Flow Links
+        'NB Fwy Thru 1
+        CALInputLine(85) = 1
+        CALInputLine(86) = "'NB Fwy Thru 1'" & "," & TYP & ", " & 30 & " , " & 0 & " , " & 30 & " , " & 4000 & " , " & CInt(FTMax) & " , " & EFHwy & " , " & HL & " , " & 56
+
+        'NBFwy Thru 2
+        CALInputLine(87) = 1
+        CALInputLine(88) = "'NBFwy Thru 2'" & "," & TYP & ", " & 30 & " , " & 0 & " , " & 30 & " , " & -2750 & " , " & CInt(FTMax) & " , " & EFHwy & " , " & HL & " , " & 56
+
+        'NB OffRamp Right
+        CALInputLine(89) = 1
+        CALInputLine(90) = "'NB OffRamp Right'" & "," & TYP & ", " & 222 & " , " & -60 & " , " & 50 & " , " & -1000 & " , " & CInt(FTRight) & " , " & EFHwy & " , " & HL & " , " & 32
+
+        'NB OffRamp Left1
+        CALInputLine(91) = 1
+        CALInputLine(92) = "'NB OffRamp Left'" & "," & TYP & ", " & 145 & " , " & -55 & " , " & 50 & " , " & -1000 & " , " & CInt(FTLeft) & " , " & EFHwy & " , " & HL & " , " & 44
+
+        'NB OnRamp
+        CALInputLine(95) = 1
+        CALInputLine(96) = "'NB OnRamp'" & "," & TYP & ", " & 220 & " , " & 55 & " , " & 50 & " , " & 1000 & " , " & (CInt(ATLeft) + CInt(ATRight)) & " , " & EFHwyOn & " , " & HL & " , " & 44
+
+        'NB Leg Dep
+        CALInputLine(97) = 1
+        CALInputLine(98) = "'NB Leg Dep'" & "," & TYP & ", " & -30 & " , " & -1000 & " , " & -30 & " , " & -2750 & " , " & CInt(FTDep) & " , " & EFHwy & " , " & HL & " , " & 56
+
+
+        'NEXT, Write all EAST Bound Free Flow Links
+        'EB Leg Thru1
+        CALInputLine(99) = 1
+        CALInputLine(100) = "'EB Leg Thru1'" & "," & TYP & ", " & -230 & " , " & -20 & " , " & -610 & " , " & -20 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
+
+        'EB Leg Thru2
+        CALInputLine(101) = 1
+        CALInputLine(102) = "'EB Leg Thru2'" & "," & TYP & ", " & 130 & " , " & 5 & " , " & -230 & " , " & -20 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
+
+        'EB Leg Left1
+        CALInputLine(103) = 1
+        CALInputLine(104) = "'EB Leg Left1'" & "," & TYP & ", " & -215 & " , " & -25 & " , " & -610 & " , " & -20 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
+
+        'EB Leg Left2
+        CALInputLine(105) = 1
+        CALInputLine(106) = "'EB Leg Left2'" & "," & TYP & ", " & 130 & " , " & -20 & " , " & -215 & " , " & -25 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
+
+        'EB Leg Dep
+        CALInputLine(109) = 1
+        CALInputLine(110) = "'EB Leg Dep'" & "," & TYP & ", " & -215 & " , " & -25 & " , " & -610 & " , " & -25 & " , " & CInt(ATDep) & " , " & EFFreeAcc & " , " & HL & " , " & 44
+
+        'Last Line
+        CALInputLine(111) = U & " , " & BRG & " , " & CLAS & " , " & MIXH & " , " & AMB & " ," & VAR & ", " & DEGR & " , " & VAL1 & " , " & VAL2
+    End Sub
+
+
+
     '******************************************************************************************************************
     '*****************************************Open and Save Subroutines************************************************
     '******************************************************************************************************************
@@ -2758,7 +3008,7 @@ Public Class Welcome
 
         StreamToDisplay.Close()
 
-        FillEFArray()
+
 
         Select Case IntType
             Case "4 X 4"
@@ -2783,7 +3033,11 @@ Public Class Welcome
                 NorthSouthFreeway.InitNSDiamond()
             Case ("E-W Diamond")
                 EastWestFreeway.InitEWDiamond()
+            Case ("D Diamond")
+                dDiamond.InitdDiamond()
         End Select
+
+        FillEFArray()
     End Sub
 
 
