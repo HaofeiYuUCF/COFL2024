@@ -113,7 +113,7 @@ Public Class IntersectionType
 
             Me.Visible = False
         Else
-            MsgBox("Please select an intersection type to proceed.", 0, "CO Florida 2012")
+            MsgBox("Please select an intersection type to proceed.", 0, "CO Florida 2024")
         End If
 
     End Sub
@@ -151,7 +151,7 @@ Public Class IntersectionType
 
             Me.Visible = False
         Else
-            MsgBox("Please select an intersection type to proceed.", 0, "CO Florida 2012")
+            MsgBox("Please select an intersection type to proceed.", 0, "CO Florida 2024")
         End If
     End Sub
 
@@ -827,7 +827,7 @@ Public Class IntersectionType
             End Select
             Me.Visible = False
         Else
-            MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
+            MsgBox("Please select a district to proceed.", 0, "CO Florida 2024")
         End If
     End Sub
 

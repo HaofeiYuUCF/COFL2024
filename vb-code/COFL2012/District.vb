@@ -76,7 +76,7 @@ Public Class District
             Welcome.FillEFArray()
             Me.Visible = False
         Else
-            MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
+            MsgBox("Please select a district to proceed.", 0, "CO Florida 2024")
         End If
     End Sub
 
@@ -120,10 +120,10 @@ Public Class District
                 Welcome.FillEFArray()
                 Me.Visible = False
             Else
-                MsgBox("All intermediary screens must be completed to proceed.", 0, "CO Florida 2012")
+                MsgBox("All intermediary screens must be completed to proceed.", 0, "CO Florida 2024")
             End If
         Else
-            MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
+            MsgBox("Please select a district to proceed.", 0, "CO Florida 2024")
         End If
     End Sub
 
@@ -163,10 +163,10 @@ Public Class District
                 Welcome.FillEFArray()
                 Me.Visible = False
             Else
-                MsgBox("All intermediary screens must be completed to proceed.", 0, "CO Florida 2012")
+                MsgBox("All intermediary screens must be completed to proceed.", 0, "CO Florida 2024")
             End If
         Else
-            MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
+            MsgBox("Please select a district to proceed.", 0, "CO Florida 2024")
         End If
     End Sub
 
@@ -272,7 +272,7 @@ Public Class District
             My.Forms.IntersectionType.Show()
             Me.Visible = False
         Else
-            MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
+            MsgBox("Please select a district to proceed.", 0, "CO Florida 2024")
         End If
     End Sub
 
@@ -287,7 +287,7 @@ Public Class District
             My.Forms.Title.Show()
             Me.Visible = False
         Else
-            MsgBox("Please select a district to proceed.", 0, "CO Florida 2012")
+            MsgBox("Please select a district to proceed.", 0, "CO Florida 2024")
         End If
     End Sub
 

@@ -167,7 +167,7 @@ Partial Class Results
         Label1.Name = "Label1"
         Label1.Size = New Size(345, 40)
         Label1.TabIndex = 0
-        Label1.Text = "CO Florida 2012 - Results"
+        Label1.Text = "CO Florida 2024 - Results"
         ' 
         ' Label3
         ' 
@@ -1652,7 +1652,7 @@ Partial Class Results
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "Results"
         RightToLeftLayout = True
-        Text = "CO Florida 2012 - Results"
+        Text = "CO Florida 2024 - Results"
         ToolStrip1.ResumeLayout(False)
         ToolStrip1.PerformLayout()
         ResumeLayout(False)

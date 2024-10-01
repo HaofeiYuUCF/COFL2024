@@ -117,7 +117,7 @@ Public Class Welcome
     Public ETCNB As String
     Public ETCEB As String
 
-    'CO FL 2012 input and output file names
+    'CO FL 2024 input and output file names
     Public FDOTin As String
     Public FDOTout As String
 
@@ -463,43 +463,7 @@ Public Class Welcome
         EFFree = 0
         EFHwy = 0
 
-        If IntType = "N-S Diamond" Then
-            If EFFree < EFWB Then
-                EFFree = EFWB
-                Speed = CInt(SWB)
-            End If
-            If EFFree < EFEB Then
-                EFFree = EFEB
-                Speed = CInt(SEB)
-            End If
-            If EFHwy < EFSB Then
-                EFHwy = EFSB
-                HwySpeed = CInt(SSB)
-            End If
-            If EFHwy < EFNB Then
-                EFHwy = EFNB
-                HwySpeed = CInt(SNB)
-            End If
-        Else
-            If EFHwy < EFWB Then
-                EFHwy = EFWB
-                HwySpeed = CInt(SWB)
-            End If
-            If EFHwy < EFEB Then
-                EFHwy = EFEB
-                HwySpeed = CInt(SEB)
-            End If
-            If EFFree < EFSB Then
-                EFFree = EFSB
-                Speed = CInt(SSB)
-            End If
-            If EFFree < EFNB Then
-                EFFree = EFNB
-                Speed = CInt(SNB)
-            End If
-        End If
-
-        If IntType = "D Diamond" Then
+        If (IntType = "N-S Diamond" Or IntType = "D Diamond") Then
             If EFFree < EFWB Then
                 EFFree = EFWB
                 Speed = CInt(SWB)
@@ -608,9 +572,12 @@ Public Class Welcome
         sAppPath = InstallDirectory & "\CAL3QHC.exe " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
         'sAppPath = "\CAL3QHC.exe " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
 
+        'Clipboard.SetText(CStr(sAppPath))
         'MessageBox.Show("Execute Command: " & sAppPath)
+        'File.Create(WorkingDirectory & "\outcal3qhc.out").Dispose()
 
         Shell(sAppPath, vbMaximizedFocus)
+        'Shell(sAppPath, vbMaximizedFocus)
 
         'Reads resulting concentrations from outcal3qhc.out
         ReadCAL3QHCOUT()
@@ -700,7 +667,7 @@ Public Class Welcome
                 End If
             End If
 
-        ElseIf (IntType = "N-S Diamond" Or IntType = "E-W Diamond") Then
+        ElseIf (IntType = "N-S Diamond" Or IntType = "E-W Diamond" Or IntType = "D Diamond") Then
             Results.TextBox38.Text = "Arterial"
             Results.TextBox34.Text = "Freeway"
             Results.TextBox37.Text = "Arterial"
@@ -2763,8 +2730,8 @@ Public Class Welcome
 
         'N-S Diamond particular parameters
         NR = 20
-        NumInputLines = 111
-        NL = 38
+        NumInputLines = 103
+        NL = 34
 
         'First Line
         CALInputLine(1) = "'" & Job & "', " & ATIM & " , " & ZO & " , " & VS & " , " & VD & " , " & NR & " , " & SCAL & " , " & IOPT & " , " & IDEBUG
@@ -2857,85 +2824,85 @@ Public Class Welcome
         CALInputLine(66) = "'SB OffRamp Left1'" & "," & TYP & ", " & -180 & " , " & 45 & " , " & -55 & " , " & 1020 & " , " & CInt(FTLeft) & " , " & EFHwy & " , " & HL & " , " & 32
 
         'SB OnRamp
-        CALInputLine(69) = 1
-        CALInputLine(70) = "'SB OnRamp'" & "," & TYP & ", " & -180 & " , " & -50 & " , " & -55 & " , " & -2750 & " , " & (CInt(ATLeft) + CInt(ATRight)) & " , " & EFHwyOn & " , " & HL & " , " & 44
+        CALInputLine(67) = 1
+        CALInputLine(68) = "'SB OnRamp'" & "," & TYP & ", " & -180 & " , " & -50 & " , " & -55 & " , " & -2750 & " , " & (CInt(ATLeft) + CInt(ATRight)) & " , " & EFHwyOn & " , " & HL & " , " & 44
 
         'SB Leg Dep
-        CALInputLine(71) = 1
-        CALInputLine(72) = "'SB Leg Dep'" & "," & TYP & ", " & 30 & " , " & 1020 & " , " & 30 & " , " & 4000 & " , " & CInt(FTDep) & " , " & EFHwy & " , " & HL & " , " & 56
+        CALInputLine(69) = 1
+        CALInputLine(70) = "'SB Leg Dep'" & "," & TYP & ", " & 30 & " , " & 1020 & " , " & 30 & " , " & 4000 & " , " & CInt(FTDep) & " , " & EFHwy & " , " & HL & " , " & 56
 
 
         'NEXT, Write all WEST Bound Free Flow Links
         'WB Leg Thru1
-        CALInputLine(73) = 1
-        CALInputLine(74) = "'WB Leg Thru1'" & "," & TYP & ", " & 232 & " , " & 0 & " , " & 810 & " , " & 0 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
+        CALInputLine(71) = 1
+        CALInputLine(72) = "'WB Leg Thru1'" & "," & TYP & ", " & 232 & " , " & 0 & " , " & 810 & " , " & 0 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
 
         'WB Leg Thru2
-        CALInputLine(75) = 1
-        CALInputLine(76) = "'WB Leg Thru2'" & "," & TYP & ", " & -120 & " , " & 0 & " , " & 232 & " , " & 0 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
+        CALInputLine(73) = 1
+        CALInputLine(74) = "'WB Leg Thru2'" & "," & TYP & ", " & -120 & " , " & 0 & " , " & 232 & " , " & 0 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
 
         'WB Leg Left1
-        CALInputLine(77) = 1
-        CALInputLine(78) = "'WB Leg Left1'" & "," & TYP & ", " & -130 & " , " & -40 & " , " & 250 & " , " & -5 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
+        CALInputLine(75) = 1
+        CALInputLine(76) = "'WB Leg Left1'" & "," & TYP & ", " & -130 & " , " & -40 & " , " & 250 & " , " & -5 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
 
         'WB Leg Left2
-        CALInputLine(79) = 1
-        CALInputLine(80) = "'WB Leg Left2'" & "," & TYP & ", " & 250 & " , " & -5 & " , " & 810 & " , " & 0 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
+        CALInputLine(77) = 1
+        CALInputLine(78) = "'WB Leg Left2'" & "," & TYP & ", " & 250 & " , " & -5 & " , " & 810 & " , " & 0 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
 
         'WB Leg Dep
-        CALInputLine(83) = 1
-        CALInputLine(84) = "'WB Leg Dep'" & "," & TYP & ", " & 250 & " , " & -25 & " , " & 810 & " , " & -25 & " , " & CInt(ATDep) & " , " & EFFreeAcc & " , " & HL & " , " & 44
+        CALInputLine(79) = 1
+        CALInputLine(80) = "'WB Leg Dep'" & "," & TYP & ", " & 250 & " , " & -25 & " , " & 810 & " , " & -25 & " , " & CInt(ATDep) & " , " & EFFreeAcc & " , " & HL & " , " & 44
 
 
         'NEXT, Write all NORTH Bound Free Flow Links
         'NB Fwy Thru 1
-        CALInputLine(85) = 1
-        CALInputLine(86) = "'NB Fwy Thru 1'" & "," & TYP & ", " & 30 & " , " & 0 & " , " & 30 & " , " & 4000 & " , " & CInt(FTMax) & " , " & EFHwy & " , " & HL & " , " & 56
+        CALInputLine(81) = 1
+        CALInputLine(82) = "'NB Fwy Thru 1'" & "," & TYP & ", " & 30 & " , " & 0 & " , " & 30 & " , " & 4000 & " , " & CInt(FTMax) & " , " & EFHwy & " , " & HL & " , " & 56
 
         'NBFwy Thru 2
-        CALInputLine(87) = 1
-        CALInputLine(88) = "'NBFwy Thru 2'" & "," & TYP & ", " & 30 & " , " & 0 & " , " & 30 & " , " & -2750 & " , " & CInt(FTMax) & " , " & EFHwy & " , " & HL & " , " & 56
+        CALInputLine(83) = 1
+        CALInputLine(84) = "'NB Fwy Thru 2'" & "," & TYP & ", " & 30 & " , " & 0 & " , " & 30 & " , " & -2750 & " , " & CInt(FTMax) & " , " & EFHwy & " , " & HL & " , " & 56
 
         'NB OffRamp Right
-        CALInputLine(89) = 1
-        CALInputLine(90) = "'NB OffRamp Right'" & "," & TYP & ", " & 222 & " , " & -60 & " , " & 50 & " , " & -1000 & " , " & CInt(FTRight) & " , " & EFHwy & " , " & HL & " , " & 32
+        CALInputLine(85) = 1
+        CALInputLine(86) = "'NB OffRamp Right'" & "," & TYP & ", " & 222 & " , " & -60 & " , " & 50 & " , " & -1000 & " , " & CInt(FTRight) & " , " & EFHwy & " , " & HL & " , " & 32
 
         'NB OffRamp Left1
-        CALInputLine(91) = 1
-        CALInputLine(92) = "'NB OffRamp Left'" & "," & TYP & ", " & 145 & " , " & -55 & " , " & 50 & " , " & -1000 & " , " & CInt(FTLeft) & " , " & EFHwy & " , " & HL & " , " & 44
+        CALInputLine(87) = 1
+        CALInputLine(88) = "'NB OffRamp Left'" & "," & TYP & ", " & 145 & " , " & -55 & " , " & 50 & " , " & -1000 & " , " & CInt(FTLeft) & " , " & EFHwy & " , " & HL & " , " & 44
 
         'NB OnRamp
-        CALInputLine(95) = 1
-        CALInputLine(96) = "'NB OnRamp'" & "," & TYP & ", " & 220 & " , " & 55 & " , " & 50 & " , " & 1000 & " , " & (CInt(ATLeft) + CInt(ATRight)) & " , " & EFHwyOn & " , " & HL & " , " & 44
+        CALInputLine(89) = 1
+        CALInputLine(90) = "'NB OnRamp'" & "," & TYP & ", " & 220 & " , " & 55 & " , " & 50 & " , " & 1000 & " , " & (CInt(ATLeft) + CInt(ATRight)) & " , " & EFHwyOn & " , " & HL & " , " & 44
 
         'NB Leg Dep
-        CALInputLine(97) = 1
-        CALInputLine(98) = "'NB Leg Dep'" & "," & TYP & ", " & -30 & " , " & -1000 & " , " & -30 & " , " & -2750 & " , " & CInt(FTDep) & " , " & EFHwy & " , " & HL & " , " & 56
+        CALInputLine(91) = 1
+        CALInputLine(92) = "'NB Leg Dep'" & "," & TYP & ", " & -30 & " , " & -1000 & " , " & -30 & " , " & -2750 & " , " & CInt(FTDep) & " , " & EFHwy & " , " & HL & " , " & 56
 
 
         'NEXT, Write all EAST Bound Free Flow Links
         'EB Leg Thru1
-        CALInputLine(99) = 1
-        CALInputLine(100) = "'EB Leg Thru1'" & "," & TYP & ", " & -230 & " , " & -20 & " , " & -610 & " , " & -20 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
+        CALInputLine(93) = 1
+        CALInputLine(94) = "'EB Leg Thru1'" & "," & TYP & ", " & -230 & " , " & -20 & " , " & -610 & " , " & -20 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
 
         'EB Leg Thru2
-        CALInputLine(101) = 1
-        CALInputLine(102) = "'EB Leg Thru2'" & "," & TYP & ", " & 130 & " , " & 5 & " , " & -230 & " , " & -20 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
+        CALInputLine(95) = 1
+        CALInputLine(96) = "'EB Leg Thru2'" & "," & TYP & ", " & 130 & " , " & 5 & " , " & -230 & " , " & -20 & " , " & CInt(ATMax) & " , " & EFFree & " , " & HL & " , " & 44
 
         'EB Leg Left1
-        CALInputLine(103) = 1
-        CALInputLine(104) = "'EB Leg Left1'" & "," & TYP & ", " & -215 & " , " & -25 & " , " & -610 & " , " & -20 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
+        CALInputLine(97) = 1
+        CALInputLine(98) = "'EB Leg Left1'" & "," & TYP & ", " & -215 & " , " & -25 & " , " & -610 & " , " & -20 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
 
         'EB Leg Left2
-        CALInputLine(105) = 1
-        CALInputLine(106) = "'EB Leg Left2'" & "," & TYP & ", " & 130 & " , " & -20 & " , " & -215 & " , " & -25 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
+        CALInputLine(99) = 1
+        CALInputLine(100) = "'EB Leg Left2'" & "," & TYP & ", " & 130 & " , " & -20 & " , " & -215 & " , " & -25 & " , " & CInt(ATLeft) & " , " & EFLt & " , " & HL & " , " & 32
 
         'EB Leg Dep
-        CALInputLine(109) = 1
-        CALInputLine(110) = "'EB Leg Dep'" & "," & TYP & ", " & -215 & " , " & -25 & " , " & -610 & " , " & -25 & " , " & CInt(ATDep) & " , " & EFFreeAcc & " , " & HL & " , " & 44
+        CALInputLine(101) = 1
+        CALInputLine(102) = "'EB Leg Dep'" & "," & TYP & ", " & -215 & " , " & -25 & " , " & -610 & " , " & -25 & " , " & CInt(ATDep) & " , " & EFFreeAcc & " , " & HL & " , " & 44
 
         'Last Line
-        CALInputLine(111) = U & " , " & BRG & " , " & CLAS & " , " & MIXH & " , " & AMB & " ," & VAR & ", " & DEGR & " , " & VAL1 & " , " & VAL2
+        CALInputLine(103) = U & " , " & BRG & " , " & CLAS & " , " & MIXH & " , " & AMB & " ," & VAR & ", " & DEGR & " , " & VAL1 & " , " & VAL2
     End Sub
 
 
@@ -2954,8 +2921,8 @@ Public Class Welcome
             i = i + 1
         Loop
 
-        If IFR(1) <> "CO Florida 2012 - User Input Summary File" Then
-            MsgBox("The file that you've selected is not a valid COFL input file.", 0, "CO Florida 2012")
+        If IFR(1) <> "CO Florida 2024 - User Input Summary File" Then
+            MsgBox("The file that you've selected is not a valid COFL input file.", 0, "CO Florida 2024")
             Exit Sub
         Else
             ClearAll()
@@ -3051,7 +3018,7 @@ Public Class Welcome
 
         sWriter = New IO.StreamWriter(FDOTin)
 
-        sWriter.WriteLine("CO Florida 2012 - User Input Summary File")
+        sWriter.WriteLine("CO Florida 2024 - User Input Summary File")
         sWriter.WriteLine("")
         sWriter.WriteLine("")
 

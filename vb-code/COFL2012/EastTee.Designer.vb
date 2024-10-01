@@ -433,7 +433,7 @@ Partial Class East_Tee
         Controls.Add(PictureBox1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "East_Tee"
-        Text = "CO Florida 2012 - East Tee"
+        Text = "CO Florida 2024 - East Tee"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ToolStrip1.ResumeLayout(False)
         ToolStrip1.PerformLayout()

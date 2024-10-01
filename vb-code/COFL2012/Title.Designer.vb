@@ -368,7 +368,7 @@ Partial Class Title
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         Name = "Title"
-        Text = "CO Florida 2012 - Title"
+        Text = "CO Florida 2024 - Title"
         ToolStrip1.ResumeLayout(False)
         ToolStrip1.PerformLayout()
         ResumeLayout(False)

@@ -93,7 +93,7 @@ Public Class SouthTee
             Me.Visible = False
         Else
             If Welcome.InputsCorrect(4) = True Then
-                MsgBox("A run cannot be made until all input forms have been completed.", 0, "CO Florida 2012")
+                MsgBox("A run cannot be made until all input forms have been completed.", 0, "CO Florida 2024")
             End If
         End If
     End Sub
@@ -123,7 +123,7 @@ Public Class SouthTee
         Catch ex As Exception
             If Welcome.ATWB <> "" Then
                 If Welcome.QuickVerify = False Then
-                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2024")
                     Welcome.InputsCorrect(4) = False
                     TextBox3.Text = ""
                     Exit Sub
@@ -138,7 +138,7 @@ Public Class SouthTee
         Catch ex As Exception
             If Welcome.SWB <> "" Then
                 If Welcome.QuickVerify = False Then
-                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2024")
                     Welcome.InputsCorrect(4) = False
                     TextBox4.Text = ""
                     Exit Sub
@@ -153,7 +153,7 @@ Public Class SouthTee
         Catch ex As Exception
             If Welcome.ATEB <> "" Then
                 If Welcome.QuickVerify = False Then
-                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2024")
                     Welcome.InputsCorrect(4) = False
                     TextBox5.Text = ""
                     Exit Sub
@@ -168,7 +168,7 @@ Public Class SouthTee
         Catch ex As Exception
             If Welcome.SEB <> "" Then
                 If Welcome.QuickVerify = False Then
-                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2024")
                     Welcome.InputsCorrect(4) = False
                     TextBox6.Text = ""
                     Exit Sub
@@ -183,7 +183,7 @@ Public Class SouthTee
         Catch ex As Exception
             If Welcome.ATNB <> "" Then
                 If Welcome.QuickVerify = False Then
-                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2024")
                     Welcome.InputsCorrect(4) = False
                     TextBox7.Text = ""
                     Exit Sub
@@ -198,7 +198,7 @@ Public Class SouthTee
         Catch ex As Exception
             If Welcome.SNB <> "" Then
                 If Welcome.QuickVerify = False Then
-                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2012")
+                    MsgBox("All input fields must be positive integers.  Please correct inputs", 0, "CO Florida 2024")
                     Welcome.InputsCorrect(4) = False
                     TextBox8.Text = ""
                     Exit Sub
@@ -212,7 +212,7 @@ Public Class SouthTee
         'Check that at least one speed and one approach traffic volume have been inputted
         If Not (Welcome.SWB <> "" And Welcome.SNB <> "" And Welcome.SEB <> "" And Welcome.ATWB <> "" And Welcome.ATNB <> "" And Welcome.ATEB <> "") Then
             If Welcome.QuickVerify = False Then
-                MsgBox("All fields must be completed in order to proceed.", 0, "CO Florida 2012")
+                MsgBox("All fields must be completed in order to proceed.", 0, "CO Florida 2024")
                 Welcome.InputsCorrect(4) = False
             Else
                 Welcome.InputsCorrect(4) = False
@@ -221,7 +221,7 @@ Public Class SouthTee
             'verifies that traffic volumes are positive numbers
             If Welcome.ATWB < 0 Or Welcome.ATNB < 0 Or Welcome.ATEB < 0 Then
                 If Welcome.QuickVerify = False Then
-                    MsgBox("Traffic volumes must be positive numbers.  Please re-enter.", 0, "CO Florida 2012")
+                    MsgBox("Traffic volumes must be positive numbers.  Please re-enter.", 0, "CO Florida 2024")
                     Welcome.InputsCorrect(4) = False
                 Else
                     Welcome.InputsCorrect(4) = False
@@ -230,7 +230,7 @@ Public Class SouthTee
                 'Verifies that cruise speeds are between 15 and 65 mph
                 If (Welcome.SWB < 15 Or Welcome.SNB < 15 Or Welcome.SEB < 15) Or (Welcome.SWB > 65 Or Welcome.SNB > 65 Or Welcome.SEB > 65) Then
                     If Welcome.QuickVerify = False Then
-                        MsgBox("Cruise speeds must be between 15 and 65 mph.  Please re-enter.", 0, "CO Florida 2012")
+                        MsgBox("Cruise speeds must be between 15 and 65 mph.  Please re-enter.", 0, "CO Florida 2024")
                         Welcome.InputsCorrect(4) = False
                     Else
                         Welcome.InputsCorrect(4) = False
@@ -239,7 +239,7 @@ Public Class SouthTee
                     'Verifies tyhat All AT's are <= 100,000
                     If Welcome.ATWB > 100000 Or Welcome.ATNB > 100000 Or Welcome.ATEB > 100000 Then
                         If Welcome.QuickVerify = False Then
-                            MsgBox("Traffic volumes may not exceed 100,000 vph.  Please re-enter.", 0, "CO Florida 2012")
+                            MsgBox("Traffic volumes may not exceed 100,000 vph.  Please re-enter.", 0, "CO Florida 2024")
                             Welcome.InputsCorrect(4) = False
                         Else
                             Welcome.InputsCorrect(4) = False
@@ -280,7 +280,7 @@ Public Class SouthTee
             Me.Visible = False
         Else
             If Welcome.InputsCorrect(4) = True Then
-                MsgBox("A run cannot be made until all input forms have been completed.", 0, "CO Florida 2012")
+                MsgBox("A run cannot be made until all input forms have been completed.", 0, "CO Florida 2024")
             End If
         End If
     End Sub

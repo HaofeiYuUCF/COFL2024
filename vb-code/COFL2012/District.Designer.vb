@@ -320,7 +320,7 @@ Partial Class District
         Controls.Add(Label1)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "District"
-        Text = "CO Florida 2012 - District"
+        Text = "CO Florida 2024 - District"
         Panel1.ResumeLayout(False)
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ToolStrip1.ResumeLayout(False)

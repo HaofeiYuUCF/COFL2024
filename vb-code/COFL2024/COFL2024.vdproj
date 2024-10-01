@@ -21,6 +21,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_1BD82A26B49348A1911E7DE2AE658C82"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_1C6B52F69FC24C58A9BC7AB6CBE8AF7F"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
@@ -64,6 +70,12 @@
         "Entry"
         {
         "MsmKey" = "8:_8C7C8E8BA84C485DA503891B325D137A"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_9159B3C9D1F142338CE58A571A25A3FE"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -140,6 +152,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -215,6 +235,26 @@
             "TargetName" = "8:Dist3EF.txt"
             "Tag" = "8:"
             "Folder" = "8:_53EFA6DFD5AD48C5A4BD66A05723B5BA"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_1BD82A26B49348A1911E7DE2AE658C82"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Downloads\\holding\\incal3qhc.in"
+            "TargetName" = "8:incal3qhc.in"
+            "Tag" = "8:"
+            "Folder" = "8:_D8C56FEF1C72497EB46F81164EEEBFAF"
             "Condition" = "8:"
             "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
@@ -389,6 +429,26 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9159B3C9D1F142338CE58A571A25A3FE"
+            {
+            "SourcePath" = "8:..\\..\\..\\..\\..\\Downloads\\holding\\outcal3qhc.out"
+            "TargetName" = "8:outcal3qhc.out"
+            "Tag" = "8:"
+            "Folder" = "8:_D8C56FEF1C72497EB46F81164EEEBFAF"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_9DA54751BA1B484DA6CEAD89CB3B1EF0"
             {
             "SourcePath" = "8:..\\COFL2012\\bin\\Release\\net6.0-windows\\EFTextFiles\\restricted\\Dist7EF.txt"
@@ -537,7 +597,7 @@
         {
             "{3C67513D-01DD-4637-8A68-80971EB9504F}:_2F4974D65C4A41F2BEEB2088A005D6C4"
             {
-            "DefaultLocation" = "8:[ProgramFilesFolder][Manufacturer]\\[ProductName]"
+            "DefaultLocation" = "8:[ProgramFilesFolder]\\[ProductName]"
             "Name" = "8:#1925"
             "AlwaysCreate" = "11:FALSE"
             "Condition" = "8:"
@@ -613,6 +673,28 @@
                 {
                 }
             }
+            "{1525181F-901A-416C-8A58-119130FE478E}:_E38710FB7D6E40B6A7A420D13FDB87E7"
+            {
+            "Name" = "8:#1915"
+            "AlwaysCreate" = "11:FALSE"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Property" = "8:AppDataFolder"
+                "Folders"
+                {
+                    "{9EF0B969-E518-4E46-987F-47570745A589}:_D8C56FEF1C72497EB46F81164EEEBFAF"
+                    {
+                    "Name" = "8:COFL2024"
+                    "AlwaysCreate" = "11:FALSE"
+                    "Condition" = "8:"
+                    "Transitive" = "11:FALSE"
+                    "Property" = "8:_AE74F0E79E6F4DB1840F17737141AFEC"
+                        "Folders"
+                        {
+                        }
+                    }
+                }
+            }
         }
         "LaunchCondition"
         {
@@ -630,7 +712,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:COFL2024"
         "ProductCode" = "8:{30A124D7-F28A-48B5-8EDB-30BD12805522}"
-        "PackageCode" = "8:{9D316A52-CA9F-4E62-A2DA-4846F54348DD}"
+        "PackageCode" = "8:{41BEC2CF-D71A-48A9-9A59-2D2F5A1B98EA}"
         "UpgradeCode" = "8:{64BDDDE2-9374-464A-B624-D8BE58A8D141}"
         "AspNetVersion" = "8:"
         "RestartWWWService" = "11:FALSE"

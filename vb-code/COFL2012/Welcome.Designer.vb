@@ -141,7 +141,7 @@ Partial Class Welcome
         MaximizeBox = False
         Name = "Welcome"
         RightToLeftLayout = True
-        Text = "CO Florida 2012 - Welcome"
+        Text = "CO Florida 2024 - Welcome"
         CType(PictureBox2, ComponentModel.ISupportInitialize).EndInit()
         CType(PictureBox3, ComponentModel.ISupportInitialize).EndInit()
         Panel1.ResumeLayout(False)

@@ -127,7 +127,7 @@ Public Class Results
 
         Welcome.PassFail = True
 
-        e.Graphics.DrawString("CO Florida 2012 - Results", prFont, Brushes.Black, 340, 75)
+        e.Graphics.DrawString("CO Florida 2024 - Results", prFont, Brushes.Black, 340, 75)
         e.Graphics.DrawString(Format$(Now, "Long Date"), prFont, Brushes.Black, 335, 92)
         e.Graphics.DrawString("Project Description", prFont, Brushes.Black, 365, 126)
         e.Graphics.DrawString("Project Title", prFont, Brushes.Black, 168, 160)
@@ -377,11 +377,11 @@ Public Class Results
             Try
                 sWriter = New IO.StreamWriter(Welcome.FDOTout)
             Catch ex As Exception
-                MsgBox("The selected output file is currently open.  Please close the file and try again.", 0, "CO Florida 2012")
+                MsgBox("The selected output file is currently open.  Please close the file and try again.", 0, "CO Florida 2024")
                 Exit Sub
             End Try
 
-            sWriter.WriteLine(Space(7) & "CO Florida 2012 - Results")
+            sWriter.WriteLine(Space(7) & "CO Florida 2024 - Results")
             sWriter.WriteLine(Space(7) & Format$(Now, "Long Date"))
             sWriter.WriteLine("")
             sWriter.WriteLine(Space(10) & "Project Description")

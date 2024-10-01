@@ -110,7 +110,7 @@ Partial Class About
         Controls.Add(Label2)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "About"
-        Text = "About CO Florida 2012"
+        Text = "About CO Florida 2024"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
         ResumeLayout(False)
         PerformLayout()
