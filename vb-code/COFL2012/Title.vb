@@ -81,37 +81,37 @@ Public Class Title
     '************************************************Top Navigation Menus and Buttons*****************************************************
     '*************************************************************************************************************************************
 
-    Private Sub NewToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NewToolStripButton.Click
-        Welcome.ClearAll()
-        District.InitDistrict()
-        IntersectionType.InitIntType()
-        InitTitle()
+    Private Sub NewToolStripButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Welcome.ClearAll
+        District.InitDistrict
+        IntersectionType.InitIntType
+        InitTitle
     End Sub
 
-    Private Sub SaveToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveToolStripButton.Click
+    Private Sub SaveToolStripButton_Click(ByVal sender As Object, ByVal e As EventArgs)
         'Writes user program run inputs to text file
 
         SaveFileDialog1.InitialDirectory = Welcome.PrimaryDirectory & "\UsrFiles\"
         SaveFileDialog1.Filter = "Input files (*.in)|*.in|All files (*.*)|*.*"
         SaveFileDialog1.FileName = ""
 
-        If SaveFileDialog1.ShowDialog() = DialogResult.OK Then
+        If SaveFileDialog1.ShowDialog = DialogResult.OK Then
             Welcome.FDOTin = SaveFileDialog1.FileName
-            Welcome.SaveFile()
+            Welcome.SaveFile
         End If
     End Sub
 
-    Private Sub OpenToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpenToolStripButton.Click
+    Private Sub OpenToolStripButton_Click(ByVal sender As Object, ByVal e As EventArgs)
         OpenFileDialog1.InitialDirectory = Welcome.PrimaryDirectory & "\UsrFiles\"
         OpenFileDialog1.Filter = "Input files (*in)|*.in|All files (*.*)|*.*"
         OpenFileDialog1.FileName = ""
 
-        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
             Welcome.FDOTin = OpenFileDialog1.FileName
-            Welcome.OpenFile()
-            InitTitle()
-            District.InitDistrict()
-            IntersectionType.InitIntType()
+            Welcome.OpenFile
+            InitTitle
+            District.InitDistrict
+            IntersectionType.InitIntType
         End If
     End Sub
 

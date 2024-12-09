@@ -24,8 +24,6 @@ Partial Class About
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(About))
         Label2 = New Label()
-        Label3 = New Label()
-        Label4 = New Label()
         Label1 = New Label()
         Button1 = New Button()
         PictureBox1 = New PictureBox()
@@ -36,34 +34,12 @@ Partial Class About
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label2.Location = New Point(235, 81)
+        Label2.Location = New Point(48, 76)
         Label2.Name = "Label2"
         Label2.RightToLeft = RightToLeft.No
-        Label2.Size = New Size(549, 20)
+        Label2.Size = New Size(939, 220)
         Label2.TabIndex = 1
-        Label2.Text = "CO Florida 2024 is the FDOT's latest version of Florida's CO screening model"
-        ' 
-        ' Label3
-        ' 
-        Label3.AutoSize = True
-        Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label3.Location = New Point(157, 127)
-        Label3.Name = "Label3"
-        Label3.Size = New Size(703, 100)
-        Label3.TabIndex = 2
-        Label3.Text = resources.GetString("Label3.Text")
-        Label3.TextAlign = ContentAlignment.MiddleCenter
-        ' 
-        ' Label4
-        ' 
-        Label4.AutoSize = True
-        Label4.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Regular, GraphicsUnit.Point)
-        Label4.Location = New Point(73, 246)
-        Label4.Name = "Label4"
-        Label4.Size = New Size(864, 40)
-        Label4.TabIndex = 3
-        Label4.Text = resources.GetString("Label4.Text")
-        Label4.TextAlign = ContentAlignment.MiddleCenter
+        Label2.Text = resources.GetString("Label2.Text")
         ' 
         ' Label1
         ' 
@@ -105,8 +81,6 @@ Partial Class About
         Controls.Add(PictureBox1)
         Controls.Add(Button1)
         Controls.Add(Label1)
-        Controls.Add(Label4)
-        Controls.Add(Label3)
         Controls.Add(Label2)
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "About"
@@ -117,8 +91,6 @@ Partial Class About
     End Sub
 
     Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
     Friend WithEvents Label1 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents PictureBox1 As PictureBox

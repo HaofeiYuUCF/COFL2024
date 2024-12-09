@@ -8,7 +8,7 @@ Public Class Welcome
     Public PassFail As Boolean
     Public StreamToDisplay As StreamReader
     Public PrimaryDirectory As String
-    Public InstallDirectory As String = Path.GetDirectoryName(Application.ExecutablePath)
+    'Public InstallDirectory As String = Path.GetDirectoryName(Application.ExecutablePath)
     Public WorkingDirectory As String = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "COFL2024")
     'Public Const WorkingDirectory As String = "C:\ProgramData\COFL2024"
     Public TestMsg As String
@@ -548,8 +548,8 @@ Public Class Welcome
     Sub WriteCAL3QHCIN()
 
         'Writes CALInputLine Array out to "incal3qhc.in"
-        'Directory.SetCurrentDirectory(PrimaryDirectory)
-        Directory.SetCurrentDirectory(WorkingDirectory)
+        Directory.SetCurrentDirectory(PrimaryDirectory)
+        'Directory.SetCurrentDirectory(WorkingDirectory)
 
         'MessageBox.Show(InstallDirectory)
 
@@ -569,7 +569,8 @@ Public Class Welcome
         'Runs CAL3QHC
         Directory.SetCurrentDirectory(PrimaryDirectory)
         'sAppPath = "CAL3QHC incal3qhc" & RunNumber & ".in outcal3qhc" & RunNumber & ".out"
-        sAppPath = InstallDirectory & "\CAL3QHC.exe " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
+        sAppPath = "CAL3QHC incal3qhc.in outcal3qhc.out"
+        'sAppPath = InstallDirectory & "\CAL3QHC.exe " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
         'sAppPath = "\CAL3QHC.exe " & WorkingDirectory & "\incal3qhc.in " & WorkingDirectory & "\outcal3qhc.out"
 
         'Clipboard.SetText(CStr(sAppPath))
@@ -789,7 +790,7 @@ Public Class Welcome
         Dim PPMString As String
 
         PassFail = True
-        Directory.SetCurrentDirectory(WorkingDirectory)
+        Directory.SetCurrentDirectory(PrimaryDirectory)
 
         'Opens the CAL3QHC output file
         For i = 1 To Delay

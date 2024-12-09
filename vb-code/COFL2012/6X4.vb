@@ -22,28 +22,28 @@ Public Class _6X4
     ''*************************************************************************************************************************************
     ''************************************************Top Navigation Menus and Buttons*****************************************************
     ''*************************************************************************************************************************************
-    Private Sub ToolStripButton1_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton1.Click
-        Welcome.ClearAll()
-        District.InitDistrict()
-        IntersectionType.InitIntType()
-        My.Forms.Title.Show()
-        Me.Visible = False
-        Title.InitTitle()
+    Private Sub ToolStripButton1_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Welcome.ClearAll
+        District.InitDistrict
+        IntersectionType.InitIntType
+        My.Forms.Title.Show
+        Visible = False
+        Title.InitTitle
     End Sub
 
-    Private Sub ToolStripButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton2.Click
+    Private Sub ToolStripButton2_Click(ByVal sender As Object, ByVal e As EventArgs)
         OpenFileDialog1.InitialDirectory = Welcome.PrimaryDirectory & "\UsrFiles\"
         OpenFileDialog1.Filter = "Input files (*in)|*.in|All files (*.*)|*.*"
         OpenFileDialog1.FileName = ""
 
-        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
             Welcome.FDOTin = OpenFileDialog1.FileName
-            Welcome.OpenFile()
-            My.Forms.Title.Show()
-            Me.Visible = False
-            Title.InitTitle()
-            District.InitDistrict()
-            IntersectionType.InitIntType()
+            Welcome.OpenFile
+            My.Forms.Title.Show
+            Visible = False
+            Title.InitTitle
+            District.InitDistrict
+            IntersectionType.InitIntType
         End If
     End Sub
 
@@ -80,12 +80,12 @@ Public Class _6X4
         Me.Visible = False
     End Sub
 
-    Private Sub ToolStripButton6_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles ToolStripButton3.Click
+    Private Sub ToolStripButton6_Click(ByVal sender As Object, ByVal e As EventArgs)
         Welcome.QuickVerify = True
-        Verify6X4Form()
+        Verify6X4Form
         Welcome.QuickVerify = False
-        My.Forms.IntersectionType.Show()
-        Me.Visible = False
+        My.Forms.IntersectionType.Show
+        Visible = False
     End Sub
 
 

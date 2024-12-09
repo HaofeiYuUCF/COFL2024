@@ -55,11 +55,6 @@ Partial Class _4X4
         OpenFileDialog1 = New OpenFileDialog()
         SaveFileDialog1 = New SaveFileDialog()
         ToolStrip1 = New ToolStrip()
-        ToolStripButton1 = New ToolStripButton()
-        ToolStripButton2 = New ToolStripButton()
-        ToolStripButton3 = New ToolStripButton()
-        ToolStripSeparator2 = New ToolStripSeparator()
-        ToolStripLabel3 = New ToolStripLabel()
         ToolStripButton4 = New ToolStripButton()
         ToolStripButton5 = New ToolStripButton()
         ToolStripButton6 = New ToolStripButton()
@@ -365,95 +360,51 @@ Partial Class _4X4
         ' ToolStrip1
         ' 
         ToolStrip1.BackColor = SystemColors.InactiveCaption
-        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripButton1, ToolStripButton2, ToolStripButton3, ToolStripSeparator2, ToolStripLabel3, ToolStripButton4, ToolStripButton5, ToolStripButton6, ToolStripButton7, ToolStripButton8, ToolStripLabel4, ToolStripButton9})
+        ToolStrip1.Items.AddRange(New ToolStripItem() {ToolStripButton4, ToolStripButton5, ToolStripButton6, ToolStripButton7, ToolStripButton8, ToolStripLabel4, ToolStripButton9})
         ToolStrip1.Location = New Point(0, 0)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(1351, 25)
         ToolStrip1.TabIndex = 38
         ToolStrip1.Text = "ToolStrip2"
         ' 
-        ' ToolStripButton1
-        ' 
-        ToolStripButton1.AccessibleRole = AccessibleRole.Equation
-        ToolStripButton1.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton1.Image = My.Resources.Resources.new_file
-        ToolStripButton1.ImageTransparentColor = Color.Magenta
-        ToolStripButton1.Name = "ToolStripButton1"
-        ToolStripButton1.Size = New Size(23, 22)
-        ToolStripButton1.Text = "New"
-        ' 
-        ' ToolStripButton2
-        ' 
-        ToolStripButton2.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton2.Image = My.Resources.Resources.folder
-        ToolStripButton2.ImageTransparentColor = Color.Magenta
-        ToolStripButton2.Name = "ToolStripButton2"
-        ToolStripButton2.Size = New Size(23, 22)
-        ToolStripButton2.Text = "Open"
-        ' 
-        ' ToolStripButton3
-        ' 
-        ToolStripButton3.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton3.Image = My.Resources.Resources.save_file
-        ToolStripButton3.ImageTransparentColor = Color.Magenta
-        ToolStripButton3.Name = "ToolStripButton3"
-        ToolStripButton3.Size = New Size(23, 22)
-        ToolStripButton3.Text = "Save"
-        ' 
-        ' ToolStripSeparator2
-        ' 
-        ToolStripSeparator2.Name = "ToolStripSeparator2"
-        ToolStripSeparator2.Size = New Size(6, 25)
-        ' 
-        ' ToolStripLabel3
-        ' 
-        ToolStripLabel3.Name = "ToolStripLabel3"
-        ToolStripLabel3.Size = New Size(37, 22)
-        ToolStripLabel3.Text = "          "
-        ' 
         ' ToolStripButton4
         ' 
-        ToolStripButton4.DisplayStyle = ToolStripItemDisplayStyle.Image
         ToolStripButton4.Image = CType(resources.GetObject("ToolStripButton4.Image"), Image)
         ToolStripButton4.ImageTransparentColor = Color.Magenta
         ToolStripButton4.Name = "ToolStripButton4"
-        ToolStripButton4.Size = New Size(23, 22)
-        ToolStripButton4.Text = "Title"
+        ToolStripButton4.Size = New Size(127, 22)
+        ToolStripButton4.Text = "Project Description"
         ' 
         ' ToolStripButton5
         ' 
-        ToolStripButton5.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton5.Image = My.Resources.Resources._2408276
+        ToolStripButton5.Image = CType(resources.GetObject("ToolStripButton5.Image"), Image)
         ToolStripButton5.ImageTransparentColor = Color.Magenta
         ToolStripButton5.Name = "ToolStripButton5"
-        ToolStripButton5.Size = New Size(23, 22)
+        ToolStripButton5.Size = New Size(64, 22)
         ToolStripButton5.Text = "District"
         ' 
         ' ToolStripButton6
         ' 
-        ToolStripButton6.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton6.Image = My.Resources.Resources.Intersection_icon
+        ToolStripButton6.Image = CType(resources.GetObject("ToolStripButton6.Image"), Image)
         ToolStripButton6.ImageTransparentColor = Color.Magenta
         ToolStripButton6.Name = "ToolStripButton6"
-        ToolStripButton6.Size = New Size(23, 22)
+        ToolStripButton6.Size = New Size(122, 22)
         ToolStripButton6.Text = "Interesection Type"
         ' 
         ' ToolStripButton7
         ' 
-        ToolStripButton7.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton7.Image = My.Resources.Resources.data_type_number
+        ToolStripButton7.Image = CType(resources.GetObject("ToolStripButton7.Image"), Image)
         ToolStripButton7.ImageTransparentColor = Color.Magenta
         ToolStripButton7.Name = "ToolStripButton7"
-        ToolStripButton7.Size = New Size(23, 22)
+        ToolStripButton7.Size = New Size(122, 22)
         ToolStripButton7.Text = "Interesection Data"
         ' 
         ' ToolStripButton8
         ' 
-        ToolStripButton8.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton8.Image = My.Resources.Resources.button_icon_png_21060
+        ToolStripButton8.Image = CType(resources.GetObject("ToolStripButton8.Image"), Image)
         ToolStripButton8.ImageTransparentColor = Color.Magenta
         ToolStripButton8.Name = "ToolStripButton8"
-        ToolStripButton8.Size = New Size(23, 22)
+        ToolStripButton8.Size = New Size(48, 22)
         ToolStripButton8.Text = "Run"
         ' 
         ' ToolStripLabel4
@@ -465,7 +416,7 @@ Partial Class _4X4
         ' ToolStripButton9
         ' 
         ToolStripButton9.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton9.Image = My.Resources.Resources.Info
+        ToolStripButton9.Image = CType(resources.GetObject("ToolStripButton9.Image"), Image)
         ToolStripButton9.ImageTransparentColor = Color.Magenta
         ToolStripButton9.Name = "ToolStripButton9"
         ToolStripButton9.Size = New Size(23, 22)
@@ -553,11 +504,6 @@ Partial Class _4X4
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents ToolStripButton1 As ToolStripButton
-    Friend WithEvents ToolStripButton2 As ToolStripButton
-    Friend WithEvents ToolStripButton3 As ToolStripButton
-    Friend WithEvents ToolStripSeparator2 As ToolStripSeparator
-    Friend WithEvents ToolStripLabel3 As ToolStripLabel
     Friend WithEvents ToolStripButton4 As ToolStripButton
     Friend WithEvents ToolStripButton5 As ToolStripButton
     Friend WithEvents ToolStripButton6 As ToolStripButton

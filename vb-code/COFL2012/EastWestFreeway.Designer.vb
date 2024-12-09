@@ -57,11 +57,6 @@ Partial Class EastWestFreeway
         PictureBox1 = New PictureBox()
         Label14 = New Label()
         ToolStrip1 = New ToolStrip()
-        NewToolStripButton = New ToolStripButton()
-        OpenToolStripButton = New ToolStripButton()
-        SaveToolStripButton = New ToolStripButton()
-        ToolStripSeparator1 = New ToolStripSeparator()
-        ToolStripLabel1 = New ToolStripLabel()
         TitleToolStripButton = New ToolStripButton()
         DistrictToolStripButton = New ToolStripButton()
         IntersectionTypeToolStripButton = New ToolStripButton()
@@ -384,95 +379,51 @@ Partial Class EastWestFreeway
         ' ToolStrip1
         ' 
         ToolStrip1.BackColor = SystemColors.InactiveCaption
-        ToolStrip1.Items.AddRange(New ToolStripItem() {NewToolStripButton, OpenToolStripButton, SaveToolStripButton, ToolStripSeparator1, ToolStripLabel1, TitleToolStripButton, DistrictToolStripButton, IntersectionTypeToolStripButton, ToolStripButton7, RunToolStripButton, ToolStripLabel2, AboutToolStripButton})
+        ToolStrip1.Items.AddRange(New ToolStripItem() {TitleToolStripButton, DistrictToolStripButton, IntersectionTypeToolStripButton, ToolStripButton7, RunToolStripButton, ToolStripLabel2, AboutToolStripButton})
         ToolStrip1.Location = New Point(0, 0)
         ToolStrip1.Name = "ToolStrip1"
         ToolStrip1.Size = New Size(1351, 25)
         ToolStrip1.TabIndex = 164
         ToolStrip1.Text = "ToolStrip1"
         ' 
-        ' NewToolStripButton
-        ' 
-        NewToolStripButton.AccessibleRole = AccessibleRole.Equation
-        NewToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        NewToolStripButton.Image = My.Resources.Resources.new_file
-        NewToolStripButton.ImageTransparentColor = Color.Magenta
-        NewToolStripButton.Name = "NewToolStripButton"
-        NewToolStripButton.Size = New Size(23, 22)
-        NewToolStripButton.Text = "New"
-        ' 
-        ' OpenToolStripButton
-        ' 
-        OpenToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        OpenToolStripButton.Image = My.Resources.Resources.folder
-        OpenToolStripButton.ImageTransparentColor = Color.Magenta
-        OpenToolStripButton.Name = "OpenToolStripButton"
-        OpenToolStripButton.Size = New Size(23, 22)
-        OpenToolStripButton.Text = "Open"
-        ' 
-        ' SaveToolStripButton
-        ' 
-        SaveToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        SaveToolStripButton.Image = My.Resources.Resources.save_file
-        SaveToolStripButton.ImageTransparentColor = Color.Magenta
-        SaveToolStripButton.Name = "SaveToolStripButton"
-        SaveToolStripButton.Size = New Size(23, 22)
-        SaveToolStripButton.Text = "Save"
-        ' 
-        ' ToolStripSeparator1
-        ' 
-        ToolStripSeparator1.Name = "ToolStripSeparator1"
-        ToolStripSeparator1.Size = New Size(6, 25)
-        ' 
-        ' ToolStripLabel1
-        ' 
-        ToolStripLabel1.Name = "ToolStripLabel1"
-        ToolStripLabel1.Size = New Size(37, 22)
-        ToolStripLabel1.Text = "          "
-        ' 
         ' TitleToolStripButton
         ' 
-        TitleToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
         TitleToolStripButton.Image = CType(resources.GetObject("TitleToolStripButton.Image"), Image)
         TitleToolStripButton.ImageTransparentColor = Color.Magenta
         TitleToolStripButton.Name = "TitleToolStripButton"
-        TitleToolStripButton.Size = New Size(23, 22)
-        TitleToolStripButton.Text = "Title"
+        TitleToolStripButton.Size = New Size(127, 22)
+        TitleToolStripButton.Text = "Project Description"
         ' 
         ' DistrictToolStripButton
         ' 
-        DistrictToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        DistrictToolStripButton.Image = My.Resources.Resources._2408276
+        DistrictToolStripButton.Image = CType(resources.GetObject("DistrictToolStripButton.Image"), Image)
         DistrictToolStripButton.ImageTransparentColor = Color.Magenta
         DistrictToolStripButton.Name = "DistrictToolStripButton"
-        DistrictToolStripButton.Size = New Size(23, 22)
+        DistrictToolStripButton.Size = New Size(64, 22)
         DistrictToolStripButton.Text = "District"
         ' 
         ' IntersectionTypeToolStripButton
         ' 
-        IntersectionTypeToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        IntersectionTypeToolStripButton.Image = My.Resources.Resources.Intersection_icon
+        IntersectionTypeToolStripButton.Image = CType(resources.GetObject("IntersectionTypeToolStripButton.Image"), Image)
         IntersectionTypeToolStripButton.ImageTransparentColor = Color.Magenta
         IntersectionTypeToolStripButton.Name = "IntersectionTypeToolStripButton"
-        IntersectionTypeToolStripButton.Size = New Size(23, 22)
+        IntersectionTypeToolStripButton.Size = New Size(122, 22)
         IntersectionTypeToolStripButton.Text = "Interesection Type"
         ' 
         ' ToolStripButton7
         ' 
-        ToolStripButton7.DisplayStyle = ToolStripItemDisplayStyle.Image
-        ToolStripButton7.Image = My.Resources.Resources.data_type_number
+        ToolStripButton7.Image = CType(resources.GetObject("ToolStripButton7.Image"), Image)
         ToolStripButton7.ImageTransparentColor = Color.Magenta
         ToolStripButton7.Name = "ToolStripButton7"
-        ToolStripButton7.Size = New Size(23, 22)
+        ToolStripButton7.Size = New Size(122, 22)
         ToolStripButton7.Text = "Interesection Data"
         ' 
         ' RunToolStripButton
         ' 
-        RunToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        RunToolStripButton.Image = My.Resources.Resources.button_icon_png_21060
+        RunToolStripButton.Image = CType(resources.GetObject("RunToolStripButton.Image"), Image)
         RunToolStripButton.ImageTransparentColor = Color.Magenta
         RunToolStripButton.Name = "RunToolStripButton"
-        RunToolStripButton.Size = New Size(23, 22)
+        RunToolStripButton.Size = New Size(48, 22)
         RunToolStripButton.Text = "Run"
         ' 
         ' ToolStripLabel2
@@ -484,7 +435,7 @@ Partial Class EastWestFreeway
         ' AboutToolStripButton
         ' 
         AboutToolStripButton.DisplayStyle = ToolStripItemDisplayStyle.Image
-        AboutToolStripButton.Image = My.Resources.Resources.Info
+        AboutToolStripButton.Image = CType(resources.GetObject("AboutToolStripButton.Image"), Image)
         AboutToolStripButton.ImageTransparentColor = Color.Magenta
         AboutToolStripButton.Name = "AboutToolStripButton"
         AboutToolStripButton.Size = New Size(23, 22)
@@ -629,11 +580,6 @@ Partial Class EastWestFreeway
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Label14 As Label
     Friend WithEvents ToolStrip1 As ToolStrip
-    Friend WithEvents NewToolStripButton As ToolStripButton
-    Friend WithEvents OpenToolStripButton As ToolStripButton
-    Friend WithEvents SaveToolStripButton As ToolStripButton
-    Friend WithEvents ToolStripSeparator1 As ToolStripSeparator
-    Friend WithEvents ToolStripLabel1 As ToolStripLabel
     Friend WithEvents TitleToolStripButton As ToolStripButton
     Friend WithEvents DistrictToolStripButton As ToolStripButton
     Friend WithEvents IntersectionTypeToolStripButton As ToolStripButton

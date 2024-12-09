@@ -17,40 +17,40 @@ Public Class TollBoothEW
     '*************************************************************************************************************************************
     '************************************************Top Navigation Menus and Buttons*****************************************************
     '*************************************************************************************************************************************
-    Private Sub NewToolStripButton_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles NewToolStripButton.Click
-        Welcome.ClearAll()
-        District.InitDistrict()
-        IntersectionType.InitIntType()
-        My.Forms.Title.Show()
-        Me.Visible = False
-        Title.InitTitle()
+    Private Sub NewToolStripButton_Click(ByVal sender As Object, ByVal e As EventArgs)
+        Welcome.ClearAll
+        District.InitDistrict
+        IntersectionType.InitIntType
+        My.Forms.Title.Show
+        Visible = False
+        Title.InitTitle
     End Sub
 
-    Private Sub ToolStripButton2_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles OpenToolStripButton.Click
+    Private Sub ToolStripButton2_Click(ByVal sender As Object, ByVal e As EventArgs)
         OpenFileDialog1.InitialDirectory = Welcome.PrimaryDirectory & "\UsrFiles\"
         OpenFileDialog1.Filter = "Input files (*in)|*.in|All files (*.*)|*.*"
         OpenFileDialog1.FileName = ""
 
-        If OpenFileDialog1.ShowDialog() = DialogResult.OK Then
+        If OpenFileDialog1.ShowDialog = DialogResult.OK Then
             Welcome.FDOTin = OpenFileDialog1.FileName
-            Welcome.OpenFile()
-            My.Forms.Title.Show()
-            Me.Visible = False
-            Title.InitTitle()
-            District.InitDistrict()
-            IntersectionType.InitIntType()
+            Welcome.OpenFile
+            My.Forms.Title.Show
+            Visible = False
+            Title.InitTitle
+            District.InitDistrict
+            IntersectionType.InitIntType
         End If
     End Sub
 
-    Private Sub ToolStripButton3_Click(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles SaveToolStripButton.Click
+    Private Sub ToolStripButton3_Click(ByVal sender As Object, ByVal e As EventArgs)
         'Writes user program run inputs to text file
         SaveFileDialog1.InitialDirectory = Welcome.PrimaryDirectory & "\UsrFiles\"
         SaveFileDialog1.Filter = "Input files (*.in)|*.in|All files (*.*)|*.*"
         SaveFileDialog1.FileName = ""
 
-        If SaveFileDialog1.ShowDialog() = DialogResult.OK Then
+        If SaveFileDialog1.ShowDialog = DialogResult.OK Then
             Welcome.FDOTin = SaveFileDialog1.FileName
-            Welcome.SaveFile()
+            Welcome.SaveFile
         End If
     End Sub
 
