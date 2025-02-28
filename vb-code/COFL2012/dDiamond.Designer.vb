@@ -186,15 +186,15 @@ Partial Class dDiamond
         Label14.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label14.Location = New Point(652, 757)
         Label14.Name = "Label14"
-        Label14.Size = New Size(141, 24)
+        Label14.Size = New Size(155, 24)
         Label14.TabIndex = 203
-        Label14.Text = "WESTBOUND"
+        Label14.Text = "NORTHBOUND"
         ' 
         ' Label10
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label10.Location = New Point(1078, 481)
+        Label10.Location = New Point(1076, 435)
         Label10.Name = "Label10"
         Label10.Size = New Size(175, 20)
         Label10.TabIndex = 202
@@ -204,7 +204,7 @@ Partial Class dDiamond
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(1078, 573)
+        Label7.Location = New Point(354, 809)
         Label7.Name = "Label7"
         Label7.Size = New Size(126, 40)
         Label7.TabIndex = 201
@@ -214,7 +214,7 @@ Partial Class dDiamond
         ' 
         Label18.AutoSize = True
         Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label18.Location = New Point(124, 324)
+        Label18.Location = New Point(147, 374)
         Label18.Name = "Label18"
         Label18.Size = New Size(142, 40)
         Label18.TabIndex = 200
@@ -222,7 +222,7 @@ Partial Class dDiamond
         ' 
         ' TextBox11
         ' 
-        TextBox11.Location = New Point(529, 740)
+        TextBox11.Location = New Point(537, 724)
         TextBox11.Name = "TextBox11"
         TextBox11.Size = New Size(100, 23)
         TextBox11.TabIndex = 175
@@ -231,7 +231,7 @@ Partial Class dDiamond
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label12.Location = New Point(346, 733)
+        Label12.Location = New Point(354, 717)
         Label12.Name = "Label12"
         Label12.Size = New Size(147, 40)
         Label12.TabIndex = 199
@@ -239,14 +239,14 @@ Partial Class dDiamond
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(529, 776)
+        TextBox2.Location = New Point(537, 760)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 23)
         TextBox2.TabIndex = 176
         ' 
         ' TextBox12
         ' 
-        TextBox12.Location = New Point(529, 693)
+        TextBox12.Location = New Point(537, 677)
         TextBox12.Name = "TextBox12"
         TextBox12.Size = New Size(100, 23)
         TextBox12.TabIndex = 174
@@ -255,7 +255,7 @@ Partial Class dDiamond
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label13.Location = New Point(346, 776)
+        Label13.Location = New Point(354, 760)
         Label13.Name = "Label13"
         Label13.Size = New Size(148, 40)
         Label13.TabIndex = 198
@@ -265,7 +265,7 @@ Partial Class dDiamond
         ' 
         Label17.AutoSize = True
         Label17.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label17.Location = New Point(346, 693)
+        Label17.Location = New Point(354, 677)
         Label17.Name = "Label17"
         Label17.Size = New Size(133, 40)
         Label17.TabIndex = 197
@@ -273,7 +273,7 @@ Partial Class dDiamond
         ' 
         ' TextBox7
         ' 
-        TextBox7.Location = New Point(958, 139)
+        TextBox7.Location = New Point(958, 126)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(100, 23)
         TextBox7.TabIndex = 172
@@ -282,7 +282,7 @@ Partial Class dDiamond
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label11.Location = New Point(728, 137)
+        Label11.Location = New Point(728, 124)
         Label11.Name = "Label11"
         Label11.Size = New Size(147, 40)
         Label11.TabIndex = 196
@@ -290,14 +290,14 @@ Partial Class dDiamond
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(959, 575)
+        TextBox4.Location = New Point(537, 809)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(100, 23)
         TextBox4.TabIndex = 182
         ' 
         ' TextBox14
         ' 
-        TextBox14.Location = New Point(314, 289)
+        TextBox14.Location = New Point(318, 338)
         TextBox14.Name = "TextBox14"
         TextBox14.Size = New Size(100, 23)
         TextBox14.TabIndex = 177
@@ -306,7 +306,7 @@ Partial Class dDiamond
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label9.Location = New Point(98, 291)
+        Label9.Location = New Point(121, 341)
         Label9.Name = "Label9"
         Label9.Size = New Size(175, 20)
         Label9.TabIndex = 195
@@ -359,14 +359,14 @@ Partial Class dDiamond
         ' 
         ' TextBox15
         ' 
-        TextBox15.Location = New Point(959, 525)
+        TextBox15.Location = New Point(957, 479)
         TextBox15.Name = "TextBox15"
         TextBox15.Size = New Size(100, 23)
         TextBox15.TabIndex = 181
         ' 
         ' TextBox16
         ' 
-        TextBox16.Location = New Point(959, 483)
+        TextBox16.Location = New Point(957, 437)
         TextBox16.Name = "TextBox16"
         TextBox16.Size = New Size(100, 23)
         TextBox16.TabIndex = 180
@@ -375,7 +375,7 @@ Partial Class dDiamond
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label15.Location = New Point(1078, 523)
+        Label15.Location = New Point(1076, 477)
         Label15.Name = "Label15"
         Label15.Size = New Size(142, 40)
         Label15.TabIndex = 192
@@ -393,14 +393,14 @@ Partial Class dDiamond
         ' 
         ' TextBox6
         ' 
-        TextBox6.Location = New Point(314, 375)
+        TextBox6.Location = New Point(957, 209)
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(100, 23)
         TextBox6.TabIndex = 179
         ' 
         ' TextBox13
         ' 
-        TextBox13.Location = New Point(314, 326)
+        TextBox13.Location = New Point(318, 375)
         TextBox13.Name = "TextBox13"
         TextBox13.Size = New Size(100, 23)
         TextBox13.TabIndex = 178
@@ -409,7 +409,7 @@ Partial Class dDiamond
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(124, 373)
+        Label6.Location = New Point(728, 208)
         Label6.Name = "Label6"
         Label6.Size = New Size(126, 40)
         Label6.TabIndex = 190
@@ -427,14 +427,14 @@ Partial Class dDiamond
         ' 
         ' TextBox9
         ' 
-        TextBox9.Location = New Point(957, 177)
+        TextBox9.Location = New Point(957, 164)
         TextBox9.Name = "TextBox9"
         TextBox9.Size = New Size(100, 23)
         TextBox9.TabIndex = 173
         ' 
         ' TextBox8
         ' 
-        TextBox8.Location = New Point(957, 99)
+        TextBox8.Location = New Point(957, 86)
         TextBox8.Name = "TextBox8"
         TextBox8.Size = New Size(100, 23)
         TextBox8.TabIndex = 171
@@ -443,7 +443,7 @@ Partial Class dDiamond
         ' 
         Label3.AutoSize = True
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label3.Location = New Point(727, 177)
+        Label3.Location = New Point(727, 164)
         Label3.Name = "Label3"
         Label3.Size = New Size(148, 40)
         Label3.TabIndex = 188
@@ -453,7 +453,7 @@ Partial Class dDiamond
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(727, 97)
+        Label2.Location = New Point(727, 84)
         Label2.Name = "Label2"
         Label2.Size = New Size(133, 40)
         Label2.TabIndex = 187
@@ -494,7 +494,7 @@ Partial Class dDiamond
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(1350, 844)
+        ClientSize = New Size(1350, 877)
         Controls.Add(PictureBox1)
         Controls.Add(PictureBox7)
         Controls.Add(PictureBox8)

@@ -324,7 +324,7 @@ use the speed limit
   <data name="PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAl8AAAGcCAYAAADnK8WaAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAA/7JJREFUeF7svQeYVEW6/z85k3MwYhYVMWEmCJgDohJUMggioGRJM4OACcVEjmYQ
+        vAAADrwBlbxySQAA/7JJREFUeF7svQeYVEW6/z85k3MwYhYVMWEmCJgDohJUMggioGRJM4OACcVEjmYQ
         yUHi5CGYXde4q65x7+7du7v37t7dvff+/u+/PtXzzpxpambODDMw4Zzn+T7dffqc6u46fao+9b5vvRUR
         kRohc+bMKVTwum693vzp5mKvU1NTq/T1znd2Fntd2b+npr2+9tpri73OyMgo9nrJkiXFXmdnZxd7vXfv
         3mKvDx8+XOx1ZmZmsdfTp08v9jr8/T/84Q/FXmdnF3//wIG84q9zDhZ7nZdX/P2Y+Jhir+fnzi/2+vGM
@@ -2356,4 +2356,7 @@ use the speed limit
         xowZYwP0XXViRS4wkkoDebNem+XXc/RqRGWY/w9xXkj9knqmeQAAAABJRU5ErkJggg==
 </value>
   </data>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>58</value>
+  </metadata>
 </root>

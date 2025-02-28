@@ -118,17 +118,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="Label2.Text" xml:space="preserve">
-    <value>CO Florida 2024 (COFL2024) is the Florida Department of Transportation's (FDOT's) latest versionof the carbon monoxide (CO) 
+    <value>CO Florida 2024 (COFL2024) is the Florida Department of Transportation's (FDOT's) latest version of the carbon monoxide (CO) 
 screening model.
 
-The original COFL model was developed for the Environmental Management Office of the FDOT at
-the University of Central Florida (UCF) by Dr. C. David Cooper and Mark Ritner, EI. Mariano Berrios is the FDOT Project Officer.
+The original COFL model (COFL2012) was developed in 2012 for the Environmental Management Office of the FDOT at
+the University of Central Florida (UCF) by Dr. C. David Cooper and Mark Ritner, EI. Mariano Berrios was the FDOT Project Officer.
+
+COFL2012 was updated by Erik Cornelison and Dr. Haofei Yu at UCF. Catherine Bradley, Neil Campbell, and Terri Cook
+are the FDOT Project Officers.
 
 COFL2024 replaces the previous version. It incorporated the latest version of the U.S. Environmental Protection Agency's (USEPA's)
-Motor Vehicle Emission Simulator (MOVES version 4), optimized dispersion modeling, and added an additional intersection option.
-
-The COFL2024 update was completed by Erik Cornelison and Dr. Haofei Yu at UCF. 
-Catherine Bradley, Neil Campbell, and Terri Cook are the FDOT Project Officers.</value>
+Motor Vehicle Emission Simulator (MOVES version 4), optimized dispersion modeling, and added an additional intersection option.</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

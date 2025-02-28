@@ -442,9 +442,9 @@ Partial Class NorthSouthFreeway
         Label14.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label14.Location = New Point(639, 768)
         Label14.Name = "Label14"
-        Label14.Size = New Size(141, 24)
+        Label14.Size = New Size(155, 24)
         Label14.TabIndex = 166
-        Label14.Text = "WESTBOUND"
+        Label14.Text = "NORTHBOUND"
         ' 
         ' PictureBox7
         ' 

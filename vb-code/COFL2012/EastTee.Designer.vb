@@ -315,9 +315,9 @@ Partial Class East_Tee
         Label4.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Bold, GraphicsUnit.Point)
         Label4.Location = New Point(650, 777)
         Label4.Name = "Label4"
-        Label4.Size = New Size(153, 24)
+        Label4.Size = New Size(155, 24)
         Label4.TabIndex = 115
-        Label4.Text = "SOUTHBOUND"
+        Label4.Text = "NORTHBOUND"
         ' 
         ' PictureBox7
         ' 
