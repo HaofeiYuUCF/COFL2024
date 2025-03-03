@@ -129,7 +129,9 @@ are the FDOT Project Officers.
 
 COFL2024 replaces the previous version. It incorporated the latest version of the U.S. Environmental Protection Agency's (USEPA's)
 Motor Vehicle Emission Simulator (MOVES version 4), optimized dispersion modeling, and added an additional intersection option
-and an additional intersection type (Diverging Diamond).</value>
+and an additional intersection type (Diverging Diamond).
+
+Version 1.0. Published 3/3/2025. Contact: haofei.yu@ucf.edu</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">

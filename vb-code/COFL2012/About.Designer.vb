@@ -37,7 +37,7 @@ Partial Class About
         Label2.Location = New Point(48, 76)
         Label2.Name = "Label2"
         Label2.RightToLeft = RightToLeft.No
-        Label2.Size = New Size(939, 240)
+        Label2.Size = New Size(939, 280)
         Label2.TabIndex = 1
         Label2.Text = resources.GetString("Label2.Text")
         ' 
@@ -55,7 +55,7 @@ Partial Class About
         ' 
         Button1.BackColor = SystemColors.ButtonShadow
         Button1.Font = New Font("Microsoft Sans Serif", 18F, FontStyle.Bold, GraphicsUnit.Point)
-        Button1.Location = New Point(405, 603)
+        Button1.Location = New Point(404, 619)
         Button1.Name = "Button1"
         Button1.Size = New Size(201, 39)
         Button1.TabIndex = 7
@@ -65,7 +65,7 @@ Partial Class About
         ' PictureBox1
         ' 
         PictureBox1.Image = My.Resources.Resources.fdot_logo
-        PictureBox1.Location = New Point(244, 334)
+        PictureBox1.Location = New Point(247, 359)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(527, 252)
         PictureBox1.SizeMode = PictureBoxSizeMode.Zoom

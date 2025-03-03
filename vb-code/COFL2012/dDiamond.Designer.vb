@@ -343,7 +343,7 @@ Partial Class dDiamond
         Label8.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point)
         Label8.Location = New Point(25, 651)
         Label8.Name = "Label8"
-        Label8.Size = New Size(235, 167)
+        Label8.Size = New Size(234, 167)
         Label8.TabIndex = 194
         Label8.Text = resources.GetString("Label8.Text")
         ' 

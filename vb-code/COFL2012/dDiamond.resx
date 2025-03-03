@@ -310,9 +310,9 @@
   <data name="Label8.Text" xml:space="preserve">
     <value>NOTES:
 
-1) APPROACH TRAFFIC is the peak hour
-volume on that leg, including left and right
-turning traffic, if applicable
+1) APPROACH TRAFFIC is the peak hour 
+volume on that leg for all lanes, including 
+left and right turning traffic, if applicable.
 
 2) SPEED is the cruise speed as vehicles
 approach the intersection before entering

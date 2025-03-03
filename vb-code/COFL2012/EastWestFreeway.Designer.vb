@@ -230,7 +230,7 @@ Partial Class EastWestFreeway
         Label8.BorderStyle = BorderStyle.FixedSingle
         Label8.Location = New Point(12, 662)
         Label8.Name = "Label8"
-        Label8.Size = New Size(236, 167)
+        Label8.Size = New Size(231, 167)
         Label8.TabIndex = 146
         Label8.Text = resources.GetString("Label8.Text")
         ' 
