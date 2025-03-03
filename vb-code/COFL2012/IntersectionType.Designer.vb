@@ -235,9 +235,9 @@ Partial Class IntersectionType
         Label11.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label11.Location = New Point(325, 639)
         Label11.Name = "Label11"
-        Label11.Size = New Size(201, 72)
+        Label11.Size = New Size(201, 48)
         Label11.TabIndex = 25
-        Label11.Text = "Diamond Interchange: " & vbCrLf & "    N-S Freeway" & vbCrLf
+        Label11.Text = "Diamond Interchange: " & vbCrLf & "    N-S Highway"
         ' 
         ' Label12
         ' 
@@ -246,9 +246,9 @@ Partial Class IntersectionType
         Label12.Font = New Font("Microsoft Sans Serif", 14.25F, FontStyle.Regular, GraphicsUnit.Point)
         Label12.Location = New Point(643, 639)
         Label12.Name = "Label12"
-        Label12.Size = New Size(201, 72)
+        Label12.Size = New Size(201, 48)
         Label12.TabIndex = 26
-        Label12.Text = "Diamond Interchange: " & vbCrLf & "    E-W Freeway" & vbCrLf
+        Label12.Text = "Diamond Interchange: " & vbCrLf & "    E-W Highway"
         ' 
         ' PictureBox5
         ' 
@@ -278,7 +278,7 @@ Partial Class IntersectionType
         ' 
         PictureBox9.BorderStyle = BorderStyle.FixedSingle
         PictureBox9.Cursor = Cursors.Hand
-        PictureBox9.Image = My.Resources.Resources.Tool_Booth
+        PictureBox9.Image = CType(resources.GetObject("PictureBox9.Image"), Image)
         PictureBox9.Location = New Point(28, 501)
         PictureBox9.Name = "PictureBox9"
         PictureBox9.Size = New Size(195, 135)

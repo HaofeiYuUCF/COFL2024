@@ -595,9 +595,9 @@ Public Class Welcome
 
         If IntType = "Toll Booth" Then
             If EWTollBooth = True Then
-                Results.TextBox30.Text = "E-W Freeway " & IntType
+                Results.TextBox30.Text = "E-W Highway " & IntType
             Else
-                Results.TextBox30.Text = "N-S Freeway " & IntType
+                Results.TextBox30.Text = "N-S Highway " & IntType
             End If
         Else
             Results.TextBox30.Text = IntType
@@ -608,9 +608,9 @@ Public Class Welcome
 
         If IntType = "Toll Booth" Then
             If EWTollBooth = True Then
-                Results.TextBox30.Text = "E-W Freeway " & IntType
+                Results.TextBox30.Text = "E-W Highway " & IntType
             Else
-                Results.TextBox30.Text = "N-S Freeway " & IntType
+                Results.TextBox30.Text = "N-S Highway " & IntType
             End If
         Else
             Results.TextBox30.Text = IntType
@@ -670,9 +670,9 @@ Public Class Welcome
 
         ElseIf (IntType = "N-S Diamond" Or IntType = "E-W Diamond" Or IntType = "D Diamond") Then
             Results.TextBox38.Text = "Arterial"
-            Results.TextBox34.Text = "Freeway"
+            Results.TextBox34.Text = "Highway"
             Results.TextBox37.Text = "Arterial"
-            Results.TextBox42.Text = "Freeway"
+            Results.TextBox42.Text = "Highway"
             Results.TextBox40.Text = Speed & " mph"
             Results.TextBox36.Text = HwySpeed & " mph"
             Results.TextBox39.Text = ATMax & " vph"

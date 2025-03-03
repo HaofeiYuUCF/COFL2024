@@ -155,11 +155,11 @@ Partial Class _4X6
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label15.Location = New Point(1063, 518)
+        Label15.Location = New Point(1063, 520)
         Label15.Name = "Label15"
-        Label15.Size = New Size(142, 40)
+        Label15.Size = New Size(208, 20)
         Label15.TabIndex = 42
-        Label15.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label15.Text = "Approach Traffic (veh/hr)"
         ' 
         ' TextBox6
         ' 
@@ -173,7 +173,7 @@ Partial Class _4X6
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label14.Location = New Point(1073, 476)
+        Label14.Location = New Point(1063, 476)
         Label14.Name = "Label14"
         Label14.Size = New Size(112, 20)
         Label14.TabIndex = 41
@@ -183,11 +183,11 @@ Partial Class _4X6
         ' 
         Label18.AutoSize = True
         Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label18.Location = New Point(390, 771)
+        Label18.Location = New Point(324, 755)
         Label18.Name = "Label18"
-        Label18.Size = New Size(142, 40)
+        Label18.Size = New Size(208, 20)
         Label18.TabIndex = 43
-        Label18.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label18.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label17
         ' 
@@ -212,7 +212,7 @@ Partial Class _4X6
         ' TextBox7
         ' 
         TextBox7.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox7.Location = New Point(544, 771)
+        TextBox7.Location = New Point(544, 755)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(100, 21)
         TextBox7.TabIndex = 3
@@ -228,17 +228,17 @@ Partial Class _4X6
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(125, 410)
+        Label6.Location = New Point(87, 416)
         Label6.Name = "Label6"
-        Label6.Size = New Size(142, 40)
+        Label6.Size = New Size(208, 20)
         Label6.TabIndex = 35
-        Label6.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label6.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(163, 359)
+        Label7.Location = New Point(183, 364)
         Label7.Name = "Label7"
         Label7.Size = New Size(112, 20)
         Label7.TabIndex = 34
@@ -258,7 +258,7 @@ Partial Class _4X6
         ' 
         TextBox2.BorderStyle = BorderStyle.FixedSingle
         TextBox2.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox2.Location = New Point(872, 190)
+        TextBox2.Location = New Point(910, 189)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 21)
         TextBox2.TabIndex = 1
@@ -269,15 +269,15 @@ Partial Class _4X6
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(696, 188)
         Label3.Name = "Label3"
-        Label3.Size = New Size(142, 40)
+        Label3.Size = New Size(208, 20)
         Label3.TabIndex = 29
-        Label3.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label3.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label2
         ' 
         Label2.AutoSize = True
         Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label2.Location = New Point(706, 135)
+        Label2.Location = New Point(782, 154)
         Label2.Name = "Label2"
         Label2.Size = New Size(112, 20)
         Label2.TabIndex = 28
@@ -376,7 +376,7 @@ Partial Class _4X6
         ' 
         TextBox1.BorderStyle = BorderStyle.FixedSingle
         TextBox1.Font = New Font("Microsoft Sans Serif", 9F, FontStyle.Bold, GraphicsUnit.Point)
-        TextBox1.Location = New Point(872, 133)
+        TextBox1.Location = New Point(910, 155)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(100, 21)
         TextBox1.TabIndex = 0

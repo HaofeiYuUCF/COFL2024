@@ -137,14 +137,14 @@ Partial Class TollBoothEW
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(188, 501)
+        TextBox1.Location = New Point(188, 522)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(100, 23)
         TextBox1.TabIndex = 7
         ' 
         ' TextBox14
         ' 
-        TextBox14.Location = New Point(184, 452)
+        TextBox14.Location = New Point(188, 473)
         TextBox14.Name = "TextBox14"
         TextBox14.Size = New Size(100, 23)
         TextBox14.TabIndex = 6
@@ -153,21 +153,21 @@ Partial Class TollBoothEW
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(8, 499)
+        Label6.Location = New Point(0, 499)
         Label6.Name = "Label6"
-        Label6.Size = New Size(142, 40)
+        Label6.Size = New Size(208, 20)
         Label6.TabIndex = 121
-        Label6.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label6.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(31, 450)
+        Label7.Location = New Point(0, 450)
         Label7.Name = "Label7"
-        Label7.Size = New Size(112, 40)
+        Label7.Size = New Size(184, 20)
         Label7.TabIndex = 120
-        Label7.Text = "Freeway " & vbCrLf & "Speed (mph)" & vbCrLf
+        Label7.Text = "Freeway Speed (mph)" & vbCrLf
         ' 
         ' Label1
         ' 
@@ -191,7 +191,7 @@ Partial Class TollBoothEW
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(188, 562)
+        TextBox2.Location = New Point(188, 585)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 23)
         TextBox2.TabIndex = 8
@@ -200,15 +200,15 @@ Partial Class TollBoothEW
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label9.Location = New Point(8, 562)
+        Label9.Location = New Point(0, 562)
         Label9.Name = "Label9"
-        Label9.Size = New Size(194, 40)
+        Label9.Size = New Size(303, 20)
         Label9.TabIndex = 135
-        Label9.Text = "% of Vehicles" & vbCrLf & " Using ETC-Only Lanes" & vbCrLf
+        Label9.Text = "% of Vehicles Using ETC-Only Lanes"
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(1224, 575)
+        TextBox3.Location = New Point(1224, 598)
         TextBox3.Name = "TextBox3"
         TextBox3.Size = New Size(100, 23)
         TextBox3.TabIndex = 11
@@ -219,20 +219,20 @@ Partial Class TollBoothEW
         Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.Location = New Point(1037, 575)
         Label2.Name = "Label2"
-        Label2.Size = New Size(194, 60)
+        Label2.Size = New Size(303, 20)
         Label2.TabIndex = 143
-        Label2.Text = "% of Vehicles" & vbCrLf & " Using ETC-Only Lanes" & vbCrLf & vbCrLf
+        Label2.Text = "% of Vehicles Using ETC-Only Lanes"
         ' 
         ' TextBox4
         ' 
-        TextBox4.Location = New Point(1224, 512)
+        TextBox4.Location = New Point(1224, 535)
         TextBox4.Name = "TextBox4"
         TextBox4.Size = New Size(100, 23)
         TextBox4.TabIndex = 10
         ' 
         ' TextBox5
         ' 
-        TextBox5.Location = New Point(1224, 463)
+        TextBox5.Location = New Point(1224, 483)
         TextBox5.Name = "TextBox5"
         TextBox5.Size = New Size(100, 23)
         TextBox5.TabIndex = 9
@@ -243,9 +243,9 @@ Partial Class TollBoothEW
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(1048, 512)
         Label3.Name = "Label3"
-        Label3.Size = New Size(142, 40)
+        Label3.Size = New Size(208, 20)
         Label3.TabIndex = 140
-        Label3.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label3.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label5
         ' 
@@ -253,13 +253,13 @@ Partial Class TollBoothEW
         Label5.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label5.Location = New Point(1048, 461)
         Label5.Name = "Label5"
-        Label5.Size = New Size(112, 40)
+        Label5.Size = New Size(184, 20)
         Label5.TabIndex = 139
-        Label5.Text = "Freeway " & vbCrLf & "Speed (mph)" & vbCrLf
+        Label5.Text = "Freeway Speed (mph)" & vbCrLf
         ' 
         ' PictureBox1
         ' 
-        PictureBox1.Image = My.Resources.Resources.ToolBoothN_S
+        PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
         PictureBox1.Location = New Point(294, 228)
         PictureBox1.Name = "PictureBox1"
         PictureBox1.Size = New Size(737, 440)
@@ -269,7 +269,7 @@ Partial Class TollBoothEW
         ' 
         ' TextBox6
         ' 
-        TextBox6.Location = New Point(319, 198)
+        TextBox6.Location = New Point(961, 121)
         TextBox6.Name = "TextBox6"
         TextBox6.Size = New Size(100, 23)
         TextBox6.TabIndex = 0
@@ -278,22 +278,22 @@ Partial Class TollBoothEW
         ' 
         Label10.AutoSize = True
         Label10.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label10.Location = New Point(869, 137)
+        Label10.Location = New Point(652, 190)
         Label10.Name = "Label10"
-        Label10.Size = New Size(169, 40)
+        Label10.Size = New Size(303, 20)
         Label10.TabIndex = 150
-        Label10.Text = "% of Vehicles Using" & vbCrLf & "ETC-Only Lanes" & vbCrLf
+        Label10.Text = "% of Vehicles Using ETC-Only Lanes" & vbCrLf
         ' 
         ' TextBox7
         ' 
-        TextBox7.Location = New Point(693, 198)
+        TextBox7.Location = New Point(961, 157)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(100, 23)
         TextBox7.TabIndex = 1
         ' 
         ' TextBox8
         ' 
-        TextBox8.Location = New Point(869, 198)
+        TextBox8.Location = New Point(961, 190)
         TextBox8.Name = "TextBox8"
         TextBox8.Size = New Size(100, 23)
         TextBox8.TabIndex = 2
@@ -302,21 +302,21 @@ Partial Class TollBoothEW
         ' 
         Label11.AutoSize = True
         Label11.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label11.Location = New Point(678, 137)
+        Label11.Location = New Point(747, 160)
         Label11.Name = "Label11"
-        Label11.Size = New Size(142, 40)
+        Label11.Size = New Size(208, 20)
         Label11.TabIndex = 147
-        Label11.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label11.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label12
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label12.Location = New Point(315, 137)
+        Label12.Location = New Point(771, 120)
         Label12.Name = "Label12"
-        Label12.Size = New Size(112, 40)
+        Label12.Size = New Size(184, 20)
         Label12.TabIndex = 146
-        Label12.Text = "Freeway " & vbCrLf & "Speed (mph)" & vbCrLf
+        Label12.Text = "Highway Speed (mph)"
         ' 
         ' Label13
         ' 
@@ -340,7 +340,7 @@ Partial Class TollBoothEW
         ' 
         ' TextBox9
         ' 
-        TextBox9.Location = New Point(329, 744)
+        TextBox9.Location = New Point(547, 701)
         TextBox9.Name = "TextBox9"
         TextBox9.Size = New Size(100, 23)
         TextBox9.TabIndex = 3
@@ -349,22 +349,22 @@ Partial Class TollBoothEW
         ' 
         Label15.AutoSize = True
         Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label15.Location = New Point(885, 683)
+        Label15.Location = New Point(238, 771)
         Label15.Name = "Label15"
-        Label15.Size = New Size(169, 40)
+        Label15.Size = New Size(303, 20)
         Label15.TabIndex = 158
-        Label15.Text = "% of Vehicles Using" & vbCrLf & "ETC-Only Lanes" & vbCrLf
+        Label15.Text = "% of Vehicles Using ETC-Only Lanes"
         ' 
         ' TextBox10
         ' 
-        TextBox10.Location = New Point(528, 744)
+        TextBox10.Location = New Point(547, 740)
         TextBox10.Name = "TextBox10"
         TextBox10.Size = New Size(100, 23)
         TextBox10.TabIndex = 4
         ' 
         ' TextBox11
         ' 
-        TextBox11.Location = New Point(903, 744)
+        TextBox11.Location = New Point(547, 772)
         TextBox11.Name = "TextBox11"
         TextBox11.Size = New Size(100, 23)
         TextBox11.TabIndex = 5
@@ -373,21 +373,21 @@ Partial Class TollBoothEW
         ' 
         Label17.AutoSize = True
         Label17.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label17.Location = New Point(528, 683)
+        Label17.Location = New Point(333, 740)
         Label17.Name = "Label17"
-        Label17.Size = New Size(142, 40)
+        Label17.Size = New Size(208, 20)
         Label17.TabIndex = 155
-        Label17.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label17.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label18
         ' 
         Label18.AutoSize = True
         Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label18.Location = New Point(329, 683)
+        Label18.Location = New Point(357, 701)
         Label18.Name = "Label18"
-        Label18.Size = New Size(112, 40)
+        Label18.Size = New Size(184, 20)
         Label18.TabIndex = 154
-        Label18.Text = "Freeway " & vbCrLf & "Speed (mph)" & vbCrLf
+        Label18.Text = "Highway Speed (mph)" & vbCrLf
         ' 
         ' ToolStrip1
         ' 

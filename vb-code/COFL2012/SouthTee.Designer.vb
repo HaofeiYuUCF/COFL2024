@@ -145,9 +145,9 @@ Partial Class SouthTee
         Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(1076, 394)
         Label15.Name = "Label15"
-        Label15.Size = New Size(142, 40)
+        Label15.Size = New Size(208, 20)
         Label15.TabIndex = 71
-        Label15.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label15.Text = "Approach Traffic (veh/hr)"
         ' 
         ' TextBox6
         ' 
@@ -160,7 +160,7 @@ Partial Class SouthTee
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label14.Location = New Point(1086, 354)
+        Label14.Location = New Point(1076, 354)
         Label14.Name = "Label14"
         Label14.Size = New Size(112, 20)
         Label14.TabIndex = 70
@@ -170,11 +170,11 @@ Partial Class SouthTee
         ' 
         Label18.AutoSize = True
         Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label18.Location = New Point(383, 654)
+        Label18.Location = New Point(331, 654)
         Label18.Name = "Label18"
-        Label18.Size = New Size(142, 40)
+        Label18.Size = New Size(208, 20)
         Label18.TabIndex = 72
-        Label18.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label18.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label17
         ' 
@@ -214,17 +214,17 @@ Partial Class SouthTee
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(122, 308)
+        Label6.Location = New Point(85, 312)
         Label6.Name = "Label6"
-        Label6.Size = New Size(142, 40)
+        Label6.Size = New Size(208, 20)
         Label6.TabIndex = 64
-        Label6.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label6.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(172, 259)
+        Label7.Location = New Point(181, 259)
         Label7.Name = "Label7"
         Label7.Size = New Size(112, 20)
         Label7.TabIndex = 63

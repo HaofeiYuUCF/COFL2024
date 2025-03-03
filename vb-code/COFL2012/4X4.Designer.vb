@@ -188,11 +188,11 @@ Partial Class _4X4
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(123, 391)
+        Label6.Location = New Point(85, 394)
         Label6.Name = "Label6"
-        Label6.Size = New Size(142, 40)
+        Label6.Size = New Size(208, 20)
         Label6.TabIndex = 10
-        Label6.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label6.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label7
         ' 
@@ -220,9 +220,9 @@ Partial Class _4X4
         Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(1048, 493)
         Label15.Name = "Label15"
-        Label15.Size = New Size(142, 40)
+        Label15.Size = New Size(208, 20)
         Label15.TabIndex = 16
-        Label15.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label15.Text = "Approach Traffic (veh/hr)"
         ' 
         ' TextBox3
         ' 

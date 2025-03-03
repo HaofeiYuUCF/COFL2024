@@ -141,7 +141,7 @@ Partial Class _6X6
         ' 
         ' TextBox7
         ' 
-        TextBox7.Location = New Point(544, 722)
+        TextBox7.Location = New Point(582, 721)
         TextBox7.Name = "TextBox7"
         TextBox7.Size = New Size(100, 23)
         TextBox7.TabIndex = 3
@@ -152,13 +152,13 @@ Partial Class _6X6
         Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(1063, 486)
         Label15.Name = "Label15"
-        Label15.Size = New Size(142, 40)
+        Label15.Size = New Size(208, 20)
         Label15.TabIndex = 100
-        Label15.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label15.Text = "Approach Traffic (veh/hr)"
         ' 
         ' TextBox8
         ' 
-        TextBox8.Location = New Point(544, 673)
+        TextBox8.Location = New Point(582, 672)
         TextBox8.Name = "TextBox8"
         TextBox8.Size = New Size(100, 23)
         TextBox8.TabIndex = 2
@@ -167,7 +167,7 @@ Partial Class _6X6
         ' 
         Label14.AutoSize = True
         Label14.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label14.Location = New Point(1073, 446)
+        Label14.Location = New Point(1063, 446)
         Label14.Name = "Label14"
         Label14.Size = New Size(112, 20)
         Label14.TabIndex = 99
@@ -179,9 +179,9 @@ Partial Class _6X6
         Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label18.Location = New Point(368, 720)
         Label18.Name = "Label18"
-        Label18.Size = New Size(142, 40)
+        Label18.Size = New Size(208, 20)
         Label18.TabIndex = 101
-        Label18.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label18.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label17
         ' 
@@ -221,17 +221,17 @@ Partial Class _6X6
         ' 
         Label6.AutoSize = True
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label6.Location = New Point(125, 384)
+        Label6.Location = New Point(87, 385)
         Label6.Name = "Label6"
-        Label6.Size = New Size(142, 40)
+        Label6.Size = New Size(208, 20)
         Label6.TabIndex = 93
-        Label6.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label6.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label7
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(175, 337)
+        Label7.Location = New Point(87, 337)
         Label7.Name = "Label7"
         Label7.Size = New Size(112, 20)
         Label7.TabIndex = 92
@@ -249,14 +249,14 @@ Partial Class _6X6
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(872, 178)
+        TextBox2.Location = New Point(910, 177)
         TextBox2.Name = "TextBox2"
         TextBox2.Size = New Size(100, 23)
         TextBox2.TabIndex = 1
         ' 
         ' TextBox1
         ' 
-        TextBox1.Location = New Point(832, 127)
+        TextBox1.Location = New Point(910, 128)
         TextBox1.Name = "TextBox1"
         TextBox1.Size = New Size(100, 23)
         TextBox1.TabIndex = 0
@@ -267,9 +267,9 @@ Partial Class _6X6
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(696, 176)
         Label3.Name = "Label3"
-        Label3.Size = New Size(142, 40)
+        Label3.Size = New Size(208, 20)
         Label3.TabIndex = 87
-        Label3.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label3.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label2
         ' 

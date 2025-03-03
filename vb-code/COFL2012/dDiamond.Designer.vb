@@ -204,21 +204,21 @@ Partial Class dDiamond
         ' 
         Label7.AutoSize = True
         Label7.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label7.Location = New Point(354, 809)
+        Label7.Location = New Point(325, 812)
         Label7.Name = "Label7"
-        Label7.Size = New Size(126, 40)
+        Label7.Size = New Size(206, 20)
         Label7.TabIndex = 201
-        Label7.Text = "On Ramp" & vbCrLf & "Traffic (veh/hr)" & vbCrLf
+        Label7.Text = "On Ramp Traffic (veh/hr)" & vbCrLf
         ' 
         ' Label18
         ' 
         Label18.AutoSize = True
         Label18.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label18.Location = New Point(147, 374)
+        Label18.Location = New Point(104, 378)
         Label18.Name = "Label18"
-        Label18.Size = New Size(142, 40)
+        Label18.Size = New Size(208, 20)
         Label18.TabIndex = 200
-        Label18.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label18.Text = "Approach Traffic (veh/hr)"
         ' 
         ' TextBox11
         ' 
@@ -231,11 +231,11 @@ Partial Class dDiamond
         ' 
         Label12.AutoSize = True
         Label12.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label12.Location = New Point(354, 717)
+        Label12.Location = New Point(325, 720)
         Label12.Name = "Label12"
-        Label12.Size = New Size(147, 40)
+        Label12.Size = New Size(208, 20)
         Label12.TabIndex = 199
-        Label12.Text = "Approach Traffic " & vbCrLf & "(veh/hr)" & vbCrLf
+        Label12.Text = "Approach Traffic (veh/hr)" & vbCrLf
         ' 
         ' TextBox2
         ' 
@@ -255,21 +255,21 @@ Partial Class dDiamond
         ' 
         Label13.AutoSize = True
         Label13.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label13.Location = New Point(354, 760)
+        Label13.Location = New Point(325, 763)
         Label13.Name = "Label13"
-        Label13.Size = New Size(148, 40)
+        Label13.Size = New Size(214, 20)
         Label13.TabIndex = 198
-        Label13.Text = "Off- Ramp Traffic" & vbCrLf & "(veh/hr)" & vbCrLf
+        Label13.Text = "Off- Ramp Traffic (veh/hr)" & vbCrLf
         ' 
         ' Label17
         ' 
         Label17.AutoSize = True
         Label17.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label17.Location = New Point(354, 677)
+        Label17.Location = New Point(347, 680)
         Label17.Name = "Label17"
-        Label17.Size = New Size(133, 40)
+        Label17.Size = New Size(184, 20)
         Label17.TabIndex = 197
-        Label17.Text = "Freeway Speed" & vbCrLf & "(mph)" & vbCrLf
+        Label17.Text = "Freeway Speed (mph)" & vbCrLf
         ' 
         ' TextBox7
         ' 
@@ -284,9 +284,9 @@ Partial Class dDiamond
         Label11.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label11.Location = New Point(728, 124)
         Label11.Name = "Label11"
-        Label11.Size = New Size(147, 40)
+        Label11.Size = New Size(208, 20)
         Label11.TabIndex = 196
-        Label11.Text = "Approach Traffic " & vbCrLf & "(veh/hr)" & vbCrLf
+        Label11.Text = "Approach Traffic (veh/hr)" & vbCrLf
         ' 
         ' TextBox4
         ' 
@@ -306,7 +306,7 @@ Partial Class dDiamond
         ' 
         Label9.AutoSize = True
         Label9.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
-        Label9.Location = New Point(121, 341)
+        Label9.Location = New Point(137, 341)
         Label9.Name = "Label9"
         Label9.Size = New Size(175, 20)
         Label9.TabIndex = 195
@@ -377,9 +377,9 @@ Partial Class dDiamond
         Label15.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label15.Location = New Point(1076, 477)
         Label15.Name = "Label15"
-        Label15.Size = New Size(142, 40)
+        Label15.Size = New Size(208, 20)
         Label15.TabIndex = 192
-        Label15.Text = "Approach Traffic" & vbCrLf & " (veh/hr)"
+        Label15.Text = "Approach Traffic (veh/hr)"
         ' 
         ' Label4
         ' 
@@ -411,9 +411,9 @@ Partial Class dDiamond
         Label6.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label6.Location = New Point(728, 208)
         Label6.Name = "Label6"
-        Label6.Size = New Size(126, 40)
+        Label6.Size = New Size(201, 20)
         Label6.TabIndex = 190
-        Label6.Text = "On Ramp" & vbCrLf & "Traffic (veh/hr)" & vbCrLf
+        Label6.Text = "On RampTraffic (veh/hr)" & vbCrLf
         ' 
         ' Label5
         ' 
@@ -445,9 +445,9 @@ Partial Class dDiamond
         Label3.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label3.Location = New Point(727, 164)
         Label3.Name = "Label3"
-        Label3.Size = New Size(148, 40)
+        Label3.Size = New Size(214, 20)
         Label3.TabIndex = 188
-        Label3.Text = "Off- Ramp Traffic" & vbCrLf & "(veh/hr)" & vbCrLf
+        Label3.Text = "Off- Ramp Traffic (veh/hr)" & vbCrLf
         ' 
         ' Label2
         ' 
@@ -455,9 +455,9 @@ Partial Class dDiamond
         Label2.Font = New Font("Microsoft Sans Serif", 12F, FontStyle.Bold, GraphicsUnit.Point)
         Label2.Location = New Point(727, 84)
         Label2.Name = "Label2"
-        Label2.Size = New Size(133, 40)
+        Label2.Size = New Size(184, 20)
         Label2.TabIndex = 187
-        Label2.Text = "Freeway Speed" & vbCrLf & "(mph)" & vbCrLf
+        Label2.Text = "Freeway Speed (mph)" & vbCrLf
         ' 
         ' Label1
         ' 
@@ -533,6 +533,7 @@ Partial Class dDiamond
         Controls.Add(Label1)
         Controls.Add(PictureBox3)
         Controls.Add(ToolStrip1)
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         Name = "dDiamond"
         Text = "CO Florida 2024 -  Divergent Diamond Interchange"
         ToolStrip1.ResumeLayout(False)
