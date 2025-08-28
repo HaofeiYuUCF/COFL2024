@@ -325,11 +325,24 @@ Public Class Welcome
         'Reads EF's from the Appropriate District Input File
         LineOfText = StreamToDisplay.ReadLine() 'First input line contains unused variable, District Name
 
+        'Do Until StreamToDisplay.EndOfStream
+        '    For i = 0 To 13
+        '        For j = 0 To 40
+        '            LineOfText = StreamToDisplay.ReadLine()
+        '            EFArray(i, j) = LineOfText
+        '        Next j
+        '    Next i
+        'Loop
+
         Do Until StreamToDisplay.EndOfStream
             For i = 0 To 13
                 For j = 0 To 40
                     LineOfText = StreamToDisplay.ReadLine()
-                    EFArray(i, j) = LineOfText
+                    If Not Single.TryParse(LineOfText, EFArray(i, j)) Then
+                        MessageBox.Show("District paramater file corrupted.  Please repair and try again.")
+                        'Application.Exit()
+                        Environment.Exit(1)
+                    End If
                 Next j
             Next i
         Loop
